@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d0c251c99b565986",
+        "id": "7a7f10315c5c98f0",
         "type": "tabs",
         "children": [
           {
-            "id": "0816c9facf64fff1",
+            "id": "308f8de7d8888bed",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notas/Bitacora/2026-09-17.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-09-17"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notas/Bitacora/2026-09-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notas/Bitacora/2026-09-17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +155,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notas/Bitacora/2026-09-17.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,11 +181,15 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "0816c9facf64fff1",
+  "active": "308f8de7d8888bed",
   "lastOpenFiles": [
-    "Mecanicas/Index.md",
     "Cartas/VirusFox.md",
     "Cartas/Index.md",
-    "Lore/Index.md"
+    "Lore/Index.md",
+    "Mecanicas/Index.md",
+    "Mecanicas/Sistema de Turnos.md",
+    "Notas/Bitacora/2026-09-17.md",
+    "Notas/Index.md",
+    "Inicio.md"
   ]
 }
