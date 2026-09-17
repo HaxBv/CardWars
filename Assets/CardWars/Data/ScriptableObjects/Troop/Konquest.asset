@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: Konquest
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardID: 0
+  cardName: Konquest
+  cost: 9
+  descriptionAbility: 'Por cada 1 punto de vida faltante gana +1 de armadura.
+
+    Evolucion
+    - Monstruo: Duplica el ataque de las tropas aliadas de su carril y los de al
+    lado.
+
+    Ocaso: Se Cura 1 por cada tropa enemiga en su carril y las de alado.'
+  phrase: 
+  type: 1
+  rarity: 4
+  family: 0f000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 16
+    filter: 0
+    target: 1
+    condition: 1
+    family: 0
+    laneRadius: 0
+    effects:
+    - effectType: 2
+      value: 1
+  - trigger: 2
+    filter: 0
+    target: 1
+    condition: 8
+    family: 0
+    laneRadius: 3
+    effects:
+    - effectType: 7
+      value: 1
+  - trigger: 15
+    filter: 0
+    target: 11
+    condition: 0
+    family: 15
+    laneRadius: 3
+    effects:
+    - effectType: 0
+      value: 3
+  attack: 5
+  health: 9
+  armor: 1
+  shield: 6
+  shieldArmor: 1
+  burn: 0
+  directAttack: 0
+  abilityPassives: 

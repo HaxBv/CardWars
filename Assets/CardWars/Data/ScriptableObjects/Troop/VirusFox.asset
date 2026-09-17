@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: VirusFox
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardID: 0
+  cardName: Virus Fox
+  cost: 5
+  descriptionAbility: "Su salud no puede bajar de 1.\nOcaso: Inflige 1 de da\xF1o
+    puro a todas las tropas enemigas."
+  phrase: 
+  type: 1
+  rarity: 7
+  family: 14000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities: []
+  attack: 5
+  health: 1
+  armor: 0
+  shield: 0
+  shieldArmor: 0
+  burn: 0
+  directAttack: 0
+  abilityPassives: 060000000e0000000d000000
