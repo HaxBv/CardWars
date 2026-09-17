@@ -2,4 +2,5 @@
 
 Ideas sueltas, brainstorm y bitácora de desarrollo.
 
-- Placeholder para escribir.
+## Bitácora
+- [[Bitacora/2026-09-17|2026-09-17]] - Vault + comandos entrada/salida + revisión del diseño.
