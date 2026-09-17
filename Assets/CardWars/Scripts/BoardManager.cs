@@ -4,18 +4,38 @@ using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
-    public static BoardManager Instance;
+    private static BoardManager instancia;
+
+    public static BoardManager Instance
+    {
+        get
+        {
+            if (instancia == null)
+            {
+                instancia = FindFirstObjectByType<BoardManager>();
+            }
+
+            if (instancia == null)
+            {
+                var objeto = new GameObject("BoardManager");
+                instancia = objeto.AddComponent<BoardManager>();
+            }
+
+            return instancia;
+        }
+    }
+
     // Listas globales para rastrear las tropas activas en la escena
     [SerializeField] private List<TropaEnTablero> tropasAliadas = new List<TropaEnTablero>();
     [SerializeField] private List<TropaEnTablero> tropasEnemigas = new List<TropaEnTablero>();
 
     private void Awake()
     {
-        if (Instance == null)
+        if (instancia == null)
         {
-            Instance = this;
+            instancia = this;
         }
-        else
+        else if (instancia != this)
         {
             Destroy(gameObject);
         }
