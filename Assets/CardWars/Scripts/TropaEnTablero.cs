@@ -17,6 +17,18 @@ public class TropaEnTablero : MonoBehaviour
     [Button]
     public void AlEntrarAlTablero()
     {
+        if (datosDeLaCarta == null)
+        {
+            Debug.LogError($"TropaEnTablero '{name}': falta asignar 'datosDeLaCarta' en el Inspector.", this);
+            return;
+        }
+
+        if (estadísticasVivas == null)
+        {
+            Debug.LogError($"TropaEnTablero '{name}': falta asignar 'estadísticasVivas' (componente Tropa) en el Inspector.", this);
+            return;
+        }
+
         // 1. Registrarse automáticamente en el TableroManager
         BoardManager.Instance.RegistrarTropa(this, esAliada);
 

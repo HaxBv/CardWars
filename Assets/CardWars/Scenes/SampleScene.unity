@@ -461,11 +461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce2feeae2ff8e64b9084472c7a1aedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tropa
-  ataqueActual: 0
-  vidaActual: 0
-  armadura: 0
-  escudo: 0
-  armaduraDeEscudo: 0
+  ataqueActual: 5
+  vidaActual: 9
+  armadura: 1
+  escudo: 6
+  armaduraDeEscudo: 1
   quemadura: 0
   ataqueDirecto: 0
 --- !u!4 &593423035
@@ -870,7 +870,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6707087ec91a64e8ccc6f8ffefac1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardManager
-  tropasAliadas: []
+  tropasAliadas:
+  - {fileID: 593423033}
   tropasEnemigas: []
 --- !u!4 &1053958863
 Transform:
@@ -904,10 +905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802803fb2b518a5489ee7e1669f6c37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhasesSystem
-  currentRound: 5
-  pasoTurnoActual: 5
-  currentPhase: 3
-  currentPlayerTurn: 1
+  currentRound: 6
+  pasoTurnoActual: 1
+  currentPhase: 1
+  currentPlayerTurn: 0
 --- !u!1 &1187620305
 GameObject:
   m_ObjectHideFlags: 0
