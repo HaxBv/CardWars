@@ -14,6 +14,8 @@ public class Tropa : MonoBehaviour
     public int armaduraDeEscudo;
     public int quemadura;
     public int ataqueDirecto;
+    public int laneIndex;
+    public bool EsAliada;
 
     public event Action OnVidaModificada;
 

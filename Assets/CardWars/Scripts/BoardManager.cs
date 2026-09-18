@@ -6,6 +6,28 @@ public class BoardManager : MonoBehaviour
 {
     private static BoardManager instancia;
 
+    private void Awake()
+    {
+        // Registrar ejecutores de habilidades al iniciar
+        var registrador = FindFirstObjectByType<AbilityRegistrator>();
+        if (registrador != null)
+        {
+            registrador.RegisterBasicAbilities();
+        }
+        else
+        {
+            Debug.LogWarning("AbilityRegistrator no encontrado en la escena. Las habilidades no tendrán ejecutores registrados.");
+        }
+        if (instancia == null)
+        {
+            instancia = this;
+        }
+        else if (instancia != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public static BoardManager Instance
     {
         get
@@ -29,17 +51,7 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private List<TropaEnTablero> tropasAliadas = new List<TropaEnTablero>();
     [SerializeField] private List<TropaEnTablero> tropasEnemigas = new List<TropaEnTablero>();
 
-    private void Awake()
-    {
-        if (instancia == null)
-        {
-            instancia = this;
-        }
-        else if (instancia != this)
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 
     /// <block>
     /// Registra una tropa cuando entra al juego. 

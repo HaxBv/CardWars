@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 78195004}
   - component: {fileID: 78195003}
   m_Layer: 0
-  m_Name: Konquest (1)
+  m_Name: VirusFox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4863c2739c507f479e662816ef471c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TropaEnTablero
-  datosDeLaCarta: {fileID: 11400000, guid: 0c9d809281b45e0489b6bba29205f6c0, type: 2}
+  datosDeLaCarta: {fileID: 11400000, guid: 8e5624f70c1b9c043989780c15bdda3f, type: 2}
   "estad\xEDsticasVivas": {fileID: 78195004}
   laneIndex: 0
   esAliada: 0
@@ -256,13 +256,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce2feeae2ff8e64b9084472c7a1aedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tropa
-  ataqueActual: 0
-  vidaActual: 0
+  ataqueActual: 5
+  vidaActual: 1
   armadura: 0
   escudo: 0
   armaduraDeEscudo: 0
   quemadura: 0
   ataqueDirecto: 0
+  laneIndex: 0
+  EsAliada: 0
 --- !u!4 &78195005
 Transform:
   m_ObjectHideFlags: 0
@@ -468,6 +470,8 @@ MonoBehaviour:
   armaduraDeEscudo: 1
   quemadura: 0
   ataqueDirecto: 0
+  laneIndex: 0
+  EsAliada: 0
 --- !u!4 &593423035
 Transform:
   m_ObjectHideFlags: 0
@@ -872,7 +876,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardManager
   tropasAliadas:
   - {fileID: 593423033}
-  tropasEnemigas: []
+  tropasEnemigas:
+  - {fileID: 78195003}
 --- !u!4 &1053958863
 Transform:
   m_ObjectHideFlags: 0
@@ -905,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802803fb2b518a5489ee7e1669f6c37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhasesSystem
-  currentRound: 6
+  currentRound: 7
   pasoTurnoActual: 1
   currentPhase: 1
   currentPlayerTurn: 0

@@ -1,4 +1,4 @@
-public enum CardType
+﻿public enum CardType
 {
     None,
     Troop,
@@ -35,7 +35,6 @@ public enum FilterType
 {
     None,
 
-    Self,
     Ally,
     Enemy,
 
@@ -101,7 +100,7 @@ public enum TriggerType
     OnKill,
     OnDeath,
 
-    // Invocación global
+    // InvocaciÃ³n global
     OnUnitSummoned,
     OnUnitDeath,
 
@@ -181,7 +180,7 @@ public enum TargetType
     AlliesInLane,
     EnemiesInLane,
 
-    // Selección especial
+    // SelecciÃ³n especial
     HighestAttackEnemy,
     LowestAttackEnemy,
 

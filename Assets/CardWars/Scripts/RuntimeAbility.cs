@@ -1,6 +1,5 @@
 using UnityEngine;
 
-// Esta clase representará CADA habilidad ejecutándose en tiempo real en la mesa
 public class RuntimeAbility
 {
     private AbilityData datosOriginales; // La referencia a los Enums de la foto
@@ -17,64 +16,33 @@ public class RuntimeAbility
 
     public void Inicializar()
     {
-        // 1. Evaluamos el TRIGGER del Enum
-        if (datosOriginales.Trigger == TriggerType.Passive)
+        // Ya no hay if/else por trigger. En su lugar, ejecutamos el efecto correspondiente
+        // usando el executor centralizado. Si no hay executor registrado, simplemente registramos warning.
+        // Ejecutamos efecto inicial si la lista de efectos no está vacía.
+        if (datosOriginales.Effects != null && datosOriginales.Effects.Count > 0)
         {
-            // Si la condición depende de la vida faltante
-            if (datosOriginales.Condition == ConditionType.MissingHealth)
+            foreach (var effect in datosOriginales.Effects)
             {
-                // Nos suscribimos de manera independiente al evento de la tropa
-                poseedor.OnVidaModificada += ProcesarHabilidadPasivaVida;
-                ProcesarHabilidadPasivaVida(); // Cálculo inicial
+                AbilityEffectExecutor.Execute(datosOriginales.Trigger, effect.EffectType, datosOriginales, poseedor, BoardManager.Instance);
             }
-        }
-        else if (datosOriginales.Trigger == TriggerType.EndTurn)
-        {
-            // ACTUAlIZADO: Ahora nos suscribimos al evento global de tu PhasesSystem oficial
-            PhasesSystem.OnFinDelCombate += ProcesarHabilidadFinDeTurno;
         }
     }
 
     // LÓGICA INDEPENDIENTE 1: Armadura por Vida Faltante
-    private void ProcesarHabilidadPasivaVida()
-    {
-        // Revertimos lo otorgado antes por ESTA instancia
-        poseedor.armadura -= armaduraOtorgadaAnteriormente;
-
-        int vidaFaltante = poseedor.VidaMaxima - poseedor.VidaActual;
-
-        // Leemos el valor (1) desde los efectos de tu Enum
-        int valorEfecto = datosOriginales.Effects[0].Value;
-
-        armaduraOtorgadaAnteriormente = vidaFaltante * valorEfecto;
-        poseedor.armadura += armaduraOtorgadaAnteriormente;
-    }
+    // (Ahora manejada vía AbilityEffectExecutor.Register en lugar de código hardcodeado)
+    // Método mantenido por si se necesita limpieza, pero la lógica principal ya no está aquí.
 
     // LÓGICA INDEPENDIENTE 2: Ocaso / Fin de turno (Curar por enemigos en carril)
-    private void ProcesarHabilidadFinDeTurno()
-    {
-        if (datosOriginales.Condition == ConditionType.EnemiesInLane)
-        {
-            // Leemos el radio (3) y el valor de curación (1) de tus datos
-            int rango = datosOriginales.LaneRadius;
-            int valorCuracion = datosOriginales.Effects[0].Value;
-
-            // Buscamos los enemigos usando la posición única de esta tropa
-            int enemigosDetectados = BoardManager.Instance.ContarEnemigosEnCarril(poseedor, rango);
-
-            if (enemigosDetectados > 0)
-            {
-                poseedor.Curar(enemigosDetectados * valorCuracion);
-            }
-        }
-    }
+    // (También manejada vía executor)
 
     public void Desvincular()
     {
-        // Limpieza obligatoria para que no se quede código colgado en memoria
-        poseedor.OnVidaModificada -= ProcesarHabilidadPasivaVida;
-
-        // ACTUALIZADO: Desuscripción de tu PhasesSystem oficial
-        PhasesSystem.OnFinDelCombate -= ProcesarHabilidadFinDeTurno;
+        // En el nuevo patrón executor, la limpieza es mínima
+        // ya que la ejecución ocurre de inmediato en Inicializar()
+        // y no hay suscripciones de eventos persistentes por mantener.
+        // Se conservan referencias para posibles futuras suscripciones
+        // si algún efecto requiere suscripción evento-based.
+        this.datosOriginales = null;
+        this.poseedor = null;
     }
 }
