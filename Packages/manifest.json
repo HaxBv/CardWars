@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.coplaydev.unity-mcp": "file:C:/Users/JEREMY/Downloads/unity-mcp-10.0.0/unity-mcp-10.0.0/MCPForUnity",
+    "com.coplaydev.unity-mcp": "file:C:/Users/Alumno/Downloads/unity-mcp-10.0.0/unity-mcp-10.0.0/MCPForUnity",
     "com.unity.2d.animation": "13.0.4",
     "com.unity.2d.aseprite": "3.0.1",
     "com.unity.2d.psdimporter": "12.0.1",
