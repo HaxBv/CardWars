@@ -910,9 +910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802803fb2b518a5489ee7e1669f6c37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhasesSystem
-  currentRound: 7
-  pasoTurnoActual: 1
-  currentPhase: 1
+  currentRound: 1
+  pasoTurnoActual: 0
+  currentPhase: 2
   currentPlayerTurn: 0
 --- !u!1 &1187620305
 GameObject:
