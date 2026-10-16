@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
-  m_Name: VirusFox
+  m_Name: Catapult
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
-  cardID: 0
-  cardName: Virus Fox
-  cost: 5
-  descriptionAbility: "Su salud no puede bajar de 1.\nOcaso: Inflige 1 de da\xF1o
-    puro a todas las tropas enemigas."
+  cardName: Catapult
+  cost: 6
+  descriptionAbility: 
   phrase: 
   type: 1
-  rarity: 7
-  family: 14000000
+  rarity: 2
+  family: 05000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
   imgCard: {fileID: 0}
   abilities: []
-  attack: 5
-  health: 1
+  attack: 0
+  health: 6
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  abilityPassives: 060000000e0000000d000000
+  directAttack: 4
+  imgCharInGame: {fileID: 0}
+  anim: {fileID: 0}
+  abilityPassives: 

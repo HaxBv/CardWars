@@ -14,6 +14,14 @@ public class TroopCardData : CardData
     [SerializeField] private int burn;
     [SerializeField] private int directAttack;
 
+
+
+    [PreviewField(100)]
+    [SerializeField] private Sprite imgCharInGame;
+
+    [SerializeField] private RuntimeAnimatorController anim;
+
+
     [SerializeField] private List<AbilityPassive> abilityPassives;
 
     public List<AbilityPassive> AbilityPassives => abilityPassives;
@@ -24,5 +32,11 @@ public class TroopCardData : CardData
     public int ShieldArmor => shieldArmor;
     public int Burn => burn;
     public int DirectAttack => directAttack;
+
+    public Sprite ImgCharInGame => imgCharInGame;
+
+    public RuntimeAnimatorController Anim => anim;
+
+
 
 }

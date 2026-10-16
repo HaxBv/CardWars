@@ -1,6 +1,8 @@
 using Sirenix.OdinInspector;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 [System.Serializable]
 public class AbilityData
@@ -9,13 +11,15 @@ public class AbilityData
 
     [SerializeField] private FilterType filter;
 
-    [SerializeField] private TargetType target;
+
     [SerializeField] private ConditionType condition;
 
-
-    [SerializeField] private CardFamily family;
-
     [SerializeField] private int laneRadius;
+
+    [SerializeField] private StatType statFilter;
+    [SerializeField] private ComparisonType comparison;
+    [SerializeField] private int compareValue;
+
 
     [SerializeField] private List<EffectData> effects;
 
@@ -23,14 +27,15 @@ public class AbilityData
 
     public FilterType Filter => filter;
 
-    public TargetType Target => target;
 
     public ConditionType Condition => condition;
+    public int LaneRadius => laneRadius;
 
-    public CardFamily Family => family;
+    public StatType StatFilter => statFilter;
+    public ComparisonType Comparison => comparison;
+    public int CompareValue => compareValue;
 
     public List<EffectData> Effects => effects;
-    public int LaneRadius => laneRadius;
 
 
 
@@ -40,17 +45,41 @@ public class AbilityData
 [System.Serializable]
 public class EffectData
 {
+
     [SerializeField] private EffectType effectType;
+
+    [SerializeField] private EffectDuration duration;
+    [SerializeField] private TargetType target;
+
+    [SerializeField] private int laneRadius;
+    [SerializeField] private CardFamily familyTarget;
+    [SerializeField] private CardRarity rarityTarget;
+    [SerializeField] private LaneDestination laneDestination;
     [SerializeField] private int value;
+    [SerializeField] private int quantity;
+
+    [SerializeField] private List<AbilityPassive> abilitiesToGrant;
+
+
+
     public EffectType EffectType => effectType;
+    public EffectDuration Duration => duration;
+    public TargetType Target => target;
+
+    public int LaneRadius => laneRadius;
+    public CardFamily FamilyTarget => familyTarget;
+    public CardRarity RarityTarget => rarityTarget;
+    public LaneDestination LaneDestination => laneDestination;
     public int Value => value;
+    public int Quantity => quantity;
+
+    public List<AbilityPassive> AbilitiesToGrant => abilitiesToGrant;
 }
 
 
 [CreateAssetMenu(fileName = "CardData", menuName = "CardWars/CardData")]
 public class CardData : ScriptableObject
 {
-    [SerializeField] private string cardID;
     [SerializeField] private string cardName;
     [SerializeField] private int cost;
     [SerializeField, TextArea(3, 10)] private string descriptionAbility;
@@ -68,7 +97,6 @@ public class CardData : ScriptableObject
     [SerializeField] private Sprite imgCard;
 
     [SerializeField] private List<AbilityData> abilities;
-    public string CardID => cardID;
     public string CardName => cardName;
     public int Cost => cost;
     public string DescriptionAbility => descriptionAbility;

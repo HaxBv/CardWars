@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: LittleChef
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardName: Little Chef
+  cost: 3
+  descriptionAbility: 'On Deploy: An ally unit gets +2 ATK and +2 HP.'
+  phrase: 
+  type: 1
+  rarity: 3
+  family: 1100000006000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 3
+    filter: 0
+    condition: 0
+    laneRadius: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
+    effects:
+    - effectType: 1
+      duration: 1
+      target: 4
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      value: 2
+      quantity: 0
+      abilitiesToGrant: 
+    - effectType: 2
+      duration: 1
+      target: 4
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      value: 2
+      quantity: 0
+      abilitiesToGrant: 
+  attack: 2
+  health: 1
+  armor: 0
+  shield: 0
+  shieldArmor: 0
+  burn: 0
+  directAttack: 0
+  imgCharInGame: {fileID: 0}
+  anim: {fileID: 0}
+  abilityPassives: 

@@ -15,7 +15,31 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 0c96039a7c05f224fba46545191a3085, type: 2}
+    - {fileID: 11400000, guid: 5c44c9784e85566439562d31c3abc399, type: 2}
+    - {fileID: 11400000, guid: ca19f29e12347394daf922e89fb50aa2, type: 2}
+    - {fileID: 11400000, guid: 5c79b5ff1272fe34dbfcb1c83f72474e, type: 2}
+    - {fileID: 11400000, guid: fc36c898f39cb9f46820616fddf08362, type: 2}
+    - {fileID: 11400000, guid: a0024243a15170d4c830aaba2880da26, type: 2}
+    - {fileID: 11400000, guid: 05bec6eb4ffede44789ed294d27fac9d, type: 2}
+    - {fileID: 11400000, guid: 0e7f00fde54037847bd8d7213cd8c746, type: 2}
+    - {fileID: 11400000, guid: 88da77fe1a48bf34aaad5655c2b6d6b4, type: 2}
+    - {fileID: 11400000, guid: 8004791151c2f6244aa05c001bfce87f, type: 2}
+    - {fileID: 11400000, guid: 8627049c6190ce44eb2808ecc6d7a9d1, type: 2}
+    - {fileID: 11400000, guid: fbd3a12e755996043accf8b4ea3bc1be, type: 2}
+    - {fileID: 11400000, guid: 07de2adeaeaa032428b853b857a86f69, type: 2}
+    - {fileID: 11400000, guid: 7ccdd405b77f7fd45be37d96b028ec88, type: 2}
+    - {fileID: 11400000, guid: 211b337aa598e4a4e8146cd81c22503c, type: 2}
+    - {fileID: 11400000, guid: 5d22c4461f0d9934aac75009783b37da, type: 2}
+    - {fileID: 11400000, guid: af41da77dd3835f4ab50cf6602f2eb14, type: 2}
+    - {fileID: 11400000, guid: a2be1980a5553884bafbfa0598724e1c, type: 2}
+    - {fileID: 11400000, guid: c91fdb7d6b8eb6e458c2d960a7bfe214, type: 2}
+    - {fileID: 11400000, guid: f64e0837b8931494584570e2cdba7314, type: 2}
+    - {fileID: 11400000, guid: fa243c86e420f4149b528a59bccc82ae, type: 2}
+    - {fileID: 11400000, guid: 0c9d809281b45e0489b6bba29205f6c0, type: 2}
+    - {fileID: 11400000, guid: 2382205ffdb5c1449b617b3a9d844f94, type: 2}
+    - {fileID: 11400000, guid: 20c9741db8960ed42ba51f0f5ac4a1f9, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -60,7 +84,250 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 8
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 9
+    - Name: 
+      Entry: 10
       Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 10
+      Data: 18
+    - Name: 
+      Entry: 10
+      Data: 19
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 10
+      Data: 20
+    - Name: 
+      Entry: 10
+      Data: 21
+    - Name: 
+      Entry: 10
+      Data: 22
+    - Name: 
+      Entry: 10
+      Data: 23
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 8
+    - Name: $v
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[CardData, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -69,11 +336,11 @@ MonoBehaviour:
       Data: 
     - Name: cardsByFamily
       Entry: 7
-      Data: 4|System.Collections.Generic.Dictionary`2[[CardFamily, Assembly-CSharp],[System.Collections.Generic.List`1[[CardData,
+      Data: 12|System.Collections.Generic.Dictionary`2[[CardFamily, Assembly-CSharp],[System.Collections.Generic.List`1[[CardData,
         Assembly-CSharp]], mscorlib]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 5|System.Collections.Generic.EnumEqualityComparer`1[[CardFamily, Assembly-CSharp]],
+      Data: 13|System.Collections.Generic.EnumEqualityComparer`1[[CardFamily, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -95,11 +362,11 @@ MonoBehaviour:
       Data: 
     - Name: cardsByCost
       Entry: 7
-      Data: 6|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[System.Collections.Generic.List`1[[CardData,
+      Data: 14|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[System.Collections.Generic.List`1[[CardData,
         Assembly-CSharp]], mscorlib]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 7|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+      Data: 15|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
         mscorlib]], mscorlib
     - Name: 
       Entry: 8

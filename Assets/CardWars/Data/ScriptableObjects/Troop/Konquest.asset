@@ -12,16 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
   m_Name: Konquest
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
-  cardID: 0
   cardName: Konquest
   cost: 9
-  descriptionAbility: 'Por cada 1 punto de vida faltante gana +1 de armadura.
+  descriptionAbility: 'End of Turn: Heal 1 HP to this unit for each enemy in this
+    lane and adjacent lanes.
 
-    Evolucion
-    - Monstruo: Duplica el ataque de las tropas aliadas de su carril y los de al
-    lado.
-
-    Ocaso: Se Cura 1 por cada tropa enemiga en su carril y las de alado.'
+    Ascension - Monster: Double the ATK of allied units
+    in this lane and adjacent lanes.'
   phrase: 
   type: 1
   rarity: 4
@@ -30,33 +27,42 @@ MonoBehaviour:
   imgRarity: {fileID: 0}
   imgCard: {fileID: 0}
   abilities:
-  - trigger: 16
-    filter: 0
-    target: 1
-    condition: 1
-    family: 0
-    laneRadius: 0
-    effects:
-    - effectType: 2
-      value: 1
   - trigger: 2
     filter: 0
-    target: 1
-    condition: 8
-    family: 0
-    laneRadius: 3
+    condition: 9
+    laneRadius: 1
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
     effects:
-    - effectType: 7
+    - effectType: 11
+      duration: 1
+      target: 1
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 1
       value: 1
-  - trigger: 15
-    filter: 0
-    target: 11
+      quantity: 0
+      abilitiesToGrant: 
+  - trigger: 16
+    filter: 1
     condition: 0
-    family: 15
-    laneRadius: 3
+    laneRadius: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
     effects:
-    - effectType: 0
-      value: 3
+    - effectType: 25
+      duration: 1
+      target: 6
+      laneRadius: 1
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      value: 2
+      quantity: 0
+      abilitiesToGrant: 
   attack: 5
   health: 9
   armor: 1
@@ -64,4 +70,6 @@ MonoBehaviour:
   shieldArmor: 1
   burn: 0
   directAttack: 0
+  imgCharInGame: {fileID: 0}
+  anim: {fileID: 0}
   abilityPassives: 

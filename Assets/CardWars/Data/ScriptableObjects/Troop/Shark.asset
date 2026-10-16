@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: Shark
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardName: Shark
+  cost: 5
+  descriptionAbility: When another unit drops to 2 HP or less, this unit performs
+    an extra attack.
+  phrase: 
+  type: 1
+  rarity: 4
+  family: 02000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 7
+    filter: 4
+    condition: 0
+    laneRadius: 0
+    statFilter: 2
+    comparison: 6
+    compareValue: 2
+    effects:
+    - effectType: 29
+      duration: 0
+      target: 1
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      value: 0
+      quantity: 0
+      abilitiesToGrant: 
+  attack: 5
+  health: 5
+  armor: 0
+  shield: 0
+  shieldArmor: 0
+  burn: 0
+  directAttack: 0
+  imgCharInGame: {fileID: 0}
+  anim: {fileID: 0}
+  abilityPassives: 10000000

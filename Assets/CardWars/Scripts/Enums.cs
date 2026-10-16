@@ -18,10 +18,13 @@ public enum ConditionType
 
     Fury,
 
+
     Bleed,
     TargetBleed,
 
-    Armor,
+    HasArmor,
+
+    HasShield,
 
     AlliedFamilyCount,
 
@@ -29,15 +32,28 @@ public enum ConditionType
 
     EnemiesInLane,
 
-    CardsInHand
+    CardsInHand,
+
+    IsOnHeights,
+    IsOnLands,
+
+    IsOnWater,
+
+    SecondHit,
+
+    IsOnEnvironment,
+
+
+
+
 }
 public enum FilterType
 {
     None,
 
     Self,
-    Ally,
-    Enemy,
+    AllyUnit,
+    EnemyUnit,
 
     NotSelf,
 
@@ -58,6 +74,7 @@ public enum CardRarity
     Legendary,
     Divine,
     Secret,
+    Token,
 }
 public enum CardFamily
 {
@@ -79,7 +96,9 @@ public enum CardFamily
     Monster,
     Nature,
     Rodent,
-    Flying,
+    Flying, 
+    Fighter,
+    Darkness,
     Visitor,
     Fox,
 }
@@ -88,74 +107,110 @@ public enum TriggerType
     None,
 
     // Turnos
-    StartTurn,
-    EndTurn,
+    StartRound,
+    EndRound,
 
     // Carta
     OnDeploy,
     OnDraw,
 
     // Combate
-    OnAttack,
-    OnTakeDamage,
-    OnKill,
+    OnHit,
+    OnPortalHit,
+    OnDamaged,
+    OnDestroy,
     OnDeath,
 
     // Invocación global
     OnUnitSummoned,
     OnUnitDeath,
+    
 
     // Carriles
     OnLaneChanged,
-    EnemyEnteredLane,
-    AllyEnteredLane,
+    OnEnemyEnteredOwnLane,
+    OnAllyEnteredOwnLane,
 
     // Especiales
     Fusion,
-    Evolution,
+    Ascension,
 
     // Permanente
-    Passive
+    Passive,
+
+    // Turnos de fase
+    StartPhase1,
+    StartPhase2,
+
+    EndPhase1,
+    EndPhase2,
+
+    StartPhase3,
+    EndPhase3,
+
 }
 public enum EffectType
 {
-    GainAttack,
-    GainHealth,
-    GainArmor,
-    GainShield,
-    GainMana,
+    None,
+    ModifyAttack,
+    ModifyHealth,
+    ModifyArmor,
+    ModifyShield,
+    ModifyShieldArmor,
+    GainCrystal,
+    LoseCrystal,
     GainAbility,
+    LoseAbility,
     GainInmunity,
     Heal,
+    DoExtraDamage,
     DealDamage,
     DrawCard,
     SummonCard,
+    GenerateCard,
+    ShuffleCard,
+    ModifyCost,
     Move,
+    Bounce,
     Stun,
     Transform,
     Destroy,
     Execute,
+    MultiplyAttack,
+    MultiplyHealth,
 
+    DivideAttack,
+    DivideHealth,
+    DoExtraAttack,
 
+    SetInactive,
+
+    ModifyDirectAttack,
+    ModifyBurn,
 
 }
 public enum AbilityPassive
 {
-    None,
-    Team,
-    Freeze,
-    Hunter,
-    Poison,
-    Charm,
-    Lethal,
-    AntiSpell,
-    Break,
-    DoubleAttack,
-    PiercingAttack,
-    AreaDamage,
-    ThreeLineAttack,
-    AllTerrain,
-    Frenzy,
+    None, //0
+    Team, //1
+    Freeze, //2
+    Burn, //3
+    Hunter, //4
+    Poison, //5
+    Charm, //6
+    Lethal, //7
+    AntiSpell, //8
+    AntiAbility, //9
+    Break, //10
+    BleedingAttack, //11
+    DoubleAttack, //12
+    PiercingAttack, //13
+    AreaDamage, //14
+    ThreeLineAttack, //15
+    Aquatic, //16
+    HighGround, //17
+    AllTerrain, //18
+    Frenzy, //19
 }
 public enum TargetType
 {
@@ -163,12 +218,13 @@ public enum TargetType
 
     // Propios
     Self,
-    Player,
-    EnemyPlayer,
+    OwnPortal,
+    EnemyPortal,
 
     // Individuales
-    Ally,
-    Enemy,
+    SelectedAlly,
+    SelectedEnemy,
+   
 
     // Masivos
     AllAllies,
@@ -189,7 +245,28 @@ public enum TargetType
     LowestHealthEnemy,
 
     RandomEnemy,
-    RandomAlly
+    RandomAlly,
+
+    // Contextual Targets
+    EnemyAttacker,
+    DamagedEnemy,
+    FusionUnit,
+    SummonedUnit,
+    GeneratedCard,
+    ShuffledCard,
+
+
+
+
+
+}
+public enum LaneDestination
+{
+    None,
+    OwnLane,
+    AdjacentLane,
+    RandomLane,
+    SelectedLane,
 }
 public enum TurnPhase
 {
@@ -220,6 +297,35 @@ public enum MarkType
     Wendy,
     Sophie,
 
+}
+public enum ComparisonType
+{
+    None,
+    Equal,
+    NotEqual,
+    Greater,
+    GreaterOrEqual,
+    Less,
+    LessOrEqual
+}
+public enum StatType
+{
+    None,
+    Attack,
+    Health,
+    Armor,
+    Cost
+}
+public enum EffectDuration
+{
+    None,
+    Permanent,
+    ThisTurn,
+    ThisRound,
+    UntilPhase3,
+    WhileSourceInPlay,
 
+    UntilPhase1,
+    UnitlPhase2,
 
 }
