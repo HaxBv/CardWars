@@ -48,6 +48,7 @@ MonoBehaviour:
       quantity: 1
       abilityPasiveToGrant: 
       abilitiesToGrant: []
+  isMelee: 1
   attack: 2
   health: 3
   armor: 0

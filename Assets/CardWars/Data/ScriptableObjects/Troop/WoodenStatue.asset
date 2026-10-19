@@ -25,6 +25,7 @@ MonoBehaviour:
   imgRarity: {fileID: 0}
   imgCard: {fileID: 0}
   abilities: []
+  isMelee: 1
   attack: 0
   health: 6
   armor: 0

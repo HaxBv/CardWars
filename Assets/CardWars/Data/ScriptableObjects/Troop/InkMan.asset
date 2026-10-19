@@ -21,7 +21,7 @@ MonoBehaviour:
   type: 1
   role: 6
   rarity: 5
-  family: 17000000
+  family: 0900000017000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
   imgCard: {fileID: 0}
@@ -35,6 +35,7 @@ MonoBehaviour:
     comparison: 0
     compareValue: 0
     effects: []
+  isMelee: 1
   attack: 3
   health: 3
   armor: 0

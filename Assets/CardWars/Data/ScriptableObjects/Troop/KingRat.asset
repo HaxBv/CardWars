@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
-  m_Name: RatKing
+  m_Name: KingRat
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
-  cardName: Rat King
+  cardName: King Rat
   cost: 6
   weight: 3
   descriptionAbility: While in play, all allied Rodents cards deal 3x damage.
@@ -48,6 +48,7 @@ MonoBehaviour:
       quantity: 0
       abilityPasiveToGrant: 
       abilitiesToGrant: []
+  isMelee: 1
   attack: 2
   health: 6
   armor: 0

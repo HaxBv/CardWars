@@ -6,6 +6,7 @@ using UnityEngine;
 [InlineEditor]
 public class TroopCardData : CardData
 {
+    [SerializeField] private bool isMelee;
     [SerializeField] private int attack;
     [SerializeField] private int health;
     [SerializeField] private int armor;
@@ -23,6 +24,8 @@ public class TroopCardData : CardData
 
 
     [SerializeField] private List<AbilityPassive> abilityPassives;
+
+    public bool IsMelee => isMelee;
 
     public List<AbilityPassive> AbilityPassives => abilityPassives;
     public int Attack => attack;

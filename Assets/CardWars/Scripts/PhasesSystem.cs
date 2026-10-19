@@ -238,20 +238,20 @@ public class PhasesSystem : MonoBehaviour
 
             case 3:
                 currentPhase =
-                    TurnPhase.SpellAndEnvironmentTurn;
+                    TurnPhase.SpellAndDomainTurn;
 
                 currentPlayerTurn = currentPriority;
                 break;
 
             case 4:
                 currentPhase =
-                    TurnPhase.SpellAndEnvironmentTurn;
+                    TurnPhase.SpellAndDomainTurn;
 
                 currentPlayerTurn = segundoJugador;
                 break;
 
             case 5:
-                currentPhase = TurnPhase.Combat;
+                currentPhase = TurnPhase.CombatTurn;
 
                 Debug.Log(
                     $"Combat started - {currentTimeOfDay}"

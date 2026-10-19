@@ -17,8 +17,8 @@ MonoBehaviour:
   weight: 3
   descriptionAbility: 'When an enemy unit drops to 3 HP or less, Execute it.
 
-    While
-    on a Domain, this unit gets Anti-Spell.'
+    During
+    Night: This unit gets AntiSpell and AntiAbility.'
   phrase: 
   type: 1
   role: 3
@@ -53,7 +53,7 @@ MonoBehaviour:
       abilitiesToGrant: []
   - trigger: 17
     filter: 1
-    condition: 15
+    condition: 16
     conditionLaneRadius: 0
     conditionFamily: 0
     statFilter: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
     effects:
     - effectType: 8
       modify: 0
-      duration: 0
+      duration: 6
       target: 0
       scalingType: 0
       laneRadius: 0
@@ -72,8 +72,9 @@ MonoBehaviour:
       cardSelection: 0
       value: 0
       quantity: 0
-      abilityPasiveToGrant: 
+      abilityPasiveToGrant: 0800000009000000
       abilitiesToGrant: []
+  isMelee: 1
   attack: 3
   health: 4
   armor: 0

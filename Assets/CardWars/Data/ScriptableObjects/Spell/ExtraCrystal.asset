@@ -20,7 +20,7 @@ MonoBehaviour:
   type: 2
   role: 5
   rarity: 2
-  family: 
+  family: 0d000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
   imgCard: {fileID: 0}

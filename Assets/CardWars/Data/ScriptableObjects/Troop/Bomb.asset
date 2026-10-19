@@ -15,8 +15,7 @@ MonoBehaviour:
   cardName: Bomb
   cost: 3
   weight: 1
-  descriptionAbility: 'On Death: Deal 3 damage to all enemy units in this unit''s
-    lane.'
+  descriptionAbility: 'KO: Deal 3 damage to all enemy units in this unit''s lane.'
   phrase: 
   type: 1
   role: 3
@@ -49,6 +48,7 @@ MonoBehaviour:
       quantity: 0
       abilityPasiveToGrant: 
       abilitiesToGrant: []
+  isMelee: 1
   attack: 3
   health: 2
   armor: 0

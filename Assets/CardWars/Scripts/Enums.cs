@@ -43,7 +43,8 @@ public enum ConditionType
 
     IsOnEnvironment,
 
-
+    IsNight,
+    IsDay,
 
 
 }
@@ -157,11 +158,11 @@ public enum TriggerType
     StartPeriod,
     EndPeriod,
 
-    StartAlba,
-    EndAlba,
+    StartDay,
+    EndDay,
 
-    StartOcaso,
-    EndOcaso,
+    StartNight,
+    EndNight,
 
     //Inkman
     Inkman,
@@ -260,8 +261,8 @@ public enum TargetType
    
 
     // Masivos Solo unidades
-    AllAlliesUnit,
-    AllEnemiesUnit,
+    AllAlliedUnits,
+    AllEnemyUnits,
     AllUnits,
 
     // Carriles
@@ -317,14 +318,18 @@ public enum LaneDestination
     AdjacentLane,
     RandomLane,
     SelectedLane,
+
+    Water,
+    Heights,
+    Lands
 }
 public enum TurnPhase
 {
-    StartTurn,
+    StartPeriod,
     TroopTurn,
-    SpellAndEnvironmentTurn,
-    Combat,
-    EndTurn,
+    SpellAndDomainTurn,
+    CombatTurn,
+    EndPeriod,
 }
 public enum PeriodType
 {
@@ -382,6 +387,11 @@ public enum EffectDuration
     UntilPhase1,
     UntilPhase2,
 
+    WhileInNight,
+    WhileInDay,
+
+    ThisPeriod,
+
 }
 public enum ModifyType
 {
@@ -419,7 +429,14 @@ public enum ScalingType
     CardsInDeck,
     AvailableCrystals,
 
-    Distance
+    Distance,
+
+    //cantidad de tropas en juego
+
+    AllUnitsInPlay,
+    AllAlliesInPlay,
+    AllEnemiesInPlay,
+
 }
 public enum CardSelectionType
 {
