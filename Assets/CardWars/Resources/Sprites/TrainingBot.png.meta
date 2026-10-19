@@ -1,0 +1,807 @@
+fileFormatVersion: 2
+guid: 790fdd4082d2754428643bc5e0aef9d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3069705683101536266
+    second: TrainingBot_0
+  - first:
+      213: -6810412353933606826
+    second: TrainingBot_1
+  - first:
+      213: 3186465190987880383
+    second: TrainingBot_2
+  - first:
+      213: -33676717992178547
+    second: TrainingBot_3
+  - first:
+      213: 4701444269746539424
+    second: TrainingBot_4
+  - first:
+      213: 6355463720913380617
+    second: TrainingBot_5
+  - first:
+      213: -278772236213996610
+    second: TrainingBot_6
+  - first:
+      213: -2373556456412030927
+    second: TrainingBot_7
+  - first:
+      213: -8933021753187926461
+    second: TrainingBot_8
+  - first:
+      213: -75343729205568903
+    second: TrainingBot_9
+  - first:
+      213: 29700424432119188
+    second: TrainingBot_10
+  - first:
+      213: 8748757692330172057
+    second: TrainingBot_11
+  - first:
+      213: 5267854335937205892
+    second: TrainingBot_12
+  - first:
+      213: -6362672816440942960
+    second: TrainingBot_13
+  - first:
+      213: 1749975701356022976
+    second: TrainingBot_14
+  - first:
+      213: -5506211979789939645
+    second: TrainingBot_15
+  - first:
+      213: 3862099377484032435
+    second: TrainingBot_16
+  - first:
+      213: -666590298094305524
+    second: TrainingBot_17
+  - first:
+      213: 4384680218171364331
+    second: TrainingBot_18
+  - first:
+      213: -5337762561620792497
+    second: TrainingBot_19
+  - first:
+      213: -5189063407336018529
+    second: TrainingBot_20
+  - first:
+      213: 6308823872744074395
+    second: TrainingBot_21
+  - first:
+      213: -8059788909979979642
+    second: TrainingBot_22
+  - first:
+      213: 6997364549333490140
+    second: TrainingBot_23
+  - first:
+      213: 4519325154067894738
+    second: TrainingBot_24
+  - first:
+      213: 5591976356443063607
+    second: TrainingBot_25
+  - first:
+      213: 264863590557397327
+    second: TrainingBot_26
+  - first:
+      213: 6900370511733344915
+    second: TrainingBot_27
+  - first:
+      213: -6814727461467584561
+    second: TrainingBot_28
+  - first:
+      213: -1262320400079976068
+    second: TrainingBot_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrainingBot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff2cb9f1f63665d0800000000000000
+      internalID: -3069705683101536266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6500bd51c0e8c71a0800000000000000
+      internalID: -6810412353933606826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7daf56539983c20800000000000000
+      internalID: 3186465190987880383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c00e2143b588ff0800000000000000
+      internalID: -33676717992178547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abc98d67a2ee3140800000000000000
+      internalID: 4701444269746539424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905acebd494233850800000000000000
+      internalID: 6355463720913380617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3393fc02a912cf0800000000000000
+      internalID: -278772236213996610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_7
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138d9318afe6f0fd0800000000000000
+      internalID: -2373556456412030927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_8
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e756e6b08870480800000000000000
+      internalID: -8933021753187926461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_9
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a16a8074354fef0800000000000000
+      internalID: -75343729205568903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d64ffe064896000800000000000000
+      internalID: 29700424432119188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e5e4da4c4d96970800000000000000
+      internalID: 8748757692330172057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486d906bb9d2b1940800000000000000
+      internalID: 5267854335937205892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_13
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ed00ac8ce33b7a0800000000000000
+      internalID: -6362672816440942960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_14
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc04ece0a9294810800000000000000
+      internalID: 1749975701356022976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cce96a0610693b0800000000000000
+      internalID: -5506211979789939645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_16
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9613aebeee89530800000000000000
+      internalID: 3862099377484032435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_17
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ffd57d7abcfb6f0800000000000000
+      internalID: -666590298094305524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_18
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be359c96d6389dc30800000000000000
+      internalID: 4384680218171364331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_19
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ba63b1b357ce5b0800000000000000
+      internalID: -5337762561620792497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d22c8e25ebcf7b0800000000000000
+      internalID: -5189063407336018529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c2a6df2e17d8750800000000000000
+      internalID: 6308823872744074395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680b20060b0e52090800000000000000
+      internalID: -8059788909979979642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_23
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd91fe6ebf1ab1160800000000000000
+      internalID: 6997364549333490140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_24
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d154b0884ed7be30800000000000000
+      internalID: 4519325154067894738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrainingBot_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4024036, y: 0.01624253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7350c2e5ed0ba9d40800000000000000
+      internalID: 5591976356443063607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 04da3808e9ce7de468bbc4ba6ecf2ab9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":204.0,"y":204.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4024035930633545,"y":0.016242530196905137},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      TrainingBot_0: -3069705683101536266
+      TrainingBot_1: -6810412353933606826
+      TrainingBot_10: 29700424432119188
+      TrainingBot_11: 8748757692330172057
+      TrainingBot_12: 5267854335937205892
+      TrainingBot_13: -6362672816440942960
+      TrainingBot_14: 1749975701356022976
+      TrainingBot_15: -5506211979789939645
+      TrainingBot_16: 3862099377484032435
+      TrainingBot_17: -666590298094305524
+      TrainingBot_18: 4384680218171364331
+      TrainingBot_19: -5337762561620792497
+      TrainingBot_2: 3186465190987880383
+      TrainingBot_20: -5189063407336018529
+      TrainingBot_21: 6308823872744074395
+      TrainingBot_22: -8059788909979979642
+      TrainingBot_23: 6997364549333490140
+      TrainingBot_24: 4519325154067894738
+      TrainingBot_25: 5591976356443063607
+      TrainingBot_3: -33676717992178547
+      TrainingBot_4: 4701444269746539424
+      TrainingBot_5: 6355463720913380617
+      TrainingBot_6: -278772236213996610
+      TrainingBot_7: -2373556456412030927
+      TrainingBot_8: -8933021753187926461
+      TrainingBot_9: -75343729205568903
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

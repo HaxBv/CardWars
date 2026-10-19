@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Flying Rider
   cost: 1
-  descriptionAbility: 'On Deploy: If played on Heights, get +1 ATK and +1 HP.'
+  weight: 1
+  descriptionAbility: 'On Deploy: If played on Heights, this unit gets +1 ATK and
+    +1 HP.'
   phrase: 
   type: 1
+  role: 1
   rarity: 1
   family: 1100000012000000
   imgType: {fileID: 0}
@@ -26,37 +29,47 @@ MonoBehaviour:
   - trigger: 3
     filter: 1
     condition: 11
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 1
-      duration: 1
+      modify: 1
+      duration: 7
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 2
-      duration: 1
+      modify: 1
+      duration: 7
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 2
   health: 1
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -5497227022992013371, guid: 3b74e4cff0888bf4494cab3afc847d4b, type: 3}
+  anim: {fileID: 9100000, guid: 9e95de889013b1f418e3021352cc3e06, type: 2}
   abilityPassives: 

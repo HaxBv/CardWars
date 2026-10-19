@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Demolition Turtle
   cost: 7
+  weight: 2
   descriptionAbility: 
   phrase: 
   type: 1
+  role: 8
   rarity: 3
   family: 0f00000002000000
   imgType: {fileID: 0}
@@ -29,7 +31,7 @@ MonoBehaviour:
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
-  abilityPassives: 10000000
+  overstrike: 0
+  imgCharInGame: {fileID: -1323100720438303063, guid: 5717896060493494cab5459b12e7c93a, type: 3}
+  anim: {fileID: 9100000, guid: b037376761b5c214e925f87e079fce0d, type: 2}
+  abilityPassives: 1000000014000000

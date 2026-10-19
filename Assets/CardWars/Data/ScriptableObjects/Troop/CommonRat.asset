@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: CommonRat
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardName: Common Rat
+  cost: 0
+  weight: 0
+  descriptionAbility: 
+  phrase: 
+  type: 1
+  role: 1
+  rarity: 8
+  family: 11000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities: []
+  attack: 1
+  health: 1
+  armor: 0
+  shield: 0
+  shieldArmor: 0
+  burn: 0
+  overstrike: 0
+  imgCharInGame: {fileID: -3578019587575532720, guid: 1ba7ccadbe0cd944cb8d8c00a2fc960e, type: 3}
+  anim: {fileID: 9100000, guid: 62d0afa9a0b119f488c72b6575b832c6, type: 2}
+  abilityPassives: 01000000

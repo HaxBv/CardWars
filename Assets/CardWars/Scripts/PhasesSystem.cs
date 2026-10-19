@@ -1,107 +1,307 @@
 using Sirenix.OdinInspector;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
-
 
 public class PhasesSystem : MonoBehaviour
 {
     // ==========================================
-    // ¡AQUÍ SE CREA EL FIN DEL COMBATE Y LOS EVENTOS GENERALES!
+    // EVENTS - COMPATIBILIDAD
     // ==========================================
+
     public static event Action OnFinDeTurno;
     public static event Action OnFaseCombateIniciada;
-    public static event Action OnFinDelCombate; // El que espera RuntimeAbility
+    public static event Action OnFinDelCombate;
 
-    [SerializeField] private int currentRound = 1;
+    // ==========================================
+    // EVENTS - RONDA Y MOMENTO DEL DÍA
+    // ==========================================
 
-    // Controla cuál de los 5 pasos de la ronda se está jugando actualmente
-    [SerializeField] private int pasoTurnoActual = 1;
+    public static event Action OnRoundStarted;
+    public static event Action OnRoundEnded;
+
+    public static event Action OnTimeOfDayStarted;
+    public static event Action OnTimeOfDayEnded;
+
+    public static event Action OnAlbaStarted;
+    public static event Action OnAlbaEnded;
+
+    public static event Action OnOcasoStarted;
+    public static event Action OnOcasoEnded;
+
+    // ==========================================
+    // ROUND / TIME OF DAY
+    // ==========================================
+
+    [Header("Round")]
+    [SerializeField, Min(1)] private int currentRound = 1;
+
+    [SerializeField]
+    private TimeOfDay currentTimeOfDay =
+        TimeOfDay.Alba;
+
+    [Header("Turn")]
+    [SerializeField, Range(1, 5)]
+    private int pasoTurnoActual = 1;
 
     [SerializeField] private TurnPhase currentPhase;
     [SerializeField] private PlayerTurn currentPlayerTurn;
 
-    void Start()
+    [Header("Priority")]
+    [SerializeField] private PlayerTurn firstRoundPriority;
+    [SerializeField] private PlayerTurn currentPriority;
+
+    [Header("Board")]
+    [SerializeField]
+    private List<TropaEnTablero> tropasEnTablero = new();
+
+    // ==========================================
+    // PROPERTIES
+    // ==========================================
+
+    public int CurrentRound => currentRound;
+
+    public TimeOfDay CurrentTimeOfDay => currentTimeOfDay;
+
+    public TurnPhase CurrentPhase => currentPhase;
+
+    public PlayerTurn CurrentPlayerTurn => currentPlayerTurn;
+
+    public PlayerTurn CurrentPriority => currentPriority;
+
+    public int CurrentStep => pasoTurnoActual;
+
+    [Header("Map Sprites")]
+    [SerializeField] private SpriteRenderer mapRenderer;
+    [SerializeField] private Sprite albaMap;
+    [SerializeField] private Sprite ocasoMap;
+
+    private void ActualizarMapa()
     {
+        if (mapRenderer == null)
+            return;
+
+        mapRenderer.sprite = currentTimeOfDay == TimeOfDay.Alba
+            ? albaMap
+            : ocasoMap;
+    }
+
+    // ==========================================
+    // START
+    // ==========================================
+
+    private void Start()
+    {
+        currentRound = 1;
+
+        // El jugador inicial se decide al azar.
+        firstRoundPriority = UnityEngine.Random.Range(0, 2) == 0
+            ? PlayerTurn.Player1
+            : PlayerTurn.Player2;
+
         IniciarRonda();
     }
 
-    /// <block>
-    /// Configura el estado inicial al arrancar cada nueva ronda
-    /// </block>
+    // ==========================================
+    // ROUND
+    // ==========================================
+
     private void IniciarRonda()
     {
-        Debug.Log($"--- INICIANDO RONDA {currentRound} ---");
+        Debug.Log($"========== ROUND {currentRound} ==========");
+
+        currentTimeOfDay = TimeOfDay.Alba;
+
+        // La prioridad cambia cada ronda completa.
+        bool rondaImpar = currentRound % 2 == 1;
+
+        currentPriority = rondaImpar
+            ? firstRoundPriority
+            : ObtenerOponente(firstRoundPriority);
+
+        Debug.Log($"Round Priority: {currentPriority}");
+
+        OnRoundStarted?.Invoke();
+
+        IniciarMomentoDelDia(TimeOfDay.Alba);
+    }
+    private void FinalizarRonda()
+    {
+        Debug.Log($"ROUND {currentRound} ENDED");
+
+        OnRoundEnded?.Invoke();
+
+        currentRound++;
+
+        IniciarRonda();
+    }
+
+    // ==========================================
+    // ALBA / OCASO
+    // ==========================================
+    private void IniciarMomentoDelDia(TimeOfDay nuevoMomento)
+    {
+        currentTimeOfDay = nuevoMomento;
         pasoTurnoActual = 1;
+
+        // Cambiar el sprite del mapa.
+        ActualizarMapa();
+
+        Debug.Log(
+            $"START {currentTimeOfDay} | " +
+            $"Round: {currentRound} | " +
+            $"Priority: {currentPriority}"
+        );
+
+        OnTimeOfDayStarted?.Invoke();
+
+        if (currentTimeOfDay == TimeOfDay.Alba)
+        {
+            OnAlbaStarted?.Invoke();
+        }
+        else
+        {
+            OnOcasoStarted?.Invoke();
+        }
+
         ActualizarEstadoTurno();
     }
 
-    /// <block>
-    /// Este método debes enlazarlo al botón de "Terminar Turno" en tu interfaz de usuario.
-    /// Es el encargado de avanzar a través de tus 5 pasos de juego.
-    /// </block>
+    private void FinalizarMomentoDelDia()
+    {
+        Debug.Log($"END {currentTimeOfDay}");
+
+        OnTimeOfDayEnded?.Invoke();
+
+        if (currentTimeOfDay == TimeOfDay.Alba)
+        {
+            OnAlbaEnded?.Invoke();
+
+            IniciarMomentoDelDia(TimeOfDay.Ocaso);
+        }
+        else
+        {
+            OnOcasoEnded?.Invoke();
+
+            // La ronda termina solamente
+            // después de Ocaso.
+            FinalizarRonda();
+        }
+    }
+
+    // ==========================================
+    // TURN ADVANCE
+    // ==========================================
+
     [Button]
     public void AvanzarTurno()
     {
-        // Avisamos al juego que el turno actual (sea cual sea de los 5) acaba de terminar
         OnFinDeTurno?.Invoke();
 
-        // VALIDACIÓN CLAVE: Si estamos en el paso 5 (Fase de Combate) y se presiona avanzar...
         if (pasoTurnoActual == 5)
         {
-            Debug.Log("La Fase de Combate ha concluido de forma oficial.");
+            Debug.Log("Combat phase ended.");
 
-            // ¡CREACIÓN EN JUEGO! Aquí es donde disparamos el evento para Konquest
+            // Mantiene compatibilidad con RuntimeAbility.
             OnFinDelCombate?.Invoke();
 
-            // Una vez resueltos todos los efectos post-combate, pasamos a la siguiente ronda
-            currentRound++;
-            IniciarRonda();
+            FinalizarMomentoDelDia();
+
             return;
         }
 
-        // Si no estábamos en el paso 5, avanzamos normalmente al siguiente turno de la lista
         pasoTurnoActual++;
+
         ActualizarEstadoTurno();
     }
 
-    /// <block>
-    /// Implementación estricta de tu sistema de juego basado en 5 pasos secuenciales
-    /// </block>
+    // ==========================================
+    // TURN STATE
+    // ==========================================
+
     private void ActualizarEstadoTurno()
     {
+        PlayerTurn segundoJugador =
+            ObtenerOponente(currentPriority);
+
         switch (pasoTurnoActual)
         {
-            case 1: // Turno 1: Jugador 1 (Solo tropas)
+            case 1:
                 currentPhase = TurnPhase.TroopTurn;
-                currentPlayerTurn = PlayerTurn.Player1;
-                Debug.Log("Paso 1: Turno del Jugador 1 - Solo Tropas.");
+                currentPlayerTurn = currentPriority;
                 break;
 
-            case 2: // Turno 2: Jugador 2 (Solo tropas)
+            case 2:
                 currentPhase = TurnPhase.TroopTurn;
-                currentPlayerTurn = PlayerTurn.Player2;
-                Debug.Log("Paso 2: Turno del Jugador 2 - Solo Tropas.");
+                currentPlayerTurn = segundoJugador;
                 break;
 
-            case 3: // Turno 3: Jugador 1 (Solo hechizos y dominios)
-                currentPhase = TurnPhase.SpellAndEnvironmentTurn;
-                currentPlayerTurn = PlayerTurn.Player1;
-                Debug.Log("Paso 3: Turno del Jugador 1 - Hechizos y Dominios.");
+            case 3:
+                currentPhase =
+                    TurnPhase.SpellAndEnvironmentTurn;
+
+                currentPlayerTurn = currentPriority;
                 break;
 
-            case 4: // Turno 4: Jugador 2 (Solo hechizos y dominios)
-                currentPhase = TurnPhase.SpellAndEnvironmentTurn;
-                currentPlayerTurn = PlayerTurn.Player2;
-                Debug.Log("Paso 4: Turno del Jugador 2 - Hechizos y Dominios.");
+            case 4:
+                currentPhase =
+                    TurnPhase.SpellAndEnvironmentTurn;
+
+                currentPlayerTurn = segundoJugador;
                 break;
 
-            case 5: // Turno 5: Combate automático general
+            case 5:
                 currentPhase = TurnPhase.Combat;
-                Debug.Log("Paso 5: ¡Se inicia la Fase de Combate automático!");
 
-                // Dispara el evento que inicia el intercambio de ataques físicos en tu tablero
+                Debug.Log(
+                    $"Combat started - {currentTimeOfDay}"
+                );
+
                 OnFaseCombateIniciada?.Invoke();
                 break;
         }
+
+        Debug.Log(
+            $"Round {currentRound} | " +
+            $"{currentTimeOfDay} | " +
+            $"Step {pasoTurnoActual} | " +
+            $"Phase: {currentPhase} | " +
+            $"Player: {currentPlayerTurn}"
+        );
+    }
+
+    // ==========================================
+    // PRIORITY
+    // ==========================================
+
+    private PlayerTurn ObtenerOponente(PlayerTurn jugador)
+    {
+        return jugador == PlayerTurn.Player1
+            ? PlayerTurn.Player2
+            : PlayerTurn.Player1;
+    }
+
+    // ==========================================
+    // TROOP REGISTRATION
+    // ==========================================
+
+    public void RegistrarTropa(TropaEnTablero tropa)
+    {
+        if (tropa == null || tropasEnTablero.Contains(tropa))
+            return;
+
+        tropasEnTablero.Add(tropa);
+
+        Debug.Log(
+            $"Troop registered: {tropa.name}"
+        );
+    }
+
+    public void QuitarTropa(TropaEnTablero tropa)
+    {
+        if (tropa == null)
+            return;
+
+        tropasEnTablero.Remove(tropa);
     }
 }

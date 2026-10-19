@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Wooden Statue
   cost: 1
+  weight: 0
   descriptionAbility: 
   phrase: 
   type: 1
+  role: 2
   rarity: 1
   family: 05000000
   imgType: {fileID: 0}
@@ -29,7 +31,7 @@ MonoBehaviour:
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -9203895833094664059, guid: 2cd46b144c08f9349915387cb3f7299f, type: 3}
+  anim: {fileID: 9100000, guid: 4969430de6141df479bbb5c44b319d2e, type: 2}
   abilityPassives: 01000000

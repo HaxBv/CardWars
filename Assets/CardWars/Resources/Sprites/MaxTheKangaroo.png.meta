@@ -1,0 +1,1058 @@
+fileFormatVersion: 2
+guid: 2d61c8e2a5755d548b7aa2e3164ce18a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7159943926759656777
+    second: MaxTheKangaroo_0
+  - first:
+      213: -8712177141046497778
+    second: MaxTheKangaroo_1
+  - first:
+      213: -4519820881121186087
+    second: MaxTheKangaroo_2
+  - first:
+      213: 3171428445766411121
+    second: MaxTheKangaroo_3
+  - first:
+      213: -8417179209108563765
+    second: MaxTheKangaroo_4
+  - first:
+      213: 7731645842595195951
+    second: MaxTheKangaroo_5
+  - first:
+      213: -3847964761024818591
+    second: MaxTheKangaroo_6
+  - first:
+      213: 5170771101343091210
+    second: MaxTheKangaroo_7
+  - first:
+      213: 85344971078447166
+    second: MaxTheKangaroo_8
+  - first:
+      213: 8184852995270144185
+    second: MaxTheKangaroo_9
+  - first:
+      213: 7317254693189105990
+    second: MaxTheKangaroo_10
+  - first:
+      213: -418122750578569742
+    second: MaxTheKangaroo_11
+  - first:
+      213: 7900261666279449614
+    second: MaxTheKangaroo_12
+  - first:
+      213: -4014953338916700423
+    second: MaxTheKangaroo_13
+  - first:
+      213: -5743158961828532300
+    second: MaxTheKangaroo_14
+  - first:
+      213: -4638510370199855732
+    second: MaxTheKangaroo_15
+  - first:
+      213: -8695623363437135072
+    second: MaxTheKangaroo_16
+  - first:
+      213: 2912635477156215310
+    second: MaxTheKangaroo_17
+  - first:
+      213: -3923118957087498283
+    second: MaxTheKangaroo_18
+  - first:
+      213: 1753238877986362453
+    second: MaxTheKangaroo_19
+  - first:
+      213: -2093593725030529307
+    second: MaxTheKangaroo_20
+  - first:
+      213: -2957438792836137072
+    second: MaxTheKangaroo_21
+  - first:
+      213: 7062834403333849813
+    second: MaxTheKangaroo_22
+  - first:
+      213: 6475212248616838736
+    second: MaxTheKangaroo_23
+  - first:
+      213: 2011413323970348074
+    second: MaxTheKangaroo_24
+  - first:
+      213: -5744506803019447126
+    second: MaxTheKangaroo_25
+  - first:
+      213: -8390355438664733297
+    second: MaxTheKangaroo_26
+  - first:
+      213: -2476690945466684956
+    second: MaxTheKangaroo_27
+  - first:
+      213: 1430832940609706039
+    second: MaxTheKangaroo_28
+  - first:
+      213: 3059940113985507007
+    second: MaxTheKangaroo_29
+  - first:
+      213: 5393338315667790675
+    second: MaxTheKangaroo_30
+  - first:
+      213: -6499178723697926937
+    second: MaxTheKangaroo_31
+  - first:
+      213: 8945566173374404518
+    second: MaxTheKangaroo_32
+  - first:
+      213: -605332726609599557
+    second: MaxTheKangaroo_33
+  - first:
+      213: 3895248949571581287
+    second: MaxTheKangaroo_34
+  - first:
+      213: 4395317866645433394
+    second: MaxTheKangaroo_35
+  - first:
+      213: -619368013551633577
+    second: MaxTheKangaroo_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MaxTheKangaroo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d893ef01b3d5360800000000000000
+      internalID: 7159943926759656777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e25af9c01281780800000000000000
+      internalID: -8712177141046497778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dee06c0bde5641c0800000000000000
+      internalID: -4519820881121186087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173e9745e5d230c20800000000000000
+      internalID: 3171428445766411121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8d74efa1c203b80800000000000000
+      internalID: -8417179209108563765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_5
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1020
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c23090ee25c4b60800000000000000
+      internalID: 7731645842595195951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16215eeef68499ac0800000000000000
+      internalID: -3847964761024818591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a0966bbe442c740800000000000000
+      internalID: 5170771101343091210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e303f7c8cc43f2100800000000000000
+      internalID: 85344971078447166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_9
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b07ed91f60769170800000000000000
+      internalID: 8184852995270144185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_10
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649b89eff5c1c8560800000000000000
+      internalID: 7317254693189105990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_11
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 816
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd414bd297823af0800000000000000
+      internalID: -418122750578569742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04e83bc02e53ad60800000000000000
+      internalID: 7900261666279449614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fef91cd5350848c0800000000000000
+      internalID: -4014953338916700423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfeb9f4a533c40b0800000000000000
+      internalID: -5743158961828532300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d9549e463b0afb0800000000000000
+      internalID: -4638510370199855732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_16
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bfdb15f90f25780800000000000000
+      internalID: -8695623363437135072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_17
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 612
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ab810e882cb6820800000000000000
+      internalID: 2912635477156215310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfd23718184e89c0800000000000000
+      internalID: -3923118957087498283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55418c07871c45810800000000000000
+      internalID: 1753238877986362453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e68193799f02f2e0800000000000000
+      internalID: -2093593725030529307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_21
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fba0c461115f6d0800000000000000
+      internalID: -2957438792836137072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d24f16287a340260800000000000000
+      internalID: 7062834403333849813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 408
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056a014ab339cd950800000000000000
+      internalID: 6475212248616838736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a248dbfd2c9f9eb10800000000000000
+      internalID: 2011413323970348074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa406349f796740b0800000000000000
+      internalID: -5744506803019447126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_26
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d2f1bbe287f8b80800000000000000
+      internalID: -8390355438664733297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_27
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9280905b601add0800000000000000
+      internalID: -2476690945466684956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_28
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73818f58af65bd310800000000000000
+      internalID: 1430832940609706039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_29
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 204
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe03184257177a20800000000000000
+      internalID: 3059940113985507007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bd1ea7f9cf8da40800000000000000
+      internalID: 5393338315667790675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec553a82674ec5a0800000000000000
+      internalID: -6499178723697926937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_32
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a75bbef909052c70800000000000000
+      internalID: 8945566173374404518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_33
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb32483a71d6997f0800000000000000
+      internalID: -605332726609599557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_34
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7657dee1844be0630800000000000000
+      internalID: 3895248949571581287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaxTheKangaroo_35
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 204
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5301706, y: 0.0252901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c2454ff4e4ffc30800000000000000
+      internalID: 4395317866645433394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 91b52e121dd2e2c42af82877aa5c0d48
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":204.0,"y":204.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5301706194877625,"y":0.025290099903941156},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      MaxTheKangaroo_0: 7159943926759656777
+      MaxTheKangaroo_1: -8712177141046497778
+      MaxTheKangaroo_10: 7317254693189105990
+      MaxTheKangaroo_11: -418122750578569742
+      MaxTheKangaroo_12: 7900261666279449614
+      MaxTheKangaroo_13: -4014953338916700423
+      MaxTheKangaroo_14: -5743158961828532300
+      MaxTheKangaroo_15: -4638510370199855732
+      MaxTheKangaroo_16: -8695623363437135072
+      MaxTheKangaroo_17: 2912635477156215310
+      MaxTheKangaroo_18: -3923118957087498283
+      MaxTheKangaroo_19: 1753238877986362453
+      MaxTheKangaroo_2: -4519820881121186087
+      MaxTheKangaroo_20: -2093593725030529307
+      MaxTheKangaroo_21: -2957438792836137072
+      MaxTheKangaroo_22: 7062834403333849813
+      MaxTheKangaroo_23: 6475212248616838736
+      MaxTheKangaroo_24: 2011413323970348074
+      MaxTheKangaroo_25: -5744506803019447126
+      MaxTheKangaroo_26: -8390355438664733297
+      MaxTheKangaroo_27: -2476690945466684956
+      MaxTheKangaroo_28: 1430832940609706039
+      MaxTheKangaroo_29: 3059940113985507007
+      MaxTheKangaroo_3: 3171428445766411121
+      MaxTheKangaroo_30: 5393338315667790675
+      MaxTheKangaroo_31: -6499178723697926937
+      MaxTheKangaroo_32: 8945566173374404518
+      MaxTheKangaroo_33: -605332726609599557
+      MaxTheKangaroo_34: 3895248949571581287
+      MaxTheKangaroo_35: 4395317866645433394
+      MaxTheKangaroo_4: -8417179209108563765
+      MaxTheKangaroo_5: 7731645842595195951
+      MaxTheKangaroo_6: -3847964761024818591
+      MaxTheKangaroo_7: 5170771101343091210
+      MaxTheKangaroo_8: 85344971078447166
+      MaxTheKangaroo_9: 8184852995270144185
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

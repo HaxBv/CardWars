@@ -1,0 +1,1957 @@
+fileFormatVersion: 2
+guid: 372e20817e8425045b227d7e420c0517
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5793152896592497180
+    second: InkMan_0
+  - first:
+      213: 8794865393065453510
+    second: InkMan_1
+  - first:
+      213: 1166945178161036524
+    second: InkMan_2
+  - first:
+      213: -3090734004487624290
+    second: InkMan_3
+  - first:
+      213: 838115787326625181
+    second: InkMan_4
+  - first:
+      213: 2372470621012653095
+    second: InkMan_5
+  - first:
+      213: 1383714213475641020
+    second: InkMan_6
+  - first:
+      213: 442939271581870822
+    second: InkMan_7
+  - first:
+      213: 2723932683873348629
+    second: InkMan_8
+  - first:
+      213: -7096464306132601204
+    second: InkMan_9
+  - first:
+      213: -205947816337049417
+    second: InkMan_10
+  - first:
+      213: 7061667930630784641
+    second: InkMan_11
+  - first:
+      213: -5071041082993610490
+    second: InkMan_12
+  - first:
+      213: -6428116656053733069
+    second: InkMan_13
+  - first:
+      213: 5624020176886705082
+    second: InkMan_14
+  - first:
+      213: -8509142619758494048
+    second: InkMan_15
+  - first:
+      213: -4249426360587394003
+    second: InkMan_16
+  - first:
+      213: 5263164425083394879
+    second: InkMan_17
+  - first:
+      213: -4097941077535933204
+    second: InkMan_18
+  - first:
+      213: 5731039092253209744
+    second: InkMan_19
+  - first:
+      213: -727106478661647917
+    second: InkMan_20
+  - first:
+      213: -7183120012896439280
+    second: InkMan_21
+  - first:
+      213: 7683902988509140090
+    second: InkMan_22
+  - first:
+      213: 4497159786280958106
+    second: InkMan_23
+  - first:
+      213: 4807432944860769453
+    second: InkMan_24
+  - first:
+      213: 8710269737078573882
+    second: InkMan_25
+  - first:
+      213: 70956746007329198
+    second: InkMan_26
+  - first:
+      213: -8460584629957823936
+    second: InkMan_27
+  - first:
+      213: -8269833281730433169
+    second: InkMan_28
+  - first:
+      213: -2422719955703939054
+    second: InkMan_29
+  - first:
+      213: -3904326367271431818
+    second: InkMan_30
+  - first:
+      213: -4769881928015378013
+    second: InkMan_31
+  - first:
+      213: 6486877217883626696
+    second: InkMan_32
+  - first:
+      213: -4155730088742862166
+    second: InkMan_33
+  - first:
+      213: 6101752139652350480
+    second: InkMan_34
+  - first:
+      213: -8192328812289198470
+    second: InkMan_35
+  - first:
+      213: 2954910219981672721
+    second: InkMan_36
+  - first:
+      213: -7019182396877250351
+    second: InkMan_37
+  - first:
+      213: -3718100423972980307
+    second: InkMan_38
+  - first:
+      213: -5758650942931536540
+    second: InkMan_39
+  - first:
+      213: 5723403990005560704
+    second: InkMan_40
+  - first:
+      213: 3868863425932746528
+    second: InkMan_41
+  - first:
+      213: 4695363901132343257
+    second: InkMan_42
+  - first:
+      213: -2535095116839282478
+    second: InkMan_43
+  - first:
+      213: -2201263490486952764
+    second: InkMan_44
+  - first:
+      213: -4864942834315736548
+    second: InkMan_45
+  - first:
+      213: -646003925846780162
+    second: InkMan_46
+  - first:
+      213: 9172328666143232672
+    second: InkMan_47
+  - first:
+      213: 5827961788149294828
+    second: InkMan_48
+  - first:
+      213: -8228077825023231103
+    second: InkMan_49
+  - first:
+      213: -3300639603675322864
+    second: InkMan_50
+  - first:
+      213: 4879365336042750045
+    second: InkMan_51
+  - first:
+      213: 2857849214424029919
+    second: InkMan_52
+  - first:
+      213: -1396345274755452692
+    second: InkMan_53
+  - first:
+      213: 5472422390457996220
+    second: InkMan_54
+  - first:
+      213: 6862353367352503342
+    second: InkMan_55
+  - first:
+      213: 253833559376428570
+    second: InkMan_56
+  - first:
+      213: -2592307596662301678
+    second: InkMan_57
+  - first:
+      213: 4030405053311875108
+    second: InkMan_58
+  - first:
+      213: 2553532725497452829
+    second: InkMan_59
+  - first:
+      213: 4466513597113825835
+    second: InkMan_60
+  - first:
+      213: 8989920471356074900
+    second: InkMan_61
+  - first:
+      213: 7978936306976676367
+    second: InkMan_62
+  - first:
+      213: -1529557122403153431
+    second: InkMan_63
+  - first:
+      213: 2777701099564946885
+    second: InkMan_64
+  - first:
+      213: -2346139721004736895
+    second: InkMan_65
+  - first:
+      213: -3832596931245231627
+    second: InkMan_66
+  - first:
+      213: -2729020378572829218
+    second: InkMan_67
+  - first:
+      213: -7954142495245201595
+    second: InkMan_68
+  - first:
+      213: 2272558193514986935
+    second: InkMan_69
+  - first:
+      213: -3206774539414162279
+    second: InkMan_70
+  - first:
+      213: -3771053981882265937
+    second: InkMan_71
+  - first:
+      213: -47634860341561799
+    second: InkMan_72
+  - first:
+      213: 4908005602460515526
+    second: InkMan_73
+  - first:
+      213: -1295837214322735421
+    second: InkMan_74
+  - first:
+      213: 2735523041463517510
+    second: InkMan_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InkMan_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5341d42269a9fa0800000000000000
+      internalID: -5793152896592497180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7ea015a73ad0a70800000000000000
+      internalID: 8794865393065453510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecb4a0f472d13010800000000000000
+      internalID: 1166945178161036524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e996b4f5cc18b15d0800000000000000
+      internalID: -3090734004487624290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9510483ed591ab00800000000000000
+      internalID: 838115787326625181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724728db575bce020800000000000000
+      internalID: 2372470621012653095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_6
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3456
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6efd4feb0f33310800000000000000
+      internalID: 1383714213475641020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea25b3bbe2a52600800000000000000
+      internalID: 442939271581870822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ce85e085a5dc520800000000000000
+      internalID: 2723932683873348629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_9
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c863abfef4b448d90800000000000000
+      internalID: -7096464306132601204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_10
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b876fc5d83542df0800000000000000
+      internalID: -205947816337049417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186040f8195100260800000000000000
+      internalID: 7061667930630784641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601f0c6a00b00a9b0800000000000000
+      internalID: -5071041082993610490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_13
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3072
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339352d75fdbac6a0800000000000000
+      internalID: -6428116656053733069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb26f4bd888c0e40800000000000000
+      internalID: 5624020176886705082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae7826eed379e980800000000000000
+      internalID: -8509142619758494048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24e10e4d310705c0800000000000000
+      internalID: -4249426360587394003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_17
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b919fb8248a0940800000000000000
+      internalID: 5263164425083394879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec3df24d403127c0800000000000000
+      internalID: -4097941077535933204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_19
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09431a7a0bdb88f40800000000000000
+      internalID: 5731039092253209744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_20
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2688
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1cc71928cc8e5f0800000000000000
+      internalID: -727106478661647917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014fe44f76e605c90800000000000000
+      internalID: -7183120012896439280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7456a69e05b2aa60800000000000000
+      internalID: 7683902988509140090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_23
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98b277affe196e30800000000000000
+      internalID: 4497159786280958106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_24
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacafefdace67b240800000000000000
+      internalID: 4807432944860769453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_25
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b47684d2811e870800000000000000
+      internalID: 8710269737078573882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea93f28d8c61cf000800000000000000
+      internalID: 70956746007329198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_27
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2304
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042fb3bea17f59a80800000000000000
+      internalID: -8460584629957823936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f21ca1276ab3d80800000000000000
+      internalID: -8269833281730433169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_29
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21044025905c06ed0800000000000000
+      internalID: -2422719955703939054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671589fdadb01d9c0800000000000000
+      internalID: -3904326367271431818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_31
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9861c88a9fdcdb0800000000000000
+      internalID: -4769881928015378013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_32
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc1781f574060a50800000000000000
+      internalID: 6486877217883626696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_33
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa244169081e356c0800000000000000
+      internalID: -4155730088742862166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_34
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1920
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01245771e37cda450800000000000000
+      internalID: 6101752139652350480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76fd4c99500f4e80800000000000000
+      internalID: -8192328812289198470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111dd257033f10920800000000000000
+      internalID: 2954910219981672721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_37
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0e47c9ccad69e90800000000000000
+      internalID: -7019182396877250351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_38
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da97cdd1d57a66cc0800000000000000
+      internalID: -3718100423972980307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465f8116a792510b0800000000000000
+      internalID: -5758650942931536540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085b552ea9d9d6f40800000000000000
+      internalID: 5723403990005560704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_41
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1536
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fd83ba9c6f0b530800000000000000
+      internalID: 3868863425932746528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d78f2a4798492140800000000000000
+      internalID: 4695363901132343257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_43
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d897f83c6881dcd0800000000000000
+      internalID: -2535095116839282478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_44
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc1d78a48a8371e0800000000000000
+      internalID: -2201263490486952764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_45
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a470c84404c7cb0800000000000000
+      internalID: -4864942834315736548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_46
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef615642adee807f0800000000000000
+      internalID: -646003925846780162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_47
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a299942358aa4f70800000000000000
+      internalID: 9172328666143232672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_48
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1152
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce660335e5411e050800000000000000
+      internalID: 5827961788149294828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bb837ffceffcd80800000000000000
+      internalID: -8228077825023231103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016a85b94c5c132d0800000000000000
+      internalID: -3300639603675322864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_51
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50ce20dbecf6b340800000000000000
+      internalID: 4879365336042750045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_52
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda9f5f08be19a720800000000000000
+      internalID: 2857849214424029919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_53
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0f76aee5f2f9ce0800000000000000
+      internalID: -1396345274755452692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_54
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb394248b23f1fb40800000000000000
+      internalID: 5472422390457996220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_55
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 768
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c6040870afb3f50800000000000000
+      internalID: 6862353367352503342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e74b2074cc58300800000000000000
+      internalID: 253833559376428570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_57
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c9568b9f5460cd0800000000000000
+      internalID: -2592307596662301678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_58
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428f79fba00eee730800000000000000
+      internalID: 4030405053311875108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_59
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d195c911c78ff6320800000000000000
+      internalID: 2553532725497452829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_60
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2afb64b37e3cfd30800000000000000
+      internalID: 4466513597113825835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_61
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49be03eb90d92cc70800000000000000
+      internalID: 8989920471356074900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_62
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 384
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0adfc60c40eabe60800000000000000
+      internalID: 7978936306976676367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9cd7fa6ebe5cae0800000000000000
+      internalID: -1529557122403153431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_64
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5d7c3ee606c8620800000000000000
+      internalID: 2777701099564946885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_65
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e1418aa56d07fd0800000000000000
+      internalID: -2346139721004736895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_66
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f130e1a561efcac0800000000000000
+      internalID: -3832596931245231627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_67
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd4d56bc62902ad0800000000000000
+      internalID: -2729020378572829218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_68
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f021e1b853d9190800000000000000
+      internalID: -7954142495245201595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkMan_69
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 480
+        height: 384
+      alignment: 9
+      pivot: {x: 0.4403989, y: 0.02583949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd3ddfe2afb98f10800000000000000
+      internalID: 2272558193514986935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a1bf969465f6af6478b7aa175b18e13c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":480.0,"y":384.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4403989017009735,"y":0.025839490815997125},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      InkMan_0: -5793152896592497180
+      InkMan_1: 8794865393065453510
+      InkMan_10: -205947816337049417
+      InkMan_11: 7061667930630784641
+      InkMan_12: -5071041082993610490
+      InkMan_13: -6428116656053733069
+      InkMan_14: 5624020176886705082
+      InkMan_15: -8509142619758494048
+      InkMan_16: -4249426360587394003
+      InkMan_17: 5263164425083394879
+      InkMan_18: -4097941077535933204
+      InkMan_19: 5731039092253209744
+      InkMan_2: 1166945178161036524
+      InkMan_20: -727106478661647917
+      InkMan_21: -7183120012896439280
+      InkMan_22: 7683902988509140090
+      InkMan_23: 4497159786280958106
+      InkMan_24: 4807432944860769453
+      InkMan_25: 8710269737078573882
+      InkMan_26: 70956746007329198
+      InkMan_27: -8460584629957823936
+      InkMan_28: -8269833281730433169
+      InkMan_29: -2422719955703939054
+      InkMan_3: -3090734004487624290
+      InkMan_30: -3904326367271431818
+      InkMan_31: -4769881928015378013
+      InkMan_32: 6486877217883626696
+      InkMan_33: -4155730088742862166
+      InkMan_34: 6101752139652350480
+      InkMan_35: -8192328812289198470
+      InkMan_36: 2954910219981672721
+      InkMan_37: -7019182396877250351
+      InkMan_38: -3718100423972980307
+      InkMan_39: -5758650942931536540
+      InkMan_4: 838115787326625181
+      InkMan_40: 5723403990005560704
+      InkMan_41: 3868863425932746528
+      InkMan_42: 4695363901132343257
+      InkMan_43: -2535095116839282478
+      InkMan_44: -2201263490486952764
+      InkMan_45: -4864942834315736548
+      InkMan_46: -646003925846780162
+      InkMan_47: 9172328666143232672
+      InkMan_48: 5827961788149294828
+      InkMan_49: -8228077825023231103
+      InkMan_5: 2372470621012653095
+      InkMan_50: -3300639603675322864
+      InkMan_51: 4879365336042750045
+      InkMan_52: 2857849214424029919
+      InkMan_53: -1396345274755452692
+      InkMan_54: 5472422390457996220
+      InkMan_55: 6862353367352503342
+      InkMan_56: 253833559376428570
+      InkMan_57: -2592307596662301678
+      InkMan_58: 4030405053311875108
+      InkMan_59: 2553532725497452829
+      InkMan_6: 1383714213475641020
+      InkMan_60: 4466513597113825835
+      InkMan_61: 8989920471356074900
+      InkMan_62: 7978936306976676367
+      InkMan_63: -1529557122403153431
+      InkMan_64: 2777701099564946885
+      InkMan_65: -2346139721004736895
+      InkMan_66: -3832596931245231627
+      InkMan_67: -2729020378572829218
+      InkMan_68: -7954142495245201595
+      InkMan_69: 2272558193514986935
+      InkMan_7: 442939271581870822
+      InkMan_8: 2723932683873348629
+      InkMan_9: -7096464306132601204
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

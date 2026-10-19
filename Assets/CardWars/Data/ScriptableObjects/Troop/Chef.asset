@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Chef
   cost: 1
+  weight: 1
   descriptionAbility: 'On Portal Hit: Generate a random Food card with -1 Cost.'
   phrase: 
   type: 1
+  role: 6
   rarity: 1
   family: 06000000
   imgType: {fileID: 0}
@@ -26,37 +28,47 @@ MonoBehaviour:
   - trigger: 6
     filter: 1
     condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 16
+      modify: 0
       duration: 0
       target: 0
+      scalingType: 0
       laneRadius: 0
       familyTarget: 1
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 2
       value: 0
       quantity: 1
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 18
-      duration: 1
+      modify: 2
+      duration: 0
       target: 0
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
-      value: -1
+      cardSelection: 0
+      value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 2
   health: 2
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -6707068268653951271, guid: b7700fa263953cf498a6943735de2baa, type: 3}
+  anim: {fileID: 9100000, guid: 5ca58f86bc9df9f4584f394dcd2012a5, type: 2}
   abilityPassives: 

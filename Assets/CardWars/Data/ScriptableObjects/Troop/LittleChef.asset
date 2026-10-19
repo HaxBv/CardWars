@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Little Chef
   cost: 3
+  weight: 2
   descriptionAbility: 'On Deploy: An ally unit gets +2 ATK and +2 HP.'
   phrase: 
   type: 1
+  role: 4
   rarity: 3
   family: 1100000006000000
   imgType: {fileID: 0}
@@ -26,38 +28,47 @@ MonoBehaviour:
   - trigger: 3
     filter: 0
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 1
-      duration: 1
+      modify: 1
+      duration: 7
       target: 4
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 2
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 2
-      duration: 1
+      modify: 1
+      duration: 7
       target: 4
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 2
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 2
   health: 1
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: 6531682955634966739, guid: 07b3bd04ac74f634391afed6ebcc7222, type: 3}
+  anim: {fileID: 9100000, guid: 86f6c4560bf005745a6913b4b7ed0120, type: 2}
   abilityPassives: 

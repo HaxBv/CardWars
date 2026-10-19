@@ -14,8 +14,8 @@ public class AbilityData
 
     [SerializeField] private ConditionType condition;
 
-    [SerializeField] private int laneRadius;
-
+    [SerializeField] private int conditionLaneRadius;
+    [SerializeField] private CardFamily conditionFamily;
     [SerializeField] private StatType statFilter;
     [SerializeField] private ComparisonType comparison;
     [SerializeField] private int compareValue;
@@ -29,7 +29,8 @@ public class AbilityData
 
 
     public ConditionType Condition => condition;
-    public int LaneRadius => laneRadius;
+    public int ConditionLaneRadius => conditionLaneRadius;
+    public CardFamily ConditionFamily => conditionFamily;
 
     public StatType StatFilter => statFilter;
     public ComparisonType Comparison => comparison;
@@ -47,45 +48,58 @@ public class EffectData
 {
 
     [SerializeField] private EffectType effectType;
-
+    [SerializeField] private ModifyType modify;
     [SerializeField] private EffectDuration duration;
     [SerializeField] private TargetType target;
 
+    [SerializeField] private ScalingType scalingType;
     [SerializeField] private int laneRadius;
     [SerializeField] private CardFamily familyTarget;
     [SerializeField] private CardRarity rarityTarget;
     [SerializeField] private LaneDestination laneDestination;
+    [SerializeField] private CardSelectionType cardSelection;
     [SerializeField] private int value;
     [SerializeField] private int quantity;
 
-    [SerializeField] private List<AbilityPassive> abilitiesToGrant;
-
+    [SerializeField] private List<AbilityPassive> abilityPasiveToGrant;
+    [SerializeField] private List<AbilityAsset> abilitiesToGrant;
 
 
     public EffectType EffectType => effectType;
+    public ModifyType Modify => modify;
     public EffectDuration Duration => duration;
     public TargetType Target => target;
+
+    public ScalingType ScalingType => scalingType;
 
     public int LaneRadius => laneRadius;
     public CardFamily FamilyTarget => familyTarget;
     public CardRarity RarityTarget => rarityTarget;
     public LaneDestination LaneDestination => laneDestination;
+    public CardSelectionType CardSelection => cardSelection;
     public int Value => value;
     public int Quantity => quantity;
 
-    public List<AbilityPassive> AbilitiesToGrant => abilitiesToGrant;
+    public List<AbilityPassive> AbilityPasiveToGrant => abilityPasiveToGrant;
+
+
+    public List<AbilityAsset> AbilitiesToGrant => abilitiesToGrant;
+
 }
 
 
 [CreateAssetMenu(fileName = "CardData", menuName = "CardWars/CardData")]
 public class CardData : ScriptableObject
 {
+    
     [SerializeField] private string cardName;
     [SerializeField] private int cost;
+    [SerializeField] private int weight;
     [SerializeField, TextArea(3, 10)] private string descriptionAbility;
     [SerializeField, TextArea(3, 10)] private string phrase;
 
     [SerializeField] private CardType type;
+    [SerializeField] private CardRol role;
     [SerializeField] private CardRarity rarity;
     [SerializeField] private List<CardFamily> family;
 
@@ -99,9 +113,11 @@ public class CardData : ScriptableObject
     [SerializeField] private List<AbilityData> abilities;
     public string CardName => cardName;
     public int Cost => cost;
+    public int Weight => weight;
     public string DescriptionAbility => descriptionAbility;
     public string Phrase => phrase;
     public CardType Type => type;
+    public CardRol Role => role;
     public CardRarity Rarity => rarity;
     public List<CardFamily> Family => family;
     public Sprite ImageType => imgType;

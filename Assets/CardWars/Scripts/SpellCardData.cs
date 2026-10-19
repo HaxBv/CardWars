@@ -7,7 +7,4 @@ using UnityEngine;
 public class SpellCardData : CardData
 {
 
-    [SerializeField] private List<AbilityData> effects;
-
-    public List<AbilityData> Effects => effects;
 }

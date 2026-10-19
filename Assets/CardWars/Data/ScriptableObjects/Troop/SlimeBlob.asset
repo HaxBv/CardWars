@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Slime Blob
   cost: 1
+  weight: 0
   descriptionAbility: 'On Damaged: The attacker gets -1 ATK.'
   phrase: 
   type: 1
+  role: 7
   rarity: 1
   family: 0f000000
   imgType: {fileID: 0}
@@ -26,27 +28,33 @@ MonoBehaviour:
   - trigger: 7
     filter: 1
     condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
-    laneRadius: 0
     effects:
     - effectType: 1
-      duration: 0
+      modify: 2
+      duration: 7
       target: 19
+      scalingType: 0
+      laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
-      value: -1
+      cardSelection: 0
+      value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 1
   health: 2
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -7025712506416356788, guid: d80e3a3955eb07f45a83d70293365ae6, type: 3}
+  anim: {fileID: 9100000, guid: 57f683d6380e8cc449943f8f32f2f09c, type: 2}
   abilityPassives: 01000000

@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: 5717896060493494cab5459b12e7c93a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1323100720438303063
+    second: DemolitionTurtle_0
+  - first:
+      213: -579239659976878518
+    second: DemolitionTurtle_1
+  - first:
+      213: 8767955619892449410
+    second: DemolitionTurtle_2
+  - first:
+      213: 8473059187335558220
+    second: DemolitionTurtle_3
+  - first:
+      213: 7069588981939627786
+    second: DemolitionTurtle_4
+  - first:
+      213: 160008158027617194
+    second: DemolitionTurtle_5
+  - first:
+      213: -7536523819616178271
+    second: DemolitionTurtle_6
+  - first:
+      213: 5569843270031663796
+    second: DemolitionTurtle_7
+  - first:
+      213: -6622843859599217821
+    second: DemolitionTurtle_8
+  - first:
+      213: 2945471596450508414
+    second: DemolitionTurtle_9
+  - first:
+      213: 406164209547227198
+    second: DemolitionTurtle_10
+  - first:
+      213: 2336230522654428044
+    second: DemolitionTurtle_11
+  - first:
+      213: 9393390200640516
+    second: DemolitionTurtle_12
+  - first:
+      213: -716467640380349962
+    second: DemolitionTurtle_13
+  - first:
+      213: 4829887052774738556
+    second: DemolitionTurtle_14
+  - first:
+      213: 4899794706289206770
+    second: DemolitionTurtle_15
+  - first:
+      213: 7957077666815290822
+    second: DemolitionTurtle_16
+  - first:
+      213: -2102343092854510209
+    second: DemolitionTurtle_17
+  - first:
+      213: -882116678725364939
+    second: DemolitionTurtle_18
+  - first:
+      213: 418488130614166497
+    second: DemolitionTurtle_19
+  - first:
+      213: -6682426873592435682
+    second: DemolitionTurtle_20
+  - first:
+      213: 8100488460751912294
+    second: DemolitionTurtle_21
+  - first:
+      213: -1815003689264195010
+    second: DemolitionTurtle_22
+  - first:
+      213: -3214728793261760479
+    second: DemolitionTurtle_23
+  - first:
+      213: 1783859144617244579
+    second: DemolitionTurtle_24
+  - first:
+      213: -4346184788345251012
+    second: DemolitionTurtle_25
+  - first:
+      213: 2417557185808978482
+    second: DemolitionTurtle_26
+  - first:
+      213: 7109759131304891336
+    second: DemolitionTurtle_27
+  - first:
+      213: -8258665961337157951
+    second: DemolitionTurtle_28
+  - first:
+      213: 6993519509764896767
+    second: DemolitionTurtle_29
+  - first:
+      213: 3689853426550664089
+    second: DemolitionTurtle_30
+  - first:
+      213: 3639364998975347932
+    second: DemolitionTurtle_31
+  - first:
+      213: -7462027588653684674
+    second: DemolitionTurtle_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DemolitionTurtle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a62634a7e663ade0800000000000000
+      internalID: -1323100720438303063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1152
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a469243299026f7f0800000000000000
+      internalID: -579239659976878518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1152
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28054128e290ea970800000000000000
+      internalID: 8767955619892449410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_3
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1152
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44fefd407a569570800000000000000
+      internalID: 8473059187335558220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07e68809b93c1260800000000000000
+      internalID: 7069588981939627786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 960
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3966c6296783200800000000000000
+      internalID: 160008158027617194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_6
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 960
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afe18a2483e86790800000000000000
+      internalID: -7536523819616178271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_7
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 960
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b266dc91fe0c4d40800000000000000
+      internalID: 5569843270031663796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b26b9599ee614a0800000000000000
+      internalID: -6622843859599217821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 768
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e6f6aafca60e820800000000000000
+      internalID: 2945471596450508414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_10
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 768
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e303a86523cf2a500800000000000000
+      internalID: 406164209547227198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_11
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 768
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b0e305845fb6020800000000000000
+      internalID: 2336230522654428044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40455261d3f512000800000000000000
+      internalID: 9393390200640516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 576
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f121122a789e06f0800000000000000
+      internalID: -716467640380349962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 576
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a85e54fa4370340800000000000000
+      internalID: 4829887052774738556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_15
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 576
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f525bc33519ff340800000000000000
+      internalID: 4899794706289206770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd28b4caf73d6e60800000000000000
+      internalID: 7957077666815290822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_17
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 384
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d2962881af2d2e0800000000000000
+      internalID: -2102343092854510209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_18
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 384
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533902aed8712c3f0800000000000000
+      internalID: -882116678725364939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_19
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 384
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e389ffccb4cec500800000000000000
+      internalID: 418488130614166497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1caff9d9204343a0800000000000000
+      internalID: -6682426873592435682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 192
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66db44a3657ba6070800000000000000
+      internalID: 8100488460751912294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_22
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 192
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a526bc2cfcfc6e0800000000000000
+      internalID: -1815003689264195010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_23
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 192
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120a964e13df263d0800000000000000
+      internalID: -3214728793261760479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a73e34d07a81c810800000000000000
+      internalID: 1783859144617244579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_25
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b997a46ff3fa3c0800000000000000
+      internalID: -4346184788345251012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_26
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 0
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2325654a373ec8120800000000000000
+      internalID: 2417557185808978482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemolitionTurtle_27
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 0
+        width: 342
+        height: 192
+      alignment: 9
+      pivot: {x: 0.369621, y: 0.02262243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c39404c240faa260800000000000000
+      internalID: 7109759131304891336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f0988e943b34f6a44bdb922e7fd21aae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":342.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.36962100863456728,"y":0.022622430697083474},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DemolitionTurtle_0: -1323100720438303063
+      DemolitionTurtle_1: -579239659976878518
+      DemolitionTurtle_10: 406164209547227198
+      DemolitionTurtle_11: 2336230522654428044
+      DemolitionTurtle_12: 9393390200640516
+      DemolitionTurtle_13: -716467640380349962
+      DemolitionTurtle_14: 4829887052774738556
+      DemolitionTurtle_15: 4899794706289206770
+      DemolitionTurtle_16: 7957077666815290822
+      DemolitionTurtle_17: -2102343092854510209
+      DemolitionTurtle_18: -882116678725364939
+      DemolitionTurtle_19: 418488130614166497
+      DemolitionTurtle_2: 8767955619892449410
+      DemolitionTurtle_20: -6682426873592435682
+      DemolitionTurtle_21: 8100488460751912294
+      DemolitionTurtle_22: -1815003689264195010
+      DemolitionTurtle_23: -3214728793261760479
+      DemolitionTurtle_24: 1783859144617244579
+      DemolitionTurtle_25: -4346184788345251012
+      DemolitionTurtle_26: 2417557185808978482
+      DemolitionTurtle_27: 7109759131304891336
+      DemolitionTurtle_3: 8473059187335558220
+      DemolitionTurtle_4: 7069588981939627786
+      DemolitionTurtle_5: 160008158027617194
+      DemolitionTurtle_6: -7536523819616178271
+      DemolitionTurtle_7: 5569843270031663796
+      DemolitionTurtle_8: -6622843859599217821
+      DemolitionTurtle_9: 2945471596450508414
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

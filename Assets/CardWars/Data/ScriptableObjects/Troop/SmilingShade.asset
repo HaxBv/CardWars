@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: SmilingShade
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: SmilingShade
-  cost: 0
-  descriptionAbility: 'When an enemy unit drops to 2 HP or less, Execute it.
+  cost: 4
+  weight: 3
+  descriptionAbility: 'When an enemy unit drops to 3 HP or less, Execute it.
 
     While
     on a Domain, this unit gets Anti-Spell.'
   phrase: 
   type: 1
+  role: 3
   rarity: 4
   family: 14000000
   imgType: {fileID: 0}
@@ -29,46 +31,56 @@ MonoBehaviour:
   - trigger: 7
     filter: 3
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 2
     comparison: 6
     compareValue: 3
     effects:
     - effectType: 24
+      modify: 0
       duration: 0
       target: 20
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   - trigger: 17
     filter: 1
     condition: 15
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 8
+      modify: 0
       duration: 0
       target: 0
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 08000000
-  attack: 0
-  health: 0
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
+  attack: 3
+  health: 4
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -4126795280975832674, guid: 8472951a129c88441a6b73417b6f691b, type: 3}
+  anim: {fileID: 9100000, guid: 8ff1b27b3d169b542a07d28246f23338, type: 2}
   abilityPassives: 

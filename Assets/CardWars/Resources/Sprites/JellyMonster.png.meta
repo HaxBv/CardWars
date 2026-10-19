@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 2b7f543b096e52f449fbb2f2a1508fa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2171988328020307422
+    second: JellyMonster_0
+  - first:
+      213: 5370166353300652515
+    second: JellyMonster_1
+  - first:
+      213: -2580189453200821733
+    second: JellyMonster_2
+  - first:
+      213: 2240423069223201559
+    second: JellyMonster_3
+  - first:
+      213: -6633162813674719149
+    second: JellyMonster_4
+  - first:
+      213: 1469710169506795409
+    second: JellyMonster_5
+  - first:
+      213: -6280876007057576127
+    second: JellyMonster_6
+  - first:
+      213: 723781597954128551
+    second: JellyMonster_7
+  - first:
+      213: -1289747057361333826
+    second: JellyMonster_8
+  - first:
+      213: 632056268549308346
+    second: JellyMonster_9
+  - first:
+      213: 768464578742099058
+    second: JellyMonster_10
+  - first:
+      213: -2745117841186456124
+    second: JellyMonster_11
+  - first:
+      213: 7000534886966147275
+    second: JellyMonster_12
+  - first:
+      213: -9207557173558137795
+    second: JellyMonster_13
+  - first:
+      213: -7514029200916364682
+    second: JellyMonster_14
+  - first:
+      213: 5908613823467764771
+    second: JellyMonster_15
+  - first:
+      213: 6195792241353834065
+    second: JellyMonster_16
+  - first:
+      213: 5845648804730015703
+    second: JellyMonster_17
+  - first:
+      213: 4143811455347176069
+    second: JellyMonster_18
+  - first:
+      213: 274294519164385978
+    second: JellyMonster_19
+  - first:
+      213: 3571457981564262774
+    second: JellyMonster_20
+  - first:
+      213: 7917734338281261884
+    second: JellyMonster_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JellyMonster_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edde1fb60e3742e10800000000000000
+      internalID: 2171988328020307422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 960
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e18d3198d9a68a40800000000000000
+      internalID: 5370166353300652515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 960
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1271ccdc53513cd0800000000000000
+      internalID: -2580189453200821733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 960
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ba3a349e4971f10800000000000000
+      internalID: 2240423069223201559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3587691a09542f3a0800000000000000
+      internalID: -6633162813674719149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f4b30cc95756410800000000000000
+      internalID: 1469710169506795409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_6
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f2f019c88d5d8a0800000000000000
+      internalID: -6280876007057576127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_7
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa350157836b0a00800000000000000
+      internalID: 723781597954128551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb15fdb72e5e91ee0800000000000000
+      internalID: -1289747057361333826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfb0f4d3d385c800800000000000000
+      internalID: 632056268549308346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c946e76722aaa00800000000000000
+      internalID: 768464578742099058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_11
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd7e712ed167e9d0800000000000000
+      internalID: -2745117841186456124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8b857a365e62160800000000000000
+      internalID: 7000534886966147275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ca7fcc88f283080800000000000000
+      internalID: -9207557173558137795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_14
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672c777b04ec8b790800000000000000
+      internalID: -7514029200916364682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_15
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c32ce97fc9ff150800000000000000
+      internalID: 5908613823467764771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e34008730ebf550800000000000000
+      internalID: 6195792241353834065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_17
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df8e97cd9aef1150800000000000000
+      internalID: 5845648804730015703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_18
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582b9245096c18930800000000000000
+      internalID: 4143811455347176069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_19
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba31a2796d7ec300800000000000000
+      internalID: 274294519164385978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6791f51ac1e509130800000000000000
+      internalID: 3571457981564262774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JellyMonster_21
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.239401, y: 0.01445993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3bca234e6171ed60800000000000000
+      internalID: 7917734338281261884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8f290d4cc17973749872ca823953ee7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":276.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.23940099775791169,"y":0.01445993036031723},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      JellyMonster_0: 2171988328020307422
+      JellyMonster_1: 5370166353300652515
+      JellyMonster_10: 768464578742099058
+      JellyMonster_11: -2745117841186456124
+      JellyMonster_12: 7000534886966147275
+      JellyMonster_13: -9207557173558137795
+      JellyMonster_14: -7514029200916364682
+      JellyMonster_15: 5908613823467764771
+      JellyMonster_16: 6195792241353834065
+      JellyMonster_17: 5845648804730015703
+      JellyMonster_18: 4143811455347176069
+      JellyMonster_19: 274294519164385978
+      JellyMonster_2: -2580189453200821733
+      JellyMonster_20: 3571457981564262774
+      JellyMonster_21: 7917734338281261884
+      JellyMonster_3: 2240423069223201559
+      JellyMonster_4: -6633162813674719149
+      JellyMonster_5: 1469710169506795409
+      JellyMonster_6: -6280876007057576127
+      JellyMonster_7: 723781597954128551
+      JellyMonster_8: -1289747057361333826
+      JellyMonster_9: 632056268549308346
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

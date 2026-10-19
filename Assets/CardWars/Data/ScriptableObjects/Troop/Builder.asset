@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Builder
   cost: 3
+  weight: 1
   descriptionAbility: 'On Portal Hit: Summon a random Structure costing 5 or less
     in this unit''s lane. It gets Team.'
   phrase: 
   type: 1
+  role: 6
   rarity: 2
   family: 0c00000006000000
   imgType: {fileID: 0}
@@ -27,38 +29,47 @@ MonoBehaviour:
   - trigger: 6
     filter: 1
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 4
     comparison: 6
     compareValue: 5
     effects:
     - effectType: 15
+      modify: 0
       duration: 0
       target: 0
+      scalingType: 0
       laneRadius: 0
       familyTarget: 5
       rarityTarget: 0
       laneDestination: 1
+      cardSelection: 2
       value: 0
       quantity: 1
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 8
-      duration: 1
-      target: 22
+      modify: 0
+      duration: 7
+      target: 25
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 01000000
+      abilityPasiveToGrant: 01000000
+      abilitiesToGrant: []
   attack: 2
   health: 2
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: 1448397813929791850, guid: a6fc70eb534a5cd4198db8badd2c4cbf, type: 3}
+  anim: {fileID: 9100000, guid: aaa322d5fac59b744a28d9654c95af43, type: 2}
   abilityPassives: 

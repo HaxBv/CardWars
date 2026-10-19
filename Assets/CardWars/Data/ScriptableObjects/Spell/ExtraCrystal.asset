@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ad344760e6ac74fb7624789ba708d1, type: 3}
+  m_Name: ExtraCrystal
+  m_EditorClassIdentifier: Assembly-CSharp::SpellCardData
+  cardName: Extra Crystal
+  cost: 2
+  weight: 2
+  descriptionAbility: You get +1 Crystal permanently.
+  phrase: 
+  type: 2
+  role: 5
+  rarity: 2
+  family: 
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 0
+    filter: 0
+    condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
+    effects:
+    - effectType: 6
+      modify: 0
+      duration: 1
+      target: 33
+      scalingType: 0
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      cardSelection: 0
+      value: 1
+      quantity: 0
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []

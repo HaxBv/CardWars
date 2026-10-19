@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Pirate Ship
   cost: 2
-  descriptionAbility: 'Fusion: The unit played on this gets +2 ATK,+1 HP and Aquatic'
+  weight: 1
+  descriptionAbility: 'Fusion: The unit played on this gets +2 ATK, +1 HP and Aquatic'
   phrase: 
   type: 1
+  role: 5
   rarity: 1
   family: 05000000
   imgType: {fileID: 0}
@@ -26,45 +28,61 @@ MonoBehaviour:
   - trigger: 15
     filter: 0
     condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
-    laneRadius: 0
     effects:
     - effectType: 8
-      duration: 0
+      modify: 0
+      duration: 7
       target: 21
+      scalingType: 0
+      laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 0f000000
+      abilityPasiveToGrant: 10000000
+      abilitiesToGrant: []
     - effectType: 1
-      duration: 0
+      modify: 1
+      duration: 7
       target: 1
+      scalingType: 0
+      laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 2
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 2
-      duration: 0
+      modify: 1
+      duration: 7
       target: 0
+      scalingType: 0
+      laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 2
   health: 1
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: 1288934771920868850, guid: 1f882427c08584d4c9a6f63a583c3410, type: 3}
+  anim: {fileID: 9100000, guid: cf78c5a4745c98642a59cfe3c7c51d3e, type: 2}
   abilityPassives: 0e000000

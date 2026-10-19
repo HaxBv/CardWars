@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: ZombieQueen
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardName: ZombieQueen
+  cost: 5
+  weight: 4
+  descriptionAbility: 'On Deploy: Summons 2 Zombies in random lanes.
+
+    On Kill:
+    Summons a Zombie in a random lane.'
+  phrase: 
+  type: 1
+  role: 6
+  rarity: 5
+  family: 0f000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 3
+    filter: 1
+    condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
+    effects:
+    - effectType: 15
+      modify: 0
+      duration: 0
+      target: 0
+      scalingType: 0
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 8
+      laneDestination: 3
+      cardSelection: 1
+      value: 1
+      quantity: 2
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
+  - trigger: 8
+    filter: 1
+    condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
+    effects:
+    - effectType: 15
+      modify: 0
+      duration: 0
+      target: 0
+      scalingType: 0
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 8
+      laneDestination: 3
+      cardSelection: 1
+      value: 1
+      quantity: 1
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
+  attack: 3
+  health: 5
+  armor: 0
+  shield: 0
+  shieldArmor: 0
+  burn: 0
+  overstrike: 0
+  imgCharInGame: {fileID: 7812545383296264606, guid: 477f6731a067fcb409530301e13e6f7d, type: 3}
+  anim: {fileID: 9100000, guid: 8c9b3ec742940d34baa5c118fadbea9b, type: 2}
+  abilityPassives: 07000000

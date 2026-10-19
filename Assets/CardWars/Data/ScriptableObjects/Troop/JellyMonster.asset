@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Jelly Monster
   cost: 1
+  weight: 0
   descriptionAbility: 'On Deploy: Move an enemy unit to this unit''s lane.'
   phrase: 
   type: 1
+  role: 2
   rarity: 1
   family: 0f00000001000000
   imgType: {fileID: 0}
@@ -26,27 +28,33 @@ MonoBehaviour:
   - trigger: 3
     filter: 1
     condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 19
+      modify: 0
       duration: 0
       target: 5
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 1
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 1
   health: 3
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: 2171988328020307422, guid: 2b7f543b096e52f449fbb2f2a1508fa3, type: 3}
+  anim: {fileID: 9100000, guid: a4629bace3b87834a90b3cba2780e855, type: 2}
   abilityPassives: 01000000

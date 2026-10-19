@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abc576db9a314a46bb7ae2b85d8b315, type: 3}
+  m_Name: InfestedPond
+  m_EditorClassIdentifier: Assembly-CSharp::DomainCardData
+  cardName: Infested Pond
+  cost: 4
+  weight: 3
+  descriptionAbility: 'Early: Deal 3 damage to each enemy unit in this lane.'
+  phrase: 
+  type: 3
+  role: 3
+  rarity: 3
+  family: 0200000010000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 0
+    filter: 0
+    condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
+    effects:
+    - effectType: 13
+      modify: 0
+      duration: 0
+      target: 12
+      scalingType: 0
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      cardSelection: 0
+      value: 3
+      quantity: 0
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []

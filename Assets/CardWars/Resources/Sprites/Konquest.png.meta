@@ -1,0 +1,1172 @@
+fileFormatVersion: 2
+guid: 91745a5fd431b4d4cb0ee7a526280957
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4340427415590081804
+    second: Konquest_0
+  - first:
+      213: -2673934579539453446
+    second: Konquest_1
+  - first:
+      213: -1979215152414145104
+    second: Konquest_2
+  - first:
+      213: 2539789317523067100
+    second: Konquest_3
+  - first:
+      213: -3391926785819688131
+    second: Konquest_4
+  - first:
+      213: 1825371826604732889
+    second: Konquest_5
+  - first:
+      213: 5915411489758536868
+    second: Konquest_6
+  - first:
+      213: -4946750357553392779
+    second: Konquest_7
+  - first:
+      213: 4383688901703819251
+    second: Konquest_8
+  - first:
+      213: -184297318723392956
+    second: Konquest_9
+  - first:
+      213: -5088910050305406811
+    second: Konquest_10
+  - first:
+      213: 1537510967089059729
+    second: Konquest_11
+  - first:
+      213: -3974807458287734380
+    second: Konquest_12
+  - first:
+      213: 4726530785567077116
+    second: Konquest_13
+  - first:
+      213: 9065225412029295535
+    second: Konquest_14
+  - first:
+      213: -807239896652612447
+    second: Konquest_15
+  - first:
+      213: 6452937487829132436
+    second: Konquest_16
+  - first:
+      213: 6982523657259141826
+    second: Konquest_17
+  - first:
+      213: -8580095395083120066
+    second: Konquest_18
+  - first:
+      213: -6799847348304464809
+    second: Konquest_19
+  - first:
+      213: 5685276038014733664
+    second: Konquest_20
+  - first:
+      213: 8727297587086082003
+    second: Konquest_21
+  - first:
+      213: 1148347499604857304
+    second: Konquest_22
+  - first:
+      213: 2949200897975860504
+    second: Konquest_23
+  - first:
+      213: 6059137027524614838
+    second: Konquest_24
+  - first:
+      213: 3359290415472517841
+    second: Konquest_25
+  - first:
+      213: -8799059484481596776
+    second: Konquest_26
+  - first:
+      213: 6024406161370233888
+    second: Konquest_27
+  - first:
+      213: -6050089110768737786
+    second: Konquest_28
+  - first:
+      213: -4605404280197587558
+    second: Konquest_29
+  - first:
+      213: -8969193907533785529
+    second: Konquest_30
+  - first:
+      213: -3687927009690247409
+    second: Konquest_31
+  - first:
+      213: 8677011392504306399
+    second: Konquest_32
+  - first:
+      213: 953400535371087847
+    second: Konquest_33
+  - first:
+      213: -4269480051904964396
+    second: Konquest_34
+  - first:
+      213: -8773003759490184863
+    second: Konquest_35
+  - first:
+      213: 1612437889552681821
+    second: Konquest_36
+  - first:
+      213: 7036252945351860775
+    second: Konquest_37
+  - first:
+      213: -1970570576830722061
+    second: Konquest_38
+  - first:
+      213: 8355617843930776102
+    second: Konquest_39
+  - first:
+      213: 3161643340486009931
+    second: Konquest_40
+  - first:
+      213: 2742970491540712484
+    second: Konquest_41
+  - first:
+      213: -3567062024198697685
+    second: Konquest_42
+  - first:
+      213: 3288067122905837436
+    second: Konquest_43
+  - first:
+      213: -1626644041196063975
+    second: Konquest_44
+  - first:
+      213: 2941310365232534640
+    second: Konquest_45
+  - first:
+      213: 4401539959975529975
+    second: Konquest_46
+  - first:
+      213: 7888711095614265431
+    second: Konquest_47
+  - first:
+      213: -664359145288839944
+    second: Konquest_48
+  - first:
+      213: -5782089469627516514
+    second: Konquest_49
+  - first:
+      213: 892171694275407819
+    second: Konquest_50
+  - first:
+      213: -4238561913508972460
+    second: Konquest_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Konquest_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fae2681344b3c3c0800000000000000
+      internalID: -4340427415590081804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1728
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9dae1caa644ead0800000000000000
+      internalID: -2673934579539453446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1728
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5c8422e4a6884e0800000000000000
+      internalID: -1979215152414145104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1728
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd05b4b8de42f3320800000000000000
+      internalID: 2539789317523067100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1728
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33c51b3f847de0d0800000000000000
+      internalID: -3391926785819688131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1728
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1f7cb4106055910800000000000000
+      internalID: 1825371826604732889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a46253a863c71250800000000000000
+      internalID: 5915411489758536868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1440
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5735e7142cc995bb0800000000000000
+      internalID: -4946750357553392779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1440
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ffd0ef84ddf5dc30800000000000000
+      internalID: 4383688901703819251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1440
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a6f68a09e317df0800000000000000
+      internalID: -184297318723392956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_10
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1440
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a881ad754f8069b0800000000000000
+      internalID: -5088910050305406811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1440
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1975c971416565510800000000000000
+      internalID: 1537510967089059729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491bf261da5a6d8c0800000000000000
+      internalID: -3974807458287734380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf27cad05b2089140800000000000000
+      internalID: 4726530785567077116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1152
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faba9dc8b762ecd70800000000000000
+      internalID: 9065225412029295535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_15
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1152
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac7f77479b1cc4f0800000000000000
+      internalID: -807239896652612447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1152
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4946bdfb4707d8950800000000000000
+      internalID: 6452937487829132436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1152
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca41b27548e6e060800000000000000
+      internalID: 6982523657259141826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e321b1d82b06de880800000000000000
+      internalID: -8580095395083120066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 864
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7543e652dd612a1a0800000000000000
+      internalID: -6799847348304464809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 864
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d88e74f6826ee40800000000000000
+      internalID: 5685276038014733664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 864
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfb36f8ae69d1970800000000000000
+      internalID: 8727297587086082003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 864
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1d7a877ffbfef00800000000000000
+      internalID: 1148347499604857304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 864
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d3d17579aade820800000000000000
+      internalID: 2949200897975860504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba550b1601661450800000000000000
+      internalID: 6059137027524614838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d22d97a5d89e9e20800000000000000
+      internalID: 3359290415472517841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89251fda40673e580800000000000000
+      internalID: -8799059484481596776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_27
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 576
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cb52f2c7dfa9350800000000000000
+      internalID: 6024406161370233888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_28
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 576
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602ab2d2204c90ca0800000000000000
+      internalID: -6050089110768737786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_29
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 576
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d52c725315610c0800000000000000
+      internalID: -4605404280197587558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746d9d379a5078380800000000000000
+      internalID: -8969193907533785529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f18d59ce9d1dcc0800000000000000
+      internalID: -3687927009690247409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_32
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 288
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda9c3283efea6870800000000000000
+      internalID: 8677011392504306399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 288
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eff57f4cb82b3d00800000000000000
+      internalID: 953400535371087847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_34
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 288
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d896927382cfb4c0800000000000000
+      internalID: -4269480051904964396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_35
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 288
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169cb66ef87004680800000000000000
+      internalID: -8773003759490184863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b0b2da7b7806610800000000000000
+      internalID: 1612437889552681821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7226e7d26cac5a160800000000000000
+      internalID: 7036252945351860775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Konquest_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 384
+        height: 288
+      alignment: 9
+      pivot: {x: 0.3051377, y: 0.02176963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff0b2b308027a4e0800000000000000
+      internalID: -1970570576830722061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bcefdfaf8b3c0e64e94008fa18ad91e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":384.0,"y":288.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.3051376938819885,"y":0.021769629791378976},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Konquest_0: -4340427415590081804
+      Konquest_1: -2673934579539453446
+      Konquest_10: -5088910050305406811
+      Konquest_11: 1537510967089059729
+      Konquest_12: -3974807458287734380
+      Konquest_13: 4726530785567077116
+      Konquest_14: 9065225412029295535
+      Konquest_15: -807239896652612447
+      Konquest_16: 6452937487829132436
+      Konquest_17: 6982523657259141826
+      Konquest_18: -8580095395083120066
+      Konquest_19: -6799847348304464809
+      Konquest_2: -1979215152414145104
+      Konquest_20: 5685276038014733664
+      Konquest_21: 8727297587086082003
+      Konquest_22: 1148347499604857304
+      Konquest_23: 2949200897975860504
+      Konquest_24: 6059137027524614838
+      Konquest_25: 3359290415472517841
+      Konquest_26: -8799059484481596776
+      Konquest_27: 6024406161370233888
+      Konquest_28: -6050089110768737786
+      Konquest_29: -4605404280197587558
+      Konquest_3: 2539789317523067100
+      Konquest_30: -8969193907533785529
+      Konquest_31: -3687927009690247409
+      Konquest_32: 8677011392504306399
+      Konquest_33: 953400535371087847
+      Konquest_34: -4269480051904964396
+      Konquest_35: -8773003759490184863
+      Konquest_36: 1612437889552681821
+      Konquest_37: 7036252945351860775
+      Konquest_38: -1970570576830722061
+      Konquest_4: -3391926785819688131
+      Konquest_5: 1825371826604732889
+      Konquest_6: 5915411489758536868
+      Konquest_7: -4946750357553392779
+      Konquest_8: 4383688901703819251
+      Konquest_9: -184297318723392956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

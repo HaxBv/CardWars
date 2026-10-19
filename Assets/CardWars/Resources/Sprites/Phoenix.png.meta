@@ -1,0 +1,1154 @@
+fileFormatVersion: 2
+guid: 22066b6ec7281c74abab65957bd58e6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4453784588268070965
+    second: Phoenix_0
+  - first:
+      213: 2774680632780850282
+    second: Phoenix_1
+  - first:
+      213: -7162847911029854707
+    second: Phoenix_2
+  - first:
+      213: -9044002482298871080
+    second: Phoenix_3
+  - first:
+      213: -2116434511981202434
+    second: Phoenix_4
+  - first:
+      213: -2516983635409943500
+    second: Phoenix_5
+  - first:
+      213: 1041380993228145994
+    second: Phoenix_6
+  - first:
+      213: -6729754688978202746
+    second: Phoenix_7
+  - first:
+      213: 1800069533549871
+    second: Phoenix_8
+  - first:
+      213: -4683884945944043696
+    second: Phoenix_9
+  - first:
+      213: -995161341181351066
+    second: Phoenix_10
+  - first:
+      213: -1524071442673626182
+    second: Phoenix_11
+  - first:
+      213: -7027837965058309593
+    second: Phoenix_12
+  - first:
+      213: 850099122043215124
+    second: Phoenix_13
+  - first:
+      213: -3495143416719494161
+    second: Phoenix_14
+  - first:
+      213: 6727399815077481245
+    second: Phoenix_15
+  - first:
+      213: 7124713857227302049
+    second: Phoenix_16
+  - first:
+      213: -3673123488336809705
+    second: Phoenix_17
+  - first:
+      213: 7451791943028225694
+    second: Phoenix_18
+  - first:
+      213: 3446466287338950828
+    second: Phoenix_19
+  - first:
+      213: -8984902579289830064
+    second: Phoenix_20
+  - first:
+      213: 1758175790726150424
+    second: Phoenix_21
+  - first:
+      213: 1323787016060104673
+    second: Phoenix_22
+  - first:
+      213: 8158479753419733099
+    second: Phoenix_23
+  - first:
+      213: 2780581874007081662
+    second: Phoenix_24
+  - first:
+      213: -2577956413152883933
+    second: Phoenix_25
+  - first:
+      213: 2951760185318709907
+    second: Phoenix_26
+  - first:
+      213: 9207353424257147364
+    second: Phoenix_27
+  - first:
+      213: 2640706651678729911
+    second: Phoenix_28
+  - first:
+      213: -247420842622787660
+    second: Phoenix_29
+  - first:
+      213: -6510312341273273786
+    second: Phoenix_30
+  - first:
+      213: 3076157619496120463
+    second: Phoenix_31
+  - first:
+      213: -6334842941132775891
+    second: Phoenix_32
+  - first:
+      213: 3017772694436592418
+    second: Phoenix_33
+  - first:
+      213: -7891013318890256744
+    second: Phoenix_34
+  - first:
+      213: 204784045956629729
+    second: Phoenix_35
+  - first:
+      213: -8737704101096738235
+    second: Phoenix_36
+  - first:
+      213: -4661181572273503828
+    second: Phoenix_37
+  - first:
+      213: -6933445210336987030
+    second: Phoenix_38
+  - first:
+      213: -5425325573433874020
+    second: Phoenix_39
+  - first:
+      213: 895339759068680425
+    second: Phoenix_40
+  - first:
+      213: -6709851389009360966
+    second: Phoenix_41
+  - first:
+      213: -329065978877223850
+    second: Phoenix_42
+  - first:
+      213: -989342923162458147
+    second: Phoenix_43
+  - first:
+      213: 1067107034093756926
+    second: Phoenix_44
+  - first:
+      213: 5520010539526638600
+    second: Phoenix_45
+  - first:
+      213: -7660084020599111913
+    second: Phoenix_46
+  - first:
+      213: 2680863797074260820
+    second: Phoenix_47
+  - first:
+      213: 5045883508850339097
+    second: Phoenix_48
+  - first:
+      213: 1322990402077439642
+    second: Phoenix_49
+  - first:
+      213: 6393307930582935307
+    second: Phoenix_50
+  - first:
+      213: 245299255009032067
+    second: Phoenix_51
+  - first:
+      213: -6651761741578775069
+    second: Phoenix_52
+  - first:
+      213: 6658706795320170802
+    second: Phoenix_53
+  - first:
+      213: -5646954160055705527
+    second: Phoenix_54
+  - first:
+      213: -6722505466794922536
+    second: Phoenix_55
+  - first:
+      213: -5243771674454726675
+    second: Phoenix_56
+  - first:
+      213: -1957546087698688036
+    second: Phoenix_57
+  - first:
+      213: 2093990680038365791
+    second: Phoenix_58
+  - first:
+      213: -8763747057335256538
+    second: Phoenix_59
+  - first:
+      213: -6339486514035003179
+    second: Phoenix_60
+  - first:
+      213: 2022849742937671975
+    second: Phoenix_61
+  - first:
+      213: -6581279040220674541
+    second: Phoenix_62
+  - first:
+      213: 5680720591393684388
+    second: Phoenix_63
+  - first:
+      213: 1301563869591436193
+    second: Phoenix_64
+  - first:
+      213: 4165584756130155420
+    second: Phoenix_65
+  - first:
+      213: -6954608316615368488
+    second: Phoenix_66
+  - first:
+      213: 4658887761366794246
+    second: Phoenix_67
+  - first:
+      213: -428141712562333159
+    second: Phoenix_68
+  - first:
+      213: -822110555568608388
+    second: Phoenix_69
+  - first:
+      213: -7436156462788406938
+    second: Phoenix_70
+  - first:
+      213: -3397245295438620302
+    second: Phoenix_71
+  - first:
+      213: -3018820937736070998
+    second: Phoenix_72
+  - first:
+      213: 8303526141678066452
+    second: Phoenix_73
+  - first:
+      213: -8841605654336709922
+    second: Phoenix_74
+  - first:
+      213: 2067993487639126298
+    second: Phoenix_75
+  - first:
+      213: 2017334213339293672
+    second: Phoenix_76
+  - first:
+      213: -7879833141756068713
+    second: Phoenix_77
+  - first:
+      213: -3447426622954204695
+    second: Phoenix_78
+  - first:
+      213: 7489093349023976541
+    second: Phoenix_79
+  - first:
+      213: -4767079771172229286
+    second: Phoenix_80
+  - first:
+      213: -6947321889066271240
+    second: Phoenix_81
+  - first:
+      213: -6555826325477292967
+    second: Phoenix_82
+  - first:
+      213: 7019619758427619127
+    second: Phoenix_83
+  - first:
+      213: -1950693608290552753
+    second: Phoenix_84
+  - first:
+      213: 884065874857609463
+    second: Phoenix_85
+  - first:
+      213: 6231623869687079358
+    second: Phoenix_86
+  - first:
+      213: -3305953060877086457
+    second: Phoenix_87
+  - first:
+      213: -7830195567248398810
+    second: Phoenix_88
+  - first:
+      213: -2240386718770958018
+    second: Phoenix_89
+  - first:
+      213: -943265098787438091
+    second: Phoenix_90
+  - first:
+      213: 2736849210176658932
+    second: Phoenix_91
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Phoenix_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc71c2e938af032c0800000000000000
+      internalID: -4453784588268070965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1020
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a640f0aa555a18620800000000000000
+      internalID: 2774680632780850282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1020
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eaaea76c3789c90800000000000000
+      internalID: -7162847911029854707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1020
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d223d6d8af3d7280800000000000000
+      internalID: -9044002482298871080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1020
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3bbf2560ae0a2e0800000000000000
+      internalID: -2116434511981202434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_5
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1020
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4344be918b0e11dd0800000000000000
+      internalID: -2516983635409943500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a450531fe7ab37e00800000000000000
+      internalID: 1041380993228145994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 816
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f4fe124cb1b92a0800000000000000
+      internalID: -6729754688978202746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 816
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f254e195725660000800000000000000
+      internalID: 1800069533549871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 816
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f943c357f7ffeb0800000000000000
+      internalID: -4683884945944043696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_10
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 816
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b2fa4680a7032f0800000000000000
+      internalID: -995161341181351066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_11
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 816
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab31f17091969dae0800000000000000
+      internalID: -1524071442673626182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72202b91b9a187e90800000000000000
+      internalID: -7027837965058309593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 612
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dd141c5a82ccb00800000000000000
+      internalID: 850099122043215124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 612
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3b36f9491ce7fc0800000000000000
+      internalID: -3495143416719494161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_15
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 612
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bc8bf0d768c5d50800000000000000
+      internalID: 6727399815077481245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_16
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 612
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4265a318110e260800000000000000
+      internalID: 7124713857227302049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_17
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 612
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7117a8df5a1760dc0800000000000000
+      internalID: -3673123488336809705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96b0587a451a6760800000000000000
+      internalID: 7451791943028225694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_19
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 408
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0923304de44df20800000000000000
+      internalID: 3446466287338950828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_20
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 408
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d40fb45b63f4380800000000000000
+      internalID: -8984902579289830064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_21
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 408
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8197ce2019b466810800000000000000
+      internalID: 1758175790726150424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 408
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef698207490f5210800000000000000
+      internalID: 1323787016060104673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_23
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 408
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68bcc93c1eb83170800000000000000
+      internalID: 8158479753419733099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb205157b7c969620800000000000000
+      internalID: 2780581874007081662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 204
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b05930d42493cd0800000000000000
+      internalID: -2577956413152883933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 204
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a101cdf32c6f820800000000000000
+      internalID: 2951760185318709907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_27
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 204
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1e25e182717cf70800000000000000
+      internalID: 9207353424257147364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_28
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 204
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6625965bca5a420800000000000000
+      internalID: 2640706651678729911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_29
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 204
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfd075fd0cf09cf0800000000000000
+      internalID: -247420842622787660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a90913b69b6a5a0800000000000000
+      internalID: -6510312341273273786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_31
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f807d278e05b0ba20800000000000000
+      internalID: 3076157619496120463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_32
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 216
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4390515, y: 0.05927531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ed3e198ed1618a0800000000000000
+      internalID: -6334842941132775891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b974b33264ae5cb40971749f15c0b9b4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":216.0,"y":204.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4390515089035034,"y":0.0592753104865551},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Phoenix_0: -4453784588268070965
+      Phoenix_1: 2774680632780850282
+      Phoenix_10: -995161341181351066
+      Phoenix_11: -1524071442673626182
+      Phoenix_12: -7027837965058309593
+      Phoenix_13: 850099122043215124
+      Phoenix_14: -3495143416719494161
+      Phoenix_15: 6727399815077481245
+      Phoenix_16: 7124713857227302049
+      Phoenix_17: -3673123488336809705
+      Phoenix_18: 7451791943028225694
+      Phoenix_19: 3446466287338950828
+      Phoenix_2: -7162847911029854707
+      Phoenix_20: -8984902579289830064
+      Phoenix_21: 1758175790726150424
+      Phoenix_22: 1323787016060104673
+      Phoenix_23: 8158479753419733099
+      Phoenix_24: 2780581874007081662
+      Phoenix_25: -2577956413152883933
+      Phoenix_26: 2951760185318709907
+      Phoenix_27: 9207353424257147364
+      Phoenix_28: 2640706651678729911
+      Phoenix_29: -247420842622787660
+      Phoenix_3: -9044002482298871080
+      Phoenix_30: -6510312341273273786
+      Phoenix_31: 3076157619496120463
+      Phoenix_32: -6334842941132775891
+      Phoenix_4: -2116434511981202434
+      Phoenix_5: -2516983635409943500
+      Phoenix_6: 1041380993228145994
+      Phoenix_7: -6729754688978202746
+      Phoenix_8: 1800069533549871
+      Phoenix_9: -4683884945944043696
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

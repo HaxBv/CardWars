@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Catapult
   cost: 6
+  weight: 2
   descriptionAbility: 
   phrase: 
   type: 1
+  role: 7
   rarity: 2
   family: 05000000
   imgType: {fileID: 0}
@@ -29,7 +31,7 @@ MonoBehaviour:
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 4
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
-  abilityPassives: 
+  overstrike: 4
+  imgCharInGame: {fileID: 5288215809875120788, guid: c5b7bd709107a0340b13e1cfb588f8e2, type: 3}
+  anim: {fileID: 9100000, guid: 2a8b380ed542e3c49951fe35a511f41e, type: 2}
+  abilityPassives: 1a000000

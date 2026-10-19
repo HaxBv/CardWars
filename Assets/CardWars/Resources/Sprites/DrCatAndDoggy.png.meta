@@ -1,0 +1,1050 @@
+fileFormatVersion: 2
+guid: 9800015b79a54c44d9b4efae30248f03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -949129293101081862
+    second: DrCatAndDoggy_0
+  - first:
+      213: 1756294781717218963
+    second: DrCatAndDoggy_1
+  - first:
+      213: -6710153470351233444
+    second: DrCatAndDoggy_2
+  - first:
+      213: 8193017566894292253
+    second: DrCatAndDoggy_3
+  - first:
+      213: -6271203358000659952
+    second: DrCatAndDoggy_4
+  - first:
+      213: 4807232839566918161
+    second: DrCatAndDoggy_5
+  - first:
+      213: 4785723399820085456
+    second: DrCatAndDoggy_6
+  - first:
+      213: 6177365060816144146
+    second: DrCatAndDoggy_7
+  - first:
+      213: -8835292246037886058
+    second: DrCatAndDoggy_8
+  - first:
+      213: -3656593856648766248
+    second: DrCatAndDoggy_9
+  - first:
+      213: -8106298776480808618
+    second: DrCatAndDoggy_10
+  - first:
+      213: -201277824111048512
+    second: DrCatAndDoggy_11
+  - first:
+      213: 4689118822708340550
+    second: DrCatAndDoggy_12
+  - first:
+      213: -5382899189379064328
+    second: DrCatAndDoggy_13
+  - first:
+      213: 405237335953924473
+    second: DrCatAndDoggy_14
+  - first:
+      213: -1431662149054628035
+    second: DrCatAndDoggy_15
+  - first:
+      213: 5921865743918668446
+    second: DrCatAndDoggy_16
+  - first:
+      213: 6620382161845630152
+    second: DrCatAndDoggy_17
+  - first:
+      213: 3848760256921806030
+    second: DrCatAndDoggy_18
+  - first:
+      213: 3782906064429321798
+    second: DrCatAndDoggy_19
+  - first:
+      213: -2182576767489537191
+    second: DrCatAndDoggy_20
+  - first:
+      213: 8592918316084474055
+    second: DrCatAndDoggy_21
+  - first:
+      213: -8751455500776379222
+    second: DrCatAndDoggy_22
+  - first:
+      213: 8277657923682791803
+    second: DrCatAndDoggy_23
+  - first:
+      213: 1900724319490652958
+    second: DrCatAndDoggy_24
+  - first:
+      213: -7409461973429099386
+    second: DrCatAndDoggy_25
+  - first:
+      213: 4176206950830597715
+    second: DrCatAndDoggy_26
+  - first:
+      213: -7084598662314774711
+    second: DrCatAndDoggy_27
+  - first:
+      213: -9005992944000218624
+    second: DrCatAndDoggy_28
+  - first:
+      213: -3352996607959323415
+    second: DrCatAndDoggy_29
+  - first:
+      213: 1223506325912889074
+    second: DrCatAndDoggy_30
+  - first:
+      213: -2739119292944906757
+    second: DrCatAndDoggy_31
+  - first:
+      213: 1320529558206139395
+    second: DrCatAndDoggy_32
+  - first:
+      213: 3671970372567865671
+    second: DrCatAndDoggy_33
+  - first:
+      213: -8227776403109927226
+    second: DrCatAndDoggy_34
+  - first:
+      213: -4609928037779638932
+    second: DrCatAndDoggy_35
+  - first:
+      213: 3307938602941620745
+    second: DrCatAndDoggy_36
+  - first:
+      213: 6872828634216598048
+    second: DrCatAndDoggy_37
+  - first:
+      213: 3065821168055109154
+    second: DrCatAndDoggy_38
+  - first:
+      213: -8094244654910886802
+    second: DrCatAndDoggy_39
+  - first:
+      213: -8823046159700144101
+    second: DrCatAndDoggy_40
+  - first:
+      213: 3259824416375078351
+    second: DrCatAndDoggy_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DrCatAndDoggy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1140
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afadac6cfe304d2f0800000000000000
+      internalID: -949129293101081862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_1
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1140
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39680297ccc9f5810800000000000000
+      internalID: 1756294781717218963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_2
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1140
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e2c5b78feb0e2a0800000000000000
+      internalID: -6710153470351233444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_3
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1140
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1df441911273b170800000000000000
+      internalID: 8193017566894292253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_4
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1140
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012422ca5c538f8a0800000000000000
+      internalID: -6271203358000659952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_5
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1140
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1128afa3cc8b6b240800000000000000
+      internalID: 4807232839566918161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d80d87831e4a6240800000000000000
+      internalID: 4785723399820085456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 912
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2170bd13bc86ab550800000000000000
+      internalID: 6177365060816144146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_8
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 912
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b062c738cb26580800000000000000
+      internalID: -8835292246037886058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_9
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 912
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc1396c24b214dc0800000000000000
+      internalID: -3656593856648766248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_10
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 912
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6518da83634a08f80800000000000000
+      internalID: -8106298776480808618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_11
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 912
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c882b8a2eae43df0800000000000000
+      internalID: -201277824111048512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647e029a9b8131140800000000000000
+      internalID: 4689118822708340550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 684
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd925305b91c45b0800000000000000
+      internalID: -5382899189379064328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 684
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9716243c531bf9500800000000000000
+      internalID: 405237335953924473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 684
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ff9375cd6b12ce0800000000000000
+      internalID: -1431662149054628035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_16
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 684
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a93d9c481be2250800000000000000
+      internalID: 5921865743918668446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_17
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 684
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4342aff7250eb50800000000000000
+      internalID: 6620382161845630152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec42773ef0b896530800000000000000
+      internalID: 3848760256921806030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 456
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e0bfcd5059f7430800000000000000
+      internalID: 3782906064429321798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_20
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 456
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b04c66efde5b1e0800000000000000
+      internalID: -2182576767489537191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_21
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 456
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0b9266ead204770800000000000000
+      internalID: 8592918316084474055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_22
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 456
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aace598d6959c8680800000000000000
+      internalID: -8751455500776379222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_23
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 456
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b717f41560620e270800000000000000
+      internalID: 8277657923682791803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bbf27b2bab06a10800000000000000
+      internalID: 1900724319490652958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_25
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 228
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6846ef8979d4c2990800000000000000
+      internalID: -7409461973429099386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_26
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 228
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35666c4681ed4f930800000000000000
+      internalID: 4176206950830597715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_27
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 228
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f258c6d037ead90800000000000000
+      internalID: -7084598662314774711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_28
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 228
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a413b1229440380800000000000000
+      internalID: -9005992944000218624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_29
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 228
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecae799953c771d0800000000000000
+      internalID: -3352996607959323415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f62b706584caf010800000000000000
+      internalID: 1223506325912889074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5899af381bcf9d0800000000000000
+      internalID: -2739119292944906757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_32
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30cc74003a6735210800000000000000
+      internalID: 1320529558206139395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_33
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 0
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7499aa2599575f230800000000000000
+      internalID: 3671970372567865671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrCatAndDoggy_34
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 228
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5156178, y: 0.01115498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6aa4934f011dd80800000000000000
+      internalID: -8227776403109927226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c42510d574f75364a883745de5fc6452
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":228.0,"y":228.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5156177878379822,"y":0.011154980398714543},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DrCatAndDoggy_0: -949129293101081862
+      DrCatAndDoggy_1: 1756294781717218963
+      DrCatAndDoggy_10: -8106298776480808618
+      DrCatAndDoggy_11: -201277824111048512
+      DrCatAndDoggy_12: 4689118822708340550
+      DrCatAndDoggy_13: -5382899189379064328
+      DrCatAndDoggy_14: 405237335953924473
+      DrCatAndDoggy_15: -1431662149054628035
+      DrCatAndDoggy_16: 5921865743918668446
+      DrCatAndDoggy_17: 6620382161845630152
+      DrCatAndDoggy_18: 3848760256921806030
+      DrCatAndDoggy_19: 3782906064429321798
+      DrCatAndDoggy_2: -6710153470351233444
+      DrCatAndDoggy_20: -2182576767489537191
+      DrCatAndDoggy_21: 8592918316084474055
+      DrCatAndDoggy_22: -8751455500776379222
+      DrCatAndDoggy_23: 8277657923682791803
+      DrCatAndDoggy_24: 1900724319490652958
+      DrCatAndDoggy_25: -7409461973429099386
+      DrCatAndDoggy_26: 4176206950830597715
+      DrCatAndDoggy_27: -7084598662314774711
+      DrCatAndDoggy_28: -9005992944000218624
+      DrCatAndDoggy_29: -3352996607959323415
+      DrCatAndDoggy_3: 8193017566894292253
+      DrCatAndDoggy_30: 1223506325912889074
+      DrCatAndDoggy_31: -2739119292944906757
+      DrCatAndDoggy_32: 1320529558206139395
+      DrCatAndDoggy_33: 3671970372567865671
+      DrCatAndDoggy_34: -8227776403109927226
+      DrCatAndDoggy_4: -6271203358000659952
+      DrCatAndDoggy_5: 4807232839566918161
+      DrCatAndDoggy_6: 4785723399820085456
+      DrCatAndDoggy_7: 6177365060816144146
+      DrCatAndDoggy_8: -8835292246037886058
+      DrCatAndDoggy_9: -3656593856648766248
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

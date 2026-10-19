@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: 'Scorpion 3000 '
   cost: 5
+  weight: 2
   descriptionAbility: 'On Deploy: If played on a Domain, destroy an enemy unit with
     2 ATK or less.
 
@@ -21,6 +22,7 @@ MonoBehaviour:
     Attack.'
   phrase: 
   type: 1
+  role: 3
   rarity: 3
   family: 0400000002000000
   imgType: {fileID: 0}
@@ -30,66 +32,98 @@ MonoBehaviour:
   - trigger: 3
     filter: 1
     condition: 15
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 1
     comparison: 6
     compareValue: 2
     effects:
     - effectType: 23
+      modify: 0
       duration: 0
       target: 5
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   - trigger: 16
     filter: 1
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 1
-      duration: 1
+      modify: 1
+      duration: 7
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 2
-      duration: 1
+      modify: 1
+      duration: 7
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
-    - effectType: 2
-      duration: 1
-      target: 1
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
+    - effectType: 3
+      modify: 1
+      duration: 0
+      target: 0
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
+    - effectType: 8
+      modify: 0
+      duration: 0
+      target: 0
+      scalingType: 0
+      laneRadius: 0
+      familyTarget: 0
+      rarityTarget: 0
+      laneDestination: 0
+      cardSelection: 0
+      value: 0
+      quantity: 0
+      abilityPasiveToGrant: 0d000000
+      abilitiesToGrant: []
   attack: 4
   health: 3
   armor: 1
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -2436443490600658299, guid: e4b5e24cd94e4d94c8db7dad9d7deb98, type: 3}
+  anim: {fileID: 9100000, guid: 2d4b2fc5d2ea2454f8baa2d7eafb6fe2, type: 2}
   abilityPassives: 00000000

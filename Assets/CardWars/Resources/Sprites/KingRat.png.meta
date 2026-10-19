@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 5aa6edbc80e29e64cac821afeffad58b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6517863133827445359
+    second: KingRat_0
+  - first:
+      213: -1957322211234303109
+    second: KingRat_1
+  - first:
+      213: 5643840201815995837
+    second: KingRat_2
+  - first:
+      213: 1842101942871233914
+    second: KingRat_3
+  - first:
+      213: -2926106880493345763
+    second: KingRat_4
+  - first:
+      213: -233712499146016530
+    second: KingRat_5
+  - first:
+      213: 6649342053455947019
+    second: KingRat_6
+  - first:
+      213: 7901667119887865102
+    second: KingRat_7
+  - first:
+      213: -5981550562345055739
+    second: KingRat_8
+  - first:
+      213: -5602061095770897974
+    second: KingRat_9
+  - first:
+      213: -7154685692092298957
+    second: KingRat_10
+  - first:
+      213: 4067214590150187644
+    second: KingRat_11
+  - first:
+      213: -7584370839185016281
+    second: KingRat_12
+  - first:
+      213: -6632121055048803887
+    second: KingRat_13
+  - first:
+      213: 303588459274424166
+    second: KingRat_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KingRat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dc99d4306eb85a0800000000000000
+      internalID: -6517863133827445359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 528
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73b568b1d136d4e0800000000000000
+      internalID: -1957322211234303109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 528
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5bf4ed2c2f25e40800000000000000
+      internalID: 5643840201815995837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7595e805f5709910800000000000000
+      internalID: 1842101942871233914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 396
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d142e5d9b416467d0800000000000000
+      internalID: -2926106880493345763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 396
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee835d468bfa1ccf0800000000000000
+      internalID: -233712499146016530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05ee4e2e55374c50800000000000000
+      internalID: 6649342053455947019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 264
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05dc46716c58ad60800000000000000
+      internalID: 7901667119887865102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 264
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a826584734dfca0800000000000000
+      internalID: -5981550562345055739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac14a884d1b7142b0800000000000000
+      internalID: -5602061095770897974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 132
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339c44b254375bc90800000000000000
+      internalID: -7154685692092298957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 132
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a1037ee16a17830800000000000000
+      internalID: 4067214590150187644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72abb8dc7e6eeb690800000000000000
+      internalID: -7584370839185016281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d95d66f909f5f3a0800000000000000
+      internalID: -6632121055048803887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KingRat_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.3555194, y: 0.07887685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66fc5f06810963400800000000000000
+      internalID: 303588459274424166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2e41b223bcaaefb4eba6b9e56e558937
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":240.0,"y":132.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.3555194139480591,"y":0.07887685298919678},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      KingRat_0: -6517863133827445359
+      KingRat_1: -1957322211234303109
+      KingRat_10: -7154685692092298957
+      KingRat_11: 4067214590150187644
+      KingRat_12: -7584370839185016281
+      KingRat_13: -6632121055048803887
+      KingRat_14: 303588459274424166
+      KingRat_2: 5643840201815995837
+      KingRat_3: 1842101942871233914
+      KingRat_4: -2926106880493345763
+      KingRat_5: -233712499146016530
+      KingRat_6: 6649342053455947019
+      KingRat_7: 7901667119887865102
+      KingRat_8: -5981550562345055739
+      KingRat_9: -5602061095770897974
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

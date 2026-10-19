@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: 3842e74735b614c46994cc83d641643c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5867728540657852365
+    second: CabezadeSlime_0
+  - first:
+      213: -2271611219866551115
+    second: CabezadeSlime_1
+  - first:
+      213: 5564686284452678884
+    second: CabezadeSlime_2
+  - first:
+      213: -4006498859207517158
+    second: CabezadeSlime_3
+  - first:
+      213: -2054857342873384056
+    second: CabezadeSlime_4
+  - first:
+      213: -827865150484060158
+    second: CabezadeSlime_5
+  - first:
+      213: 9010702950373722251
+    second: CabezadeSlime_6
+  - first:
+      213: -4989656397549835133
+    second: CabezadeSlime_7
+  - first:
+      213: 7605900289063920880
+    second: CabezadeSlime_8
+  - first:
+      213: -5261237944709950208
+    second: CabezadeSlime_9
+  - first:
+      213: 4899069523091681190
+    second: CabezadeSlime_10
+  - first:
+      213: -104444043254526234
+    second: CabezadeSlime_11
+  - first:
+      213: -8437362017445956059
+    second: CabezadeSlime_12
+  - first:
+      213: 2319658190662904998
+    second: CabezadeSlime_13
+  - first:
+      213: -2981567618919733297
+    second: CabezadeSlime_14
+  - first:
+      213: 7840204999297386032
+    second: CabezadeSlime_15
+  - first:
+      213: -5799313858183885241
+    second: CabezadeSlime_16
+  - first:
+      213: 1840314211073494167
+    second: CabezadeSlime_17
+  - first:
+      213: 8571055540518492726
+    second: CabezadeSlime_18
+  - first:
+      213: -8253078130509202817
+    second: CabezadeSlime_19
+  - first:
+      213: 3919366999352227255
+    second: CabezadeSlime_20
+  - first:
+      213: 6090798106371250137
+    second: CabezadeSlime_21
+  - first:
+      213: 5884732370364710506
+    second: CabezadeSlime_22
+  - first:
+      213: 2615966043902097278
+    second: CabezadeSlime_23
+  - first:
+      213: -7982572042964147473
+    second: CabezadeSlime_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CabezadeSlime_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330eaa71bf3a19ea0800000000000000
+      internalID: -5867728540657852365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcff0c81ad9970e0800000000000000
+      internalID: -2271611219866551115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec4a4751bcb93d40800000000000000
+      internalID: 5564686284452678884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c9defc38e0668c0800000000000000
+      internalID: -4006498859207517158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_4
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 768
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bcded322eab73e0800000000000000
+      internalID: -2054857342873384056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208e8772805d284f0800000000000000
+      internalID: -827865150484060158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b880795b7927c0d70800000000000000
+      internalID: 9010702950373722251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_7
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c69c851fd21cab0800000000000000
+      internalID: -4989656397549835133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_8
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f422bed3069d8960800000000000000
+      internalID: 7605900289063920880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_9
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 576
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005d1cae6f35cf6b0800000000000000
+      internalID: -5261237944709950208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af62dd56cdfcf340800000000000000
+      internalID: 4899069523091681190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee88ee22b0fc8ef0800000000000000
+      internalID: -104444043254526234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_12
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526b2ccb2f778ea80800000000000000
+      internalID: -8437362017445956059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_13
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aca9c695d4113020800000000000000
+      internalID: 2319658190662904998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_14
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 384
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc76b703c085f96d0800000000000000
+      internalID: -2981567618919733297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036cc5d58e00ecc60800000000000000
+      internalID: 7840204999297386032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e03f5a5c2b48fa0800000000000000
+      internalID: -5799313858183885241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_17
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c832a460c1a8910800000000000000
+      internalID: 1840314211073494167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_18
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a9fba4a9182f670800000000000000
+      internalID: 8571055540518492726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_19
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 192
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a347fba2d277d80800000000000000
+      internalID: -8253078130509202817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b537cc2583646630800000000000000
+      internalID: 3919366999352227255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_21
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d751e87b9cd68450800000000000000
+      internalID: 6090798106371250137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_22
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6eb4d589e4caa150800000000000000
+      internalID: 5884732370364710506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_23
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77b447c147cd4420800000000000000
+      internalID: 2615966043902097278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CabezadeSlime_24
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3922922, y: 0.06441975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe268293505383190800000000000000
+      internalID: -7982572042964147473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6bbb9f43209f5046a19be3f77248f44
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":276.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.39229220151901247,"y":0.06441974639892578},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      CabezadeSlime_0: -5867728540657852365
+      CabezadeSlime_1: -2271611219866551115
+      CabezadeSlime_10: 4899069523091681190
+      CabezadeSlime_11: -104444043254526234
+      CabezadeSlime_12: -8437362017445956059
+      CabezadeSlime_13: 2319658190662904998
+      CabezadeSlime_14: -2981567618919733297
+      CabezadeSlime_15: 7840204999297386032
+      CabezadeSlime_16: -5799313858183885241
+      CabezadeSlime_17: 1840314211073494167
+      CabezadeSlime_18: 8571055540518492726
+      CabezadeSlime_19: -8253078130509202817
+      CabezadeSlime_2: 5564686284452678884
+      CabezadeSlime_20: 3919366999352227255
+      CabezadeSlime_21: 6090798106371250137
+      CabezadeSlime_22: 5884732370364710506
+      CabezadeSlime_23: 2615966043902097278
+      CabezadeSlime_24: -7982572042964147473
+      CabezadeSlime_3: -4006498859207517158
+      CabezadeSlime_4: -2054857342873384056
+      CabezadeSlime_5: -827865150484060158
+      CabezadeSlime_6: 9010702950373722251
+      CabezadeSlime_7: -4989656397549835133
+      CabezadeSlime_8: 7605900289063920880
+      CabezadeSlime_9: -5261237944709950208
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

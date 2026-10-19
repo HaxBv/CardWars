@@ -12,7 +12,7 @@ public class TroopCardData : CardData
     [SerializeField] private int shield;
     [SerializeField] private int shieldArmor;
     [SerializeField] private int burn;
-    [SerializeField] private int directAttack;
+    [SerializeField] private int overstrike;
 
 
 
@@ -31,7 +31,7 @@ public class TroopCardData : CardData
     public int Shield => shield;
     public int ShieldArmor => shieldArmor;
     public int Burn => burn;
-    public int DirectAttack => directAttack;
+    public int Overstrike => overstrike;
 
     public Sprite ImgCharInGame => imgCharInGame;
 

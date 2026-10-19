@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586e6d4780b3c2a45aa3ff939066f2fd, type: 3}
+  m_Name: RatKing
+  m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
+  cardName: Rat King
+  cost: 6
+  weight: 3
+  descriptionAbility: While in play, all allied Rodents cards deal 3x damage.
+  phrase: 
+  type: 1
+  role: 4
+  rarity: 5
+  family: 0e00000011000000
+  imgType: {fileID: 0}
+  imgRarity: {fileID: 0}
+  imgCard: {fileID: 0}
+  abilities:
+  - trigger: 17
+    filter: 1
+    condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
+    statFilter: 0
+    comparison: 0
+    compareValue: 0
+    effects:
+    - effectType: 12
+      modify: 3
+      duration: 5
+      target: 30
+      scalingType: 0
+      laneRadius: 0
+      familyTarget: 17
+      rarityTarget: 0
+      laneDestination: 0
+      cardSelection: 0
+      value: 3
+      quantity: 0
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
+  attack: 2
+  health: 6
+  armor: 0
+  shield: 0
+  shieldArmor: 0
+  burn: 0
+  overstrike: 0
+  imgCharInGame: {fileID: -6517863133827445359, guid: 5aa6edbc80e29e64cac821afeffad58b, type: 3}
+  anim: {fileID: 9100000, guid: 3b52beed13761ab46a2f2d5269f28d51, type: 2}
+  abilityPassives: 

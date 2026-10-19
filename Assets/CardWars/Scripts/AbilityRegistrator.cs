@@ -26,23 +26,23 @@ public class AbilityRegistrator : MonoBehaviour
                 // 3. Verificar ConditionType: Si es MissingHealth, verificar vida faltante
                 // Si es None, siempre aplicar
                 bool conditionOk = data.Condition == ConditionType.None ||
-                    (data.Condition == ConditionType.MissingHealth && 
-                     (tropo.VidaMaxima - tropo.VidaActual) > 0);
+                    (data.Condition == ConditionType.Damaged && 
+                     (tropo.MaxHealth - tropo.CurrentHealth) > 0);
 
                 // Solo ejecutar si pasaron todas las verificaciones
                 if (targetOk && filterOk && conditionOk)
                 {
-                    int vidaFaltante = tropo.VidaMaxima - tropo.VidaActual;
+                    int vidaFaltante = tropo.MaxHealth - tropo.CurrentHealth;
                     int valorEfecto = data.Effects?[0]?.Value ?? 0;
                     int armaduraGanada = vidaFaltante * valorEfecto;
-                    tropo.armadura += armaduraGanada;
+                    tropo.ModificarArmadura(armaduraGanada);
                     Debug.Log($"Passive MissingHealth otorga {armaduraGanada} de armadura (vida faltante: {vidaFaltante})");
                 }
                 else
                 {
                     // Ejecutar versión "solo datos" sin filtros estrictos si queremos compatibilidad
                     // Por ahora, solo registrar warning si no coinciden los filtros
-                    if (data.Condition != ConditionType.None && data.Condition != ConditionType.MissingHealth)
+                    if (data.Condition != ConditionType.None && data.Condition != ConditionType.Damaged)
                     {
                         Debug.LogWarning($"Passive GainArmor: Condition {data.Condition} no mapeado para este caso");
                     }
@@ -69,8 +69,8 @@ public class AbilityRegistrator : MonoBehaviour
 
                 // Verificar ConditionType: Si es MissingHealth, solo si vida faltante
                 bool conditionOk = data.Condition == ConditionType.None ||
-                    (data.Condition == ConditionType.MissingHealth && 
-                     (tropo.VidaMaxima - tropo.VidaActual) > 0);
+                    (data.Condition == ConditionType.Damaged && 
+                     (tropo.MaxHealth - tropo.CurrentHealth) > 0);
 
                 if (targetOk && filterOk && conditionOk)
                 {
@@ -148,7 +148,7 @@ public class AbilityRegistrator : MonoBehaviour
                 // Condition podría ser MissingHealth, Fury, Bleed, etc.
                 // Si condition es None, siempre aplicar
                 bool conditionOk = data.Condition == ConditionType.None ||
-                    data.Condition == ConditionType.MissingHealth; // Para efectos de daño "bonus" por vida baja
+                    data.Condition == ConditionType.Damaged; // Para efectos de daño "bonus" por vida baja
 
                 if (targetOk && filterOk && conditionOk)
                 {
@@ -166,7 +166,7 @@ public class AbilityRegistrator : MonoBehaviour
 
         // OnHit + ModifyAttack -> Aumenta ataque al ser golpeado
         AbilityEffectExecutor.Register(TriggerType.OnHit, EffectType.ModifyAttack,
-            (data, tropoAtacante, board) =>
+            (data, tropaAtacante, board) =>
             {
                 // Para ModifyAttack, típicamente afecta al propio tropo que es golpeado
                 // Target ahora está en el primer efecto: data.Effects[0].Target
@@ -177,7 +177,7 @@ public class AbilityRegistrator : MonoBehaviour
                 if (targetOk && filterOk && conditionOk)
                 {
                     int bonificacion = data.Effects?[0]?.Value ?? 0;
-                    tropoAtacante.ataqueActual += bonificacion;
+                    tropaAtacante.ModificarAtaque(bonificacion);
                     Debug.Log($"OnHit ModifyAttack +{bonificacion} de ataque");
                 }
                 else
@@ -220,7 +220,7 @@ public class AbilityRegistrator : MonoBehaviour
 
         // OnDamaged + ModifyArmor -> Otorga armadura al recibir daño
         AbilityEffectExecutor.Register(TriggerType.OnDamaged, EffectType.ModifyArmor,
-            (data, tropoQueRecibe, board) =>
+            (data, tropaQueRecibe, board) =>
             {
                 // Target es el propio tropo
                 bool targetOk = data.Effects?[0]?.Target == TargetType.Self;
@@ -233,10 +233,10 @@ public class AbilityRegistrator : MonoBehaviour
 
                 if (targetOk && filterOk && conditionOk)
                 {
-                    int vidaFaltante = tropoQueRecibe.VidaMaxima - tropoQueRecibe.VidaActual;
+                    int vidaFaltante = tropaQueRecibe.MaxHealth - tropaQueRecibe.CurrentHealth;
                     int valorEfecto = data.Effects?[0]?.Value ?? 0;
                     int armaduraGanada = vidaFaltante * valorEfecto;
-                    tropoQueRecibe.armadura += armaduraGanada;
+                    tropaQueRecibe.Armor += armaduraGanada;
                     Debug.Log($"OnDamaged GainArmor: otorga {armaduraGanada} de armadura (vida faltante: {vidaFaltante})");
                 }
                 else
@@ -246,7 +246,7 @@ public class AbilityRegistrator : MonoBehaviour
             });
 
         // OnDeploy + SummonCard -> Invocar otra carta al jugar esta
-        AbilityEffectExecutor.Register(TriggerType.OnDeploy, EffectType.SummonCard,
+        AbilityEffectExecutor.Register(TriggerType.OnDeploy, EffectType.SummonUnit,
             (data, tropo, board) =>
             {
                 // Target ahora está en el primer efecto: data.Effects[0].Target
@@ -283,6 +283,163 @@ public class AbilityRegistrator : MonoBehaviour
                 else
                 {
                     Debug.LogWarning($"OnDeploy DrawCard: filtros inesperados");
+                }
+            });
+
+        // === ON KILL ===
+        // OnKill + SummonUnit -> Invocar otra carta al morir
+        AbilityEffectExecutor.Register(TriggerType.OnKill, EffectType.SummonUnit,
+            (data, tropo, board) =>
+            {
+                // Target ahora está en el primer efecto: data.Effects[0].Target
+                bool targetOk = data.Effects?[0]?.Target == TargetType.Self || data.Effects?[0]?.Target == TargetType.OwnPortal;
+                bool filterOk = data.Filter == FilterType.None || data.Filter == FilterType.SummonedFamily;
+                bool conditionOk = data.Condition == ConditionType.None;
+
+                if (targetOk && filterOk && conditionOk)
+                {
+                    int valor = data.Effects?[0]?.Value ?? 0;
+                    Debug.Log($"OnKill SummonUnit: invoca unidad (valor={valor})");
+                }
+                else
+                {
+                    Debug.LogWarning($"OnKill SummonUnit: filtros no coinciden");
+                }
+            });
+
+        // === ON DEATH ===
+        // OnDeath + ModifyHealth -> Modificar salud al morir
+        AbilityEffectExecutor.Register(TriggerType.OnDeath, EffectType.ModifyHealth,
+            (data, tropo, board) =>
+            {
+                // Target es el propio tropo
+                bool targetOk = data.Effects?[0]?.Target == TargetType.Self;
+
+                // Filter typically None
+                bool filterOk = data.Filter == FilterType.None;
+
+                // Condition
+                bool conditionOk = data.Condition == ConditionType.None;
+
+                if (targetOk && filterOk && conditionOk)
+                {
+                    int valor = data.Effects?[0]?.Value ?? 0;
+                    tropo.Curar(valor);
+                    Debug.Log($"OnDeath ModifyHealth: {valor} de vida curada");
+                }
+                else
+                {
+                    Debug.LogWarning($"OnDeath ModifyHealth: filtros no aplicables");
+                }
+});
+
+        // === ON UNIT SUMMONED ===
+        // OnUnitSummoned + GainAbility -> Otorgar habilidad al invocar una unidad
+        AbilityEffectExecutor.Register(TriggerType.OnUnitSummoned, EffectType.GainAbility,
+            (data, tropo, board) =>
+            {
+                // Target typically Self
+                bool targetOk = data.Effects?[0]?.Target == TargetType.Self;
+                // Filter typically None
+                bool filterOk = data.Filter == FilterType.None;
+                // Condition typically None
+                bool conditionOk = data.Condition == ConditionType.None;
+
+                if (targetOk && filterOk && conditionOk)
+                {
+                    // Grant the ability from the first effect
+                    if (data.Effects?[0]?.AbilityPasiveToGrant != null)
+                    {
+                        foreach (var passive in data.Effects[0].AbilityPasiveToGrant)
+                        {
+                            Debug.Log($"OnUnitSummoned GainAbility: otorga pasiva {passive}");
+                        }
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning($"OnUnitSummoned GainAbility: filtros no coinciden");
+                }
+            });
+
+        // === ON LANE CHANGED ===
+        // OnLaneChanged + Move -> Mover tropa a otro carril
+        AbilityEffectExecutor.Register(TriggerType.OnLaneChanged, EffectType.Move,
+            (data, tropo, board) =>
+            {
+                // Verificar objetivo
+                bool targetOk =
+                    data.Effects?[0]?.Target == TargetType.Self;
+
+                // Verificar destino del movimiento
+                bool destinationOk =
+                    data.Effects?[0]?.LaneDestination == LaneDestination.AdjacentLane;
+
+                // Verificar filtro
+                bool filterOk =
+                    data.Filter == FilterType.None;
+
+                // Verificar condición
+                bool conditionOk =
+                    data.Condition == ConditionType.None;
+
+                if (targetOk && destinationOk && filterOk && conditionOk)
+                {
+                    int newLane = data.Effects?[0]?.Value ?? 0;
+
+                    int currentLane = tropo.laneIndex;
+                    int totalLanes = 8;
+
+                    // Calcular nuevo carril
+                    int proposedLane = Mathf.Clamp(
+                        currentLane + newLane,
+                        0,
+                        totalLanes - 1
+                    );
+
+                    if (proposedLane != currentLane)
+                    {
+                        tropo.laneIndex = proposedLane;
+
+                        Debug.Log(
+                            $"OnLaneChanged Move: tropa movida del carril {currentLane} al {proposedLane}"
+                        );
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning(
+                        "OnLaneChanged Move: Target, Destination, Filter o Condition no coinciden"
+                    );
+                }
+            });
+
+
+        // === START ROUND ===
+        // StartRound + Heal -> Cura al comenzar la ronda
+        AbilityEffectExecutor.Register(TriggerType.StartRound, EffectType.Heal,
+            (data, tropo, board) =>
+            {
+                // Target típicamente Self o Ally
+                bool targetOk = data.Effects?[0]?.Target == TargetType.Self || 
+                               data.Effects?[0]?.Target == TargetType.SelectedAlly ||
+                               data.Effects?[0]?.Target == TargetType.OwnPortal;
+                // Filter típicamente None o Self
+                bool filterOk = data.Filter == FilterType.None || 
+                               data.Filter == FilterType.Self ||
+                               data.Filter == FilterType.AllyUnit;
+                // Condition típicamente None para Heal de inicio
+                bool conditionOk = data.Condition == ConditionType.None;
+
+                if (targetOk && filterOk && conditionOk)
+                {
+                    int valorCuracion = data.Effects?[0]?.Value ?? 0;
+                    tropo.Curar(valorCuracion);
+                    Debug.Log($"StartRound Heal: cura {valorCuracion} de vida al inicio de ronda");
+                }
+                else
+                {
+                    Debug.LogWarning($"StartRound Heal: filtros no coinciden - target={data.Effects?[0]?.Target}, filter={data.Filter}");
                 }
             });
 

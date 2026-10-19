@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Shark
   cost: 5
+  weight: 3
   descriptionAbility: When another unit drops to 2 HP or less, this unit performs
     an extra attack.
   phrase: 
   type: 1
+  role: 3
   rarity: 4
   family: 02000000
   imgType: {fileID: 0}
@@ -27,28 +29,33 @@ MonoBehaviour:
   - trigger: 7
     filter: 4
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 2
     comparison: 6
     compareValue: 2
     effects:
-    - effectType: 29
+    - effectType: 25
+      modify: 0
       duration: 0
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
-      quantity: 0
-      abilitiesToGrant: 
+      quantity: 1
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 5
   health: 5
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: 5746764926269108267, guid: c8c5112df9b5e2b478178d66392eaa44, type: 3}
+  anim: {fileID: 9100000, guid: ee8ad17e77ec45e4c99e8d486e296891, type: 2}
   abilityPassives: 10000000

@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Magic Rat
   cost: 5
+  weight: 4
   descriptionAbility: 'On Deploy: Transform all other units in this lane and adjacent
     lanes into Common Rats until this unit leaves play.'
   phrase: 
   type: 1
+  role: 7
   rarity: 3
   family: 0d00000011000000
   imgType: {fileID: 0}
@@ -27,28 +29,33 @@ MonoBehaviour:
   - trigger: 3
     filter: 1
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 22
+      modify: 0
       duration: 5
       target: 8
+      scalingType: 0
       laneRadius: 1
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 3
   health: 2
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -4098431566506622546, guid: 335180b4863093b41a60532bd6c46f8f, type: 3}
+  anim: {fileID: 9100000, guid: c80503f69bdbc9343b2511f1fec9dfde, type: 2}
   abilityPassives: 09000000

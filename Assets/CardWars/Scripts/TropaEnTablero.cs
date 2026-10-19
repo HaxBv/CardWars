@@ -1,6 +1,6 @@
+
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TropaEnTablero : MonoBehaviour
@@ -9,8 +9,8 @@ public class TropaEnTablero : MonoBehaviour
     public Tropa estadísticasVivas;
 
     [Header("Posición en Tablero")]
-    public int laneIndex; // Define en qué carril se colocó (ej: 0, 1, 2)
-    public bool esAliada; // Indica si pertenece al jugador local
+    public int laneIndex;
+    public bool esAliada;
 
     private List<RuntimeAbility> habilidadesActivas = new List<RuntimeAbility>();
 
@@ -25,18 +25,41 @@ public class TropaEnTablero : MonoBehaviour
 
         if (estadísticasVivas == null)
         {
-            Debug.LogError($"TropaEnTablero '{name}': falta asignar 'estadísticasVivas' (componente Tropa) en el Inspector.", this);
+            Debug.LogError($"TropaEnTablero '{name}': falta asignar 'estadísticasVivas' en el Inspector.", this);
             return;
         }
 
-        // 1. Registrarse automáticamente en el TableroManager
-        BoardManager.Instance.RegistrarTropa(this, esAliada);
+        // 1. Registrarse en BoardManager
+        if (BoardManager.Instance != null)
+        {
+            BoardManager.Instance.RegistrarTropa(this, esAliada);
+        }
 
-        estadísticasVivas.Inicializar(datosDeLaCarta.Attack, datosDeLaCarta.Health, datosDeLaCarta.Armor, datosDeLaCarta.Shield, datosDeLaCarta.ShieldArmor, datosDeLaCarta.Burn, datosDeLaCarta.DirectAttack);
+        // 2. Registrarse en PhasesSystem
+        var phasesSystem = FindFirstObjectByType<PhasesSystem>();
 
+        if (phasesSystem != null)
+        {
+            phasesSystem.RegistrarTropa(this);
+        }
+
+        // 3. Inicializar estadísticas
+        estadísticasVivas.Inicializar(
+            datosDeLaCarta.Attack,
+            datosDeLaCarta.Health,
+            datosDeLaCarta.Armor,
+            datosDeLaCarta.Shield,
+            datosDeLaCarta.ShieldArmor,
+            datosDeLaCarta.Burn,
+            datosDeLaCarta.Overstrike
+        );
+
+        // 4. Inicializar habilidades
         foreach (var habilidadConfig in datosDeLaCarta.Abilities)
         {
-            RuntimeAbility habilidadEnEjecucion = new RuntimeAbility(habilidadConfig, estadísticasVivas);
+            RuntimeAbility habilidadEnEjecucion =
+                new RuntimeAbility(habilidadConfig, estadísticasVivas);
+
             habilidadesActivas.Add(habilidadEnEjecucion);
             habilidadEnEjecucion.Inicializar();
         }
@@ -44,15 +67,26 @@ public class TropaEnTablero : MonoBehaviour
 
     private void OnDestroy()
     {
-        // 2. Limpiarse del TableroManager al morir
+        // 1. Eliminar del BoardManager
         if (BoardManager.Instance != null)
         {
             BoardManager.Instance.QuitarTropa(this);
         }
 
+        // 2. Eliminar del PhasesSystem
+        var phasesSystem = FindFirstObjectByType<PhasesSystem>();
+
+        if (phasesSystem != null)
+        {
+            phasesSystem.QuitarTropa(this);
+        }
+
+        // 3. Desvincular habilidades
         foreach (var habilidad in habilidadesActivas)
         {
             habilidad.Desvincular();
         }
+
+        habilidadesActivas.Clear();
     }
 }

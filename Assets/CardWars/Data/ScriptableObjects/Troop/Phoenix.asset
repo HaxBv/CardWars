@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Phoenix
   cost: 4
+  weight: 2
   descriptionAbility: 'On Death: Revives at the start of Phase 3 with full HP and
-    gets +1 ATK and +1 HP.'
+    permanently gets +1 ATK and +1 HP.'
   phrase: 
   type: 1
+  role: 1
   rarity: 4
   family: 0200000012000000
   imgType: {fileID: 0}
@@ -27,66 +29,84 @@ MonoBehaviour:
   - trigger: 9
     filter: 1
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
-    - effectType: 30
+    - effectType: 26
+      modify: 0
       duration: 4
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   - trigger: 22
     filter: 1
     condition: 0
-    laneRadius: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
-    - effectType: 11
-      duration: 1
+    - effectType: 32
+      modify: 0
+      duration: 0
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 9999
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 1
+      modify: 0
       duration: 1
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
     - effectType: 2
+      modify: 0
       duration: 1
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 1
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 1
   health: 3
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -4453784588268070965, guid: 22066b6ec7281c74abab65957bd58e6d, type: 3}
+  anim: {fileID: 9100000, guid: e0dee10bc0cdcba4ca63d33a1b7c0302, type: 2}
   abilityPassives: 0e000000

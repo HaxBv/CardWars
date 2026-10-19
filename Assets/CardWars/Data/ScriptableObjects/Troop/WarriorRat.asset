@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: Warrior Rat
   cost: 1
-  descriptionAbility: 'On Deploy: This unit gets +1 ATK this round.'
+  weight: 1
+  descriptionAbility: 'On Deploy: This unit gets +2 ATK this round.'
   phrase: 
   type: 1
+  role: 3
   rarity: 1
   family: 1100000013000000
   imgType: {fileID: 0}
@@ -26,27 +28,33 @@ MonoBehaviour:
   - trigger: 3
     filter: 1
     condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 1
+      modify: 1
       duration: 3
       target: 1
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
-      value: 1
+      cardSelection: 0
+      value: 2
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 2
   health: 1
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: -5131476662606064650, guid: 38b6ba0483639b34ea6f214222107784, type: 3}
+  anim: {fileID: 9100000, guid: 85d17e623fde59247806b87d41a18c1c, type: 2}
   abilityPassives: 

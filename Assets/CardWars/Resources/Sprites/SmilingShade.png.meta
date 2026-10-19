@@ -1,0 +1,999 @@
+fileFormatVersion: 2
+guid: 8472951a129c88441a6b73417b6f691b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4126795280975832674
+    second: SmilingShade_0
+  - first:
+      213: -2801791493059116247
+    second: SmilingShade_1
+  - first:
+      213: 8674146579743656886
+    second: SmilingShade_2
+  - first:
+      213: 5137931457061834689
+    second: SmilingShade_3
+  - first:
+      213: -8773449918050669131
+    second: SmilingShade_4
+  - first:
+      213: -6340994950033383886
+    second: SmilingShade_5
+  - first:
+      213: 7025098352949567344
+    second: SmilingShade_6
+  - first:
+      213: 30370957081422440
+    second: SmilingShade_7
+  - first:
+      213: 2715339775642559065
+    second: SmilingShade_8
+  - first:
+      213: 6867518013715839300
+    second: SmilingShade_9
+  - first:
+      213: -2649795239441839032
+    second: SmilingShade_10
+  - first:
+      213: 8711165353175428294
+    second: SmilingShade_11
+  - first:
+      213: -1106079056520620280
+    second: SmilingShade_12
+  - first:
+      213: -387025980725470682
+    second: SmilingShade_13
+  - first:
+      213: -4438026555598197390
+    second: SmilingShade_14
+  - first:
+      213: 249388625386770897
+    second: SmilingShade_15
+  - first:
+      213: 8152080674056711278
+    second: SmilingShade_16
+  - first:
+      213: 7072001479194891191
+    second: SmilingShade_17
+  - first:
+      213: -710813532656886864
+    second: SmilingShade_18
+  - first:
+      213: 418388055920550020
+    second: SmilingShade_19
+  - first:
+      213: 2227067249290282919
+    second: SmilingShade_20
+  - first:
+      213: 7374789764814906475
+    second: SmilingShade_21
+  - first:
+      213: -422534205572407175
+    second: SmilingShade_22
+  - first:
+      213: 5272020490573505999
+    second: SmilingShade_23
+  - first:
+      213: -2542436921710872184
+    second: SmilingShade_24
+  - first:
+      213: -2577236031150077717
+    second: SmilingShade_25
+  - first:
+      213: 3907897795792861208
+    second: SmilingShade_26
+  - first:
+      213: -8767923939619783297
+    second: SmilingShade_27
+  - first:
+      213: 1950470489071445707
+    second: SmilingShade_28
+  - first:
+      213: 4887373562838994493
+    second: SmilingShade_29
+  - first:
+      213: -1873517733619071349
+    second: SmilingShade_30
+  - first:
+      213: -5789980208332816133
+    second: SmilingShade_31
+  - first:
+      213: -8098610387762702518
+    second: SmilingShade_32
+  - first:
+      213: -2223479418817266019
+    second: SmilingShade_33
+  - first:
+      213: 5408914436800596482
+    second: SmilingShade_34
+  - first:
+      213: 8045290079651225023
+    second: SmilingShade_35
+  - first:
+      213: -8312137406954002424
+    second: SmilingShade_36
+  - first:
+      213: 3836537508855519899
+    second: SmilingShade_37
+  - first:
+      213: -4572733269612005383
+    second: SmilingShade_38
+  - first:
+      213: -311105089763939515
+    second: SmilingShade_39
+  - first:
+      213: -7558764156386715746
+    second: SmilingShade_40
+  - first:
+      213: -7176314021009518354
+    second: SmilingShade_41
+  - first:
+      213: 7755623210370328932
+    second: SmilingShade_42
+  - first:
+      213: -2410443992442697295
+    second: SmilingShade_43
+  - first:
+      213: 3174749063692322249
+    second: SmilingShade_44
+  - first:
+      213: 5450248530872340831
+    second: SmilingShade_45
+  - first:
+      213: 5147245595845304501
+    second: SmilingShade_46
+  - first:
+      213: -8673682657857579183
+    second: SmilingShade_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmilingShade_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e995da08e8daab6c0800000000000000
+      internalID: -4126795280975832674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1344
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92300894b790e19d0800000000000000
+      internalID: -2801791493059116247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1344
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb4a4f4b52c06870800000000000000
+      internalID: 8674146579743656886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_3
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1344
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfc97230799d4740800000000000000
+      internalID: 5137931457061834689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bde8e388c17e3680800000000000000
+      internalID: -8773449918050669131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1152
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ed6b060b24008a0800000000000000
+      internalID: -6340994950033383886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1152
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f9dbf3bb92e7160800000000000000
+      internalID: 7025098352949567344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_7
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1152
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86aa35c7936eb6000800000000000000
+      internalID: 30370957081422440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952e9a3b323dea520800000000000000
+      internalID: 2715339775642559065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 960
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449f0207f335e4f50800000000000000
+      internalID: 6867518013715839300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 960
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c4c89d4490a3bd0800000000000000
+      internalID: -2649795239441839032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_11
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 960
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc26b72cb644e870800000000000000
+      internalID: 8711165353175428294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807d69655fa66a0f0800000000000000
+      internalID: -1106079056520620280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_13
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 768
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ad20ccbe101aaf0800000000000000
+      internalID: -387025980725470682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 768
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27da1d18c56f862c0800000000000000
+      internalID: -4438026555598197390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_15
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 768
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1933b22a1067300800000000000000
+      internalID: 249388625386770897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c2a757e22022170800000000000000
+      internalID: 8152080674056711278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3d27250ebc42260800000000000000
+      internalID: 7072001479194891191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_18
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb127cabdea226f0800000000000000
+      internalID: -710813532656886864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_19
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 576
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480296b58b96ec500800000000000000
+      internalID: 418388055920550020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a78adc1dd128ee10800000000000000
+      internalID: 2227067249290282919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64aaf0c734885660800000000000000
+      internalID: 7374789764814906475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_22
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970a763f06bd22af0800000000000000
+      internalID: -422534205572407175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_23
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 384
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5e63d24baf92940800000000000000
+      internalID: 5272020490573505999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889f591171377bcd0800000000000000
+      internalID: -2542436921710872184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be846f40c71db3cd0800000000000000
+      internalID: -2577236031150077717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_26
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818f3c02754ab3630800000000000000
+      internalID: 3907897795792861208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_27
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 192
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7db151a1a3125680800000000000000
+      internalID: -8767923939619783297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc66cf56396711b10800000000000000
+      internalID: 1950470489071445707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_29
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e47a96c5073d340800000000000000
+      internalID: 4887373562838994493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_30
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b868d3f2c8deff5e0800000000000000
+      internalID: -1873517733619071349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmilingShade_31
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.2435626, y: 0.01153755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0c7c95dabd5afa0800000000000000
+      internalID: -5789980208332816133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 90d0f0b36ba2dc4499a6c81eb7f03105
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":336.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.24356259405612946,"y":0.011537550017237664},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SmilingShade_0: -4126795280975832674
+      SmilingShade_1: -2801791493059116247
+      SmilingShade_10: -2649795239441839032
+      SmilingShade_11: 8711165353175428294
+      SmilingShade_12: -1106079056520620280
+      SmilingShade_13: -387025980725470682
+      SmilingShade_14: -4438026555598197390
+      SmilingShade_15: 249388625386770897
+      SmilingShade_16: 8152080674056711278
+      SmilingShade_17: 7072001479194891191
+      SmilingShade_18: -710813532656886864
+      SmilingShade_19: 418388055920550020
+      SmilingShade_2: 8674146579743656886
+      SmilingShade_20: 2227067249290282919
+      SmilingShade_21: 7374789764814906475
+      SmilingShade_22: -422534205572407175
+      SmilingShade_23: 5272020490573505999
+      SmilingShade_24: -2542436921710872184
+      SmilingShade_25: -2577236031150077717
+      SmilingShade_26: 3907897795792861208
+      SmilingShade_27: -8767923939619783297
+      SmilingShade_28: 1950470489071445707
+      SmilingShade_29: 4887373562838994493
+      SmilingShade_3: 5137931457061834689
+      SmilingShade_30: -1873517733619071349
+      SmilingShade_31: -5789980208332816133
+      SmilingShade_4: -8773449918050669131
+      SmilingShade_5: -6340994950033383886
+      SmilingShade_6: 7025098352949567344
+      SmilingShade_7: 30370957081422440
+      SmilingShade_8: 2715339775642559065
+      SmilingShade_9: 6867518013715839300
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TroopCardData
   cardName: 'Max the kangaroo '
   cost: 5
+  weight: 3
   descriptionAbility: 'On Hit: Bounce the enemy unit hit. The second hit deals 3
     extra damage.'
   phrase: 
   type: 1
+  role: 1
   rarity: 3
   family: 0200000013000000
   imgType: {fileID: 0}
@@ -27,44 +29,56 @@ MonoBehaviour:
   - trigger: 5
     filter: 1
     condition: 0
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 20
+      modify: 0
       duration: 0
       target: 20
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 0
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   - trigger: 5
     filter: 1
     condition: 14
+    conditionLaneRadius: 0
+    conditionFamily: 0
     statFilter: 0
     comparison: 0
     compareValue: 0
     effects:
     - effectType: 12
+      modify: 1
       duration: 0
       target: 0
+      scalingType: 0
       laneRadius: 0
       familyTarget: 0
       rarityTarget: 0
       laneDestination: 0
+      cardSelection: 0
       value: 3
       quantity: 0
-      abilitiesToGrant: 
+      abilityPasiveToGrant: 
+      abilitiesToGrant: []
   attack: 2
   health: 5
   armor: 0
   shield: 0
   shieldArmor: 0
   burn: 0
-  directAttack: 0
-  imgCharInGame: {fileID: 0}
-  anim: {fileID: 0}
+  overstrike: 0
+  imgCharInGame: {fileID: 7159943926759656777, guid: 2d61c8e2a5755d548b7aa2e3164ce18a, type: 3}
+  anim: {fileID: 9100000, guid: 61f3b7a6094fd424da07a2288d8869ae, type: 2}
   abilityPassives: 

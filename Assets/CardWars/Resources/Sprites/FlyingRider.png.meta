@@ -1,0 +1,778 @@
+fileFormatVersion: 2
+guid: 3b74e4cff0888bf4494cab3afc847d4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5497227022992013371
+    second: FlyingRider_0
+  - first:
+      213: -4897421968055125591
+    second: FlyingRider_1
+  - first:
+      213: 1844375661083978017
+    second: FlyingRider_2
+  - first:
+      213: -5285466400650517184
+    second: FlyingRider_3
+  - first:
+      213: -286285168823191265
+    second: FlyingRider_4
+  - first:
+      213: -2634932792242668311
+    second: FlyingRider_5
+  - first:
+      213: 7090532647015863371
+    second: FlyingRider_6
+  - first:
+      213: -7273333975318364051
+    second: FlyingRider_7
+  - first:
+      213: -2061523649029742274
+    second: FlyingRider_8
+  - first:
+      213: 6238738559713449793
+    second: FlyingRider_9
+  - first:
+      213: -2233018172176253586
+    second: FlyingRider_10
+  - first:
+      213: 6366047909099384506
+    second: FlyingRider_11
+  - first:
+      213: 8843064216608591167
+    second: FlyingRider_12
+  - first:
+      213: 8697825463167821915
+    second: FlyingRider_13
+  - first:
+      213: 3903056297038262850
+    second: FlyingRider_14
+  - first:
+      213: 4554606384845077453
+    second: FlyingRider_15
+  - first:
+      213: -2974440909360868511
+    second: FlyingRider_16
+  - first:
+      213: -3497196255221868289
+    second: FlyingRider_17
+  - first:
+      213: -3234619518313655680
+    second: FlyingRider_18
+  - first:
+      213: 2356076701305103808
+    second: FlyingRider_19
+  - first:
+      213: 7451980732100684639
+    second: FlyingRider_20
+  - first:
+      213: 308564541880370830
+    second: FlyingRider_21
+  - first:
+      213: 8046906472581696986
+    second: FlyingRider_22
+  - first:
+      213: 2331542175664193781
+    second: FlyingRider_23
+  - first:
+      213: 1437403098040715269
+    second: FlyingRider_24
+  - first:
+      213: -860561885980705074
+    second: FlyingRider_25
+  - first:
+      213: 8932759597487137356
+    second: FlyingRider_26
+  - first:
+      213: 1822022460136556231
+    second: FlyingRider_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlyingRider_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c702ece52de5b3b0800000000000000
+      internalID: -5497227022992013371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 384
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a931eeeaacd80cb0800000000000000
+      internalID: -4897421968055125591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129694f44e9889910800000000000000
+      internalID: 1844375661083978017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 384
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045a6fcef4046a6b0800000000000000
+      internalID: -5285466400650517184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19b4dfd729e60cf0800000000000000
+      internalID: -286285168823191265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecf85ff596de6bd0800000000000000
+      internalID: -2634932792242668311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 288
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44d0bd00e1a66260800000000000000
+      internalID: 7090532647015863371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d608e54094def0b90800000000000000
+      internalID: -7273333975318364051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 288
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31e383e92ff363e0800000000000000
+      internalID: -2061523649029742274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_9
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14790427aa3749650800000000000000
+      internalID: 6238738559713449793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d317eadc9b201e0800000000000000
+      internalID: -2233018172176253586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 192
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abeacf438deb85850800000000000000
+      internalID: 6366047909099384506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d4cec6d00e8ba70800000000000000
+      internalID: 8843064216608591167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 192
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58277afc22e4b870800000000000000
+      internalID: 8697825463167821915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242315bd5017a2630800000000000000
+      internalID: 3903056297038262850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbba6c2066353f30800000000000000
+      internalID: 4554606384845077453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 96
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163d72090c9a8b6d0800000000000000
+      internalID: -2974440909360868511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff89ca9e886777fc0800000000000000
+      internalID: -3497196255221868289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_18
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 96
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0829e539fa25c13d0800000000000000
+      internalID: -3234619518313655680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c56ddcd64772b020800000000000000
+      internalID: 2356076701305103808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5baae95ef0ca6760800000000000000
+      internalID: 7451980732100684639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_21
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e868f05e0dd384400800000000000000
+      internalID: 308564541880370830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add060f6dca5caf60800000000000000
+      internalID: 8046906472581696986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f04e47714d4b5020800000000000000
+      internalID: 2331542175664193781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingRider_24
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 120
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5015508, y: 0.004377365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50843c1808ea2f310800000000000000
+      internalID: 1437403098040715269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 93c04a9c1c13f4741833dcf55bc1028d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":120.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5015507936477661,"y":0.0043773651123046879},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      FlyingRider_0: -5497227022992013371
+      FlyingRider_1: -4897421968055125591
+      FlyingRider_10: -2233018172176253586
+      FlyingRider_11: 6366047909099384506
+      FlyingRider_12: 8843064216608591167
+      FlyingRider_13: 8697825463167821915
+      FlyingRider_14: 3903056297038262850
+      FlyingRider_15: 4554606384845077453
+      FlyingRider_16: -2974440909360868511
+      FlyingRider_17: -3497196255221868289
+      FlyingRider_18: -3234619518313655680
+      FlyingRider_19: 2356076701305103808
+      FlyingRider_2: 1844375661083978017
+      FlyingRider_20: 7451980732100684639
+      FlyingRider_21: 308564541880370830
+      FlyingRider_22: 8046906472581696986
+      FlyingRider_23: 2331542175664193781
+      FlyingRider_24: 1437403098040715269
+      FlyingRider_3: -5285466400650517184
+      FlyingRider_4: -286285168823191265
+      FlyingRider_5: -2634932792242668311
+      FlyingRider_6: 7090532647015863371
+      FlyingRider_7: -7273333975318364051
+      FlyingRider_8: -2061523649029742274
+      FlyingRider_9: 6238738559713449793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
