@@ -36,7 +36,31 @@ public class BoardManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public bool TryGetTroopData(
+    GameObject troopObject,
+    out TroopCardData cardData)
+    {
+        cardData = null;
 
+        if (troopObject == null)
+            return false;
+
+        Transform current = troopObject.transform;
+
+        while (current != null)
+        {
+            if (activeTroops.TryGetValue(
+                current.gameObject, out TroopInfo info))
+            {
+                cardData = info.CardData;
+                return true;
+            }
+
+            current = current.parent;
+        }
+
+        return false;
+    }
     // Registrar una tropa cuando entra al tablero.
     public void RegisterTroop(
         GameObject troop,

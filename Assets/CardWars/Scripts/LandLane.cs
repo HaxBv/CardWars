@@ -4,7 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class LandLane : MonoBehaviour
 {
+    [Header("TERRAIN")]
     public int LaneID;
+  
+    public LaneTerrain Terrain = LaneTerrain.Land;
     private TroopCardData previewCard;
 
     [Header("DEPLOYMENT")]
@@ -40,6 +43,38 @@ public class LandLane : MonoBehaviour
             LaneRenderer = GetComponent<SpriteRenderer>();
 
         HideHighlight();
+    }
+
+    private bool CanDeployOnTerrain(TroopCardData cardData)
+    {
+        if (cardData == null)
+            return false;
+
+        // Todas las tropas pueden jugarse en tierra.
+        if (Terrain == LaneTerrain.Land)
+            return true;
+
+        if (cardData.AbilityPassives == null)
+            return false;
+
+        // AllTerrain permite ambos terrenos especiales.
+        if (cardData.AbilityPassives.Contains(AbilityPassive.AllTerrain))
+            return true;
+
+        switch (Terrain)
+        {
+            case LaneTerrain.Highground:
+                return cardData.AbilityPassives.Contains(
+                    AbilityPassive.Highground
+                );
+
+            case LaneTerrain.Aquatic:
+                return cardData.AbilityPassives.Contains(
+                    AbilityPassive.Aquatic
+                );
+        }
+
+        return false;
     }
     public void SetPreviewCard(TroopCardData cardData)
     {
@@ -126,6 +161,10 @@ public class LandLane : MonoBehaviour
         // Mostrar todas las casillas disponibles.
         ShowAvailable();
 
+        if (!CanDeployOnTerrain(previewCard))
+            return;
+
+
         bool isAlly = IsAllySide(worldPosition);
 
         GameObject firstTroop = isAlly ? allyFirstTroop : enemyFirstTroop;
@@ -160,8 +199,12 @@ public class LandLane : MonoBehaviour
 
     public bool DeployTroop(TroopCardData cardData, Vector2 worldPosition)
     {
+
         if (cardData == null || TroopPrefab == null ||
             TroopsContainer == null || !ContainsPosition(worldPosition))
+            return false;
+
+        if (!CanDeployOnTerrain(cardData))
             return false;
 
         RefreshTroopPositions();
@@ -272,23 +315,22 @@ public class LandLane : MonoBehaviour
 
         return true;
     }
-    private bool HasTeam(TroopCardData cardData)
-    {
-        return cardData != null &&
-               cardData.AbilityPassives != null &&
-               cardData.AbilityPassives.Contains(AbilityPassive.Team);
-    }
+   
     public void ShowAvailable()
     {
         RefreshTroopPositions();
 
-        // No iluminar el carril completo.
         if (LaneRenderer != null)
             LaneRenderer.color = Color.clear;
 
         HideSlotHighlights();
 
-        // Mostrar casillas disponibles para ambos bandos.
+        // No iluminar nada si la carta no es válida
+        // para este terreno.
+        if (!CanDeployOnTerrain(previewCard))
+            return;
+
+        // Mantener la lógica existente de Team.
         ShowSideSlots(true);
         ShowSideSlots(false);
     }

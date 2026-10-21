@@ -27,9 +27,6 @@ public class CardDisplay : MonoBehaviour
     public List<Sprite> RaritySprites;
 
 
-    [Header("CARD STATE")]
-    public GameObject DisabledOverlay;
-
     private void Start()
     {
         if (cardDataSO == null)
@@ -59,9 +56,15 @@ public class CardDisplay : MonoBehaviour
     }
     private void AplicarRareza()
     {
+        if (cardDataSO == null ||
+            CardDesing == null ||
+            RaritySprites == null)
+            return;
+
         int index = (int)cardDataSO.Rarity;
 
-        if (index >= 0 && index < RaritySprites.Count &&
+        if (index >= 0 &&
+            index < RaritySprites.Count &&
             RaritySprites[index] != null)
         {
             CardDesing.sprite = RaritySprites[index];
@@ -75,15 +78,27 @@ public class CardDisplay : MonoBehaviour
 
         var data = cardDataSO;
 
-        CardName.text = data.CardName;
-        CardCost.text = data.Cost.ToString();
-        CardWeight.text = data.Weight.ToString();
-        CardDescription.text = data.DescriptionAbility;
-        CardAttack.text = data.Attack.ToString();
-        CardHealth.text = data.Health.ToString();
+        if (CardName != null)
+            CardName.text = data.CardName;
 
-        if (data.ImageCard != null)
+        if (CardCost != null)
+            CardCost.text = data.Cost.ToString();
+
+        if (CardWeight != null)
+            CardWeight.text = data.Weight.ToString();
+
+        if (CardDescription != null)
+            CardDescription.text = data.DescriptionAbility;
+
+        if (CardAttack != null)
+            CardAttack.text = data.Attack.ToString();
+
+        if (CardHealth != null)
+            CardHealth.text = data.Health.ToString();
+
+        if (CardImg != null)
             CardImg.sprite = data.ImageCard;
+
         AplicarRareza();
     }
 

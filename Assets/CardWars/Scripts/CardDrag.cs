@@ -18,10 +18,18 @@ public class CardDrag : MonoBehaviour,
 
     private int originalSiblingIndex;
     private bool canDrag = true;
+    
+    private bool dragStarted;
+
+    public bool WasDraggedThisPress { get; private set; }
 
     public void SetDraggable(bool value)
     {
         canDrag = value;
+    }
+    public void ResetDragClickFlag()
+    {
+        WasDraggedThisPress = false;
     }
     private void Awake()
     {
@@ -35,7 +43,6 @@ public class CardDrag : MonoBehaviour,
 
         mainCamera = Camera.main;
 
-        DeckHandManager.Instance = GetComponentInParent<DeckHandManager>();
 
         ShowDescription(false);
     }
@@ -44,12 +51,25 @@ public class CardDrag : MonoBehaviour,
     {
         if (!canDrag)
             return;
-        // Colocar la carta por encima de las demás.
+        dragStarted = true;
+        WasDraggedThisPress = true;
+
         originalSiblingIndex = cardDisplay.transform.GetSiblingIndex();
         cardDisplay.transform.SetAsLastSibling();
 
+        // Primero restaurar la carta seleccionada y bajar las demás.
+        if (DeckHandManager.Instance != null)
+        {
+            DeckHandManager.Instance.SetCardDragState(
+                cardDisplay,
+                true
+            );
+        }
+
+        // Guardar la posición DESPUÉS de restaurarla.
         originalPosition = rectTransform.position;
         canvasGroup.blocksRaycasts = false;
+
 
         // Buscar todos los carriles.
         lanes = FindObjectsByType<LandLane>(
@@ -74,14 +94,7 @@ public class CardDrag : MonoBehaviour,
 
         UpdateLaneHighlight(eventData.position);
 
-        // Volver transparentes las demás cartas.
-        if (DeckHandManager.Instance != null)
-        {
-            DeckHandManager.Instance.SetOtherCardsAlpha(
-                cardDisplay,
-                true
-            );
-        }
+   
 
         ShowDescription(true);
     }
@@ -105,8 +118,10 @@ public class CardDrag : MonoBehaviour,
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (!canDrag)
+        if (!dragStarted)
             return;
+        dragStarted = false;
+
         canvasGroup.blocksRaycasts = true;
 
         UpdateLaneHighlight(eventData.position);
@@ -136,7 +151,7 @@ public class CardDrag : MonoBehaviour,
         // Restaurar la apariencia de la mano.
         if (DeckHandManager.Instance != null)
         {
-            DeckHandManager.Instance.SetOtherCardsAlpha(
+            DeckHandManager.Instance.SetCardDragState(
                 cardDisplay,
                 false
             );
@@ -150,8 +165,12 @@ public class CardDrag : MonoBehaviour,
             DeckHandManager hand =
                 cardDisplay.GetComponentInParent<DeckHandManager>();
 
+
             if (hand != null)
-                hand.ReturnCardToPool(cardDisplay.gameObject);
+                Debug.Log("Carta desplegada, devolviendo al pool");
+            hand.ReturnCardToPool(cardDisplay.gameObject);
+
+
         }
     }
 
@@ -220,9 +239,17 @@ public class CardDrag : MonoBehaviour,
 
     private void OnDisable()
     {
+        // No modificar la mano si esta carta no estaba siendo arrastrada.
+        if (!dragStarted)
+            return;
+        dragStarted = false;
+
+        if (canvasGroup != null)
+            canvasGroup.blocksRaycasts = true;
+
         if (DeckHandManager.Instance != null)
         {
-            DeckHandManager.Instance.SetOtherCardsAlpha(
+            DeckHandManager.Instance.SetCardDragState(
                 cardDisplay,
                 false
             );

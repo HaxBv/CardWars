@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 5520338559119039448}
   - component: {fileID: 4880449345173130089}
   - component: {fileID: 8507756948697721503}
-  - component: {fileID: 8261353239456169185}
+  - component: {fileID: 915644379013682857}
   m_Layer: 0
   m_Name: Troop
   m_TagString: Untagged
@@ -377,7 +377,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.70492125, y: -0.13990805}
+  m_Offset: {x: 0.0046852827, y: 0.35183686}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -387,7 +387,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.24753, y: 0.7201839}
+  m_Size: {x: 1.24753, y: 1.7036737}
   m_EdgeRadius: 0
 --- !u!114 &5520338559119039448
 MonoBehaviour:
@@ -488,7 +488,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
---- !u!114 &8261353239456169185
+--- !u!114 &915644379013682857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -497,9 +497,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4970265745392302620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c06c7f9d33d9644986a8d3db3e37a28, type: 3}
+  m_Script: {fileID: 11500000, guid: 38649704b95831040b453c704236f212, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CardInspectTrigger
+  m_EditorClassIdentifier: Assembly-CSharp::CardInspectorClick
+  cardDisplay: {fileID: 0}
 --- !u!1 &5313217476318594583
 GameObject:
   m_ObjectHideFlags: 0

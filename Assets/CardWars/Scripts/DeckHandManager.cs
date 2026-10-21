@@ -19,7 +19,7 @@ public class DeckHandManager : MonoBehaviour
     [Header("LAYOUT")]
     public float CardSpacing = 20f;
 
-    private List<TroopCardData> deck = new List<TroopCardData>();
+    [SerializeField]private List<TroopCardData> deck = new List<TroopCardData>();
     [Header("HAND ANIMATION")]
     [SerializeField] private float HideDistance = 350f;
     [SerializeField] private float AnimationDuration = 0.4f;
@@ -27,9 +27,6 @@ public class DeckHandManager : MonoBehaviour
     private Vector2 originalHandPosition;
     private Coroutine handAnimation;
 
-    [Header("CARD SELECTION")]
-    [Range(0f, 1f)]
-    public float UnselectedAlpha = 0.35f;
 
 
     [Header("OBJECT POOL")]
@@ -40,11 +37,16 @@ public class DeckHandManager : MonoBehaviour
 
     [Header("CARD PHASE RESTRICTIONS")]
     [SerializeField] private PhasesSystem phasesSystem;
-    [Range(0f, 1f)]
-    [SerializeField] private float BlockedCardAlpha = 0.4f;
 
-    private CardDisplay selectedCard;
-    private bool isDraggingCard;
+
+    [Header("CARD DRAG EFFECT")]
+    [SerializeField, Range(0f, 300f)]
+    private float OtherCardsLowerDistance = 100f;
+
+    [SerializeField, Min(0.01f)]
+    private float OtherCardsAnimationDuration = 0.25f;
+
+    private Dictionary<RectTransform, Coroutine> cardAnimations = new();
 
     private void Awake()
     {
@@ -83,6 +85,8 @@ public class DeckHandManager : MonoBehaviour
         PhasesSystem.OnFaseCombateIniciada -= HideHand;
         PhasesSystem.OnTimeOfDayStarted -= ShowHand;
     }
+
+
     private void OnPhaseChanged(TurnPhase phase)
     {
         RefreshCardAvailability();
@@ -125,37 +129,121 @@ public class DeckHandManager : MonoBehaviour
 
             bool canDrag = CanDragCard(display.cardDataSO);
 
-            // Bloquear o permitir el arrastre.
+            // Permitir o bloquear el arrastre.
             if (drag != null)
                 drag.SetDraggable(canDrag);
 
-            // CanvasGroup de la carta completa.
+            // Oscurecer la carta modificando sus colores.
+            CardVisualDimmer dimmer =
+                child.GetComponent<CardVisualDimmer>();
+
+            if (dimmer != null)
+                dimmer.SetDarkened(!canDrag);
+
+            // CanvasGroup de toda la carta.
             CanvasGroup group = child.GetComponent<CanvasGroup>();
 
             if (group == null)
                 group = child.gameObject.AddComponent<CanvasGroup>();
 
-            // Oscurecer las cartas no disponibles.
-            if (display.DisabledOverlay != null)
-                display.DisabledOverlay.SetActive(!canDrag);
-
-            // La transparencia solo se usa durante el arrastre.
-            group.alpha = isDraggingCard && display != selectedCard
-                ? UnselectedAlpha
-                : 1f;
-
-            // Mantener la posibilidad de recibir clics.
+            // Transparencia únicamente durante el arrastre.
+            group.alpha = 1f;
+            // Mantener los clics habilitados.
             group.blocksRaycasts = true;
         }
     }
 
-    public void SetOtherCardsAlpha(CardDisplay card, bool isSelected)
+    public void SetCardDragState(CardDisplay selectedCard, bool isDragging)
     {
-        isDraggingCard = isSelected;
-        selectedCard = isSelected ? card : null;
+        foreach (Transform child in CardsInHand)
+        {
+            if (!child.gameObject.activeSelf)
+                continue;
 
-        RefreshCardAvailability();
+            RectTransform rect = child as RectTransform;
+            CardDisplay display = child.GetComponentInChildren<CardDisplay>(true);
+
+            if (rect == null || display == null)
+                continue;
+
+            // Durante el arrastre, la carta seleccionada permanece arriba.
+            if (isDragging && display == selectedCard)
+            {
+                StopCardAnimation(rect);
+
+                rect.anchoredPosition = new Vector2(
+                    rect.anchoredPosition.x,
+                    0f
+                );
+
+                continue;
+            }
+
+            // Las demás bajan; al soltar, todas regresan.
+            float targetY = isDragging ? -OtherCardsLowerDistance : 0f;
+
+            AnimateCard(rect, targetY);
+        }
     }
+    private void StopCardAnimation(RectTransform rect)
+    {
+        if (rect == null)
+            return;
+
+        if (cardAnimations.TryGetValue(rect, out Coroutine animation))
+        {
+            if (animation != null)
+                StopCoroutine(animation);
+
+            cardAnimations.Remove(rect);
+        }
+    }
+    private void AnimateCard(RectTransform card, float targetY)
+    {
+        // Detener cualquier animación anterior de esta carta.
+        StopCardAnimation(card);
+
+        // Iniciar la nueva animación.
+        cardAnimations[card] =
+            StartCoroutine(MoveCard(card, targetY));
+    }
+
+    private IEnumerator MoveCard(RectTransform card, float targetY)
+    {
+        float startY = card.anchoredPosition.y;
+        float elapsed = 0f;
+
+        float duration = Mathf.Max(
+            0.01f,
+            OtherCardsAnimationDuration
+        );
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+
+            float t = Mathf.Clamp01(elapsed / duration);
+            float smooth = Mathf.SmoothStep(0f, 1f, t);
+
+            // Animar solamente Y y conservar la X actual.
+            card.anchoredPosition = new Vector2(
+                card.anchoredPosition.x,
+                Mathf.Lerp(startY, targetY, smooth)
+            );
+
+            yield return null;
+        }
+
+        card.anchoredPosition = new Vector2(
+            card.anchoredPosition.x,
+            targetY
+        );
+
+        cardAnimations.Remove(card);
+    }
+
+
+
     private void CreateDeck()
     {
         deck.Clear();
@@ -164,7 +252,23 @@ public class DeckHandManager : MonoBehaviour
             return;
 
         foreach (TroopCardData card in DataBase.TroopCardByID.Values)
-            deck.Add(card);
+        {
+            if (card == null)
+                continue;
+
+            // Obtener las copias máximas según la rareza.
+            int copies = card.MaxDeckCopies;
+
+            // Excluir Token y rarezas no permitidas.
+            if (copies <= 0)
+                continue;
+
+            // Agregar las copias de esta carta al mazo.
+            for (int i = 0; i < copies; i++)
+            {
+                deck.Add(card);
+            }
+        }
 
         // Barajar el mazo.
         for (int i = deck.Count - 1; i > 0; i--)
@@ -174,7 +278,10 @@ public class DeckHandManager : MonoBehaviour
             (deck[i], deck[randomIndex]) =
                 (deck[randomIndex], deck[i]);
         }
+
+        Debug.Log($"Mazo generado con {deck.Count} cartas.");
     }
+
 
     public void DrawCard()
     {
@@ -197,33 +304,78 @@ public class DeckHandManager : MonoBehaviour
         if (card == null)
             return;
 
-        card.SetActive(false);
+        // Buscar el objeto principal de la carta en CardsInHand.
+        Transform cardRoot = card.transform;
 
-        card.transform.SetParent(CardPool, false);
+        while (cardRoot.parent != null &&
+               cardRoot.parent != CardsInHand)
+        {
+            cardRoot = cardRoot.parent;
+        }
 
-        pooledCards.Push(card);
+        if (cardRoot.parent != CardsInHand)
+        {
+            Debug.LogWarning("La carta no pertenece a CardsInHand.");
+            return;
+        }
+
+        GameObject rootObject = cardRoot.gameObject;
+        RectTransform rect = rootObject.GetComponent<RectTransform>();
+
+        if (rect != null)
+        {
+            StopCardAnimation(rect);
+
+            rect.anchoredPosition = new Vector2(
+                rect.anchoredPosition.x,
+                0f
+            );
+        }
+
+        rootObject.SetActive(false);
+        rootObject.transform.SetParent(CardPool, false);
+
+        pooledCards.Push(rootObject);
 
         RefreshHand();
     }
-
     private void AddCardToHand(TroopCardData card)
     {
         GameObject newCard;
 
+        // Obtener una carta del pool o crear una nueva.
         if (pooledCards.Count > 0)
         {
-            // Reutilizar una carta existente.
             newCard = pooledCards.Pop();
-
             newCard.transform.SetParent(CardsInHand, false);
         }
         else
         {
-            // Crear una carta solamente si el pool está vacío.
             newCard = Instantiate(CardPrefab, CardsInHand);
         }
 
-        CardDisplay display = newCard.GetComponentInChildren<CardDisplay>(true);
+        // Cancelar animaciones anteriores y restaurar posición.
+        RectTransform newRect = newCard.GetComponent<RectTransform>();
+
+        if (newRect != null)
+        {
+            StopCardAnimation(newRect);
+
+            newRect.anchoredPosition = new Vector2(
+                newRect.anchoredPosition.x,
+                0f
+            );
+        }
+
+        CardDisplay display =
+            newCard.GetComponentInChildren<CardDisplay>(true);
+
+        CardVisualDimmer dimmer =
+            newCard.GetComponent<CardVisualDimmer>();
+
+        // Restaurar los colores originales.
+        if (dimmer != null)
+            dimmer.SetDarkened(false);
 
         if (display != null)
         {
@@ -231,7 +383,11 @@ public class DeckHandManager : MonoBehaviour
             display.AplicarData();
         }
 
-        CanvasGroup group = newCard.GetComponentInChildren<CanvasGroup>(true);
+        // Guardar los colores actuales de la nueva carta.
+        if (dimmer != null)
+            dimmer.CacheOriginalColors();
+
+        CanvasGroup group = newCard.GetComponent<CanvasGroup>();
 
         if (group != null)
         {
@@ -242,9 +398,10 @@ public class DeckHandManager : MonoBehaviour
         newCard.SetActive(true);
 
         RefreshHand();
-        RefreshCardAvailability();
 
+        RefreshCardAvailability();
     }
+
 
     public int GetHandCount()
     {
@@ -297,9 +454,9 @@ public class DeckHandManager : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             cards[i].anchoredPosition = new Vector2(
-                startX + i * step,
-                0f
-            );
+            startX + i * step,
+            cards[i].anchoredPosition.y);
+
         }
     }
 

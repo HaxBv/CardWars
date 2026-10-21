@@ -234,7 +234,7 @@ public enum AbilityPassive
     AreaDamage,
     LifeSteal, 
     Aquatic, 
-    HighGround, 
+    Highground, 
     AllTerrain, 
     Frenzy, 
     Armored,
@@ -462,4 +462,12 @@ public enum TimeOfDay
 {
     Alba,
     Ocaso
+}
+
+public enum LaneTerrain
+{
+    None,
+    Land,
+    Highground,
+    Aquatic
 }

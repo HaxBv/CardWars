@@ -125,5 +125,33 @@ public class CardData : ScriptableObject
     public Sprite ImageCard => imgCard;
     public List<AbilityData> Abilities => abilities;
 
+    public int MaxDeckCopies
+    {
+        get
+        {
+            switch (rarity)
+            {
+                case CardRarity.Common:
+                    return 5;
 
+                case CardRarity.Rare:
+                    return 4;
+
+                case CardRarity.Epic:
+                    return 3;
+
+                case CardRarity.Mythic:
+                    return 2;
+
+                case CardRarity.Legendary:
+                    return 1;
+
+                case CardRarity.Token:
+                    return 0;
+
+                default:
+                    return 0;
+            }
+        }
+    }
 }
