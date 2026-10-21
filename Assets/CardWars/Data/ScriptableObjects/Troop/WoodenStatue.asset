@@ -23,7 +23,7 @@ MonoBehaviour:
   family: 05000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
-  imgCard: {fileID: 0}
+  imgCard: {fileID: 21300000, guid: fb5e458a8cbaecf40a6511843585a439, type: 3}
   abilities: []
   isMelee: 1
   attack: 0

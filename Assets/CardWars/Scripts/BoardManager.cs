@@ -1,114 +1,109 @@
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
-    private static BoardManager instancia;
+    public static BoardManager Instance;
+
+    [Header("BOARD")]
+    public LandLane SelectedLane;
+
+    private Dictionary<GameObject, TroopInfo> activeTroops = new();
+    public static event Action<GameObject> OnTroopDeployed;
+    public static event Action<GameObject> OnTroopDied;
+
+    public static event Action<GameObject, int, int> OnTroopMoved;
+
+    public static event Action OnCombatStarted;
+    public static event Action OnCombatEnded;
+    private class TroopInfo
+    {
+        public TroopCardData CardData;
+        public int LaneID;
+        public bool IsAlly;
+    }
 
     private void Awake()
     {
-        // Registrar ejecutores de habilidades al iniciar
-        var registrador = FindFirstObjectByType<AbilityRegistrator>();
-        if (registrador != null)
+        if (Instance == null)
         {
-            registrador.RegisterBasicAbilities();
+            Instance = this;
         }
-        else
-        {
-            Debug.LogWarning("AbilityRegistrator no encontrado en la escena. Las habilidades no tendrán ejecutores registrados.");
-        }
-        if (instancia == null)
-        {
-            instancia = this;
-        }
-        else if (instancia != this)
+        else if (Instance != this)
         {
             Destroy(gameObject);
         }
     }
 
-    public static BoardManager Instance
+    // Registrar una tropa cuando entra al tablero.
+    public void RegisterTroop(
+        GameObject troop,
+        TroopCardData cardData,
+        int laneID,
+        bool isAlly)
     {
-        get
+        if (troop == null || cardData == null)
+            return;
+
+        activeTroops[troop] = new TroopInfo
         {
-            if (instancia == null)
-            {
-                instancia = FindFirstObjectByType<BoardManager>();
-            }
-
-            if (instancia == null)
-            {
-                var objeto = new GameObject("BoardManager");
-                instancia = objeto.AddComponent<BoardManager>();
-            }
-
-            return instancia;
-        }
+            CardData = cardData,
+            LaneID = laneID,
+            IsAlly = isAlly
+        };
     }
 
-    // Listas globales para rastrear las tropas activas en la escena
-    [SerializeField] private List<TropaEnTablero> tropasAliadas = new List<TropaEnTablero>();
-    [SerializeField] private List<TropaEnTablero> tropasEnemigas = new List<TropaEnTablero>();
-
-    
-
-    /// <block>
-    /// Registra una tropa cuando entra al juego. 
-    /// Este método debes llamarlo desde 'TropaEnTablero' en su Start o AlEntrarAlTablero.
-    /// </block>
-    public void RegistrarTropa(TropaEnTablero tropa, bool esAliada)
+    // Quitar una tropa cuando muere o abandona el tablero.
+    public void UnregisterTroop(GameObject troop)
     {
-        if (esAliada)
-        {
-            if (!tropasAliadas.Contains(tropa)) tropasAliadas.Add(tropa);
-        }
-        else
-        {
-            if (!tropasEnemigas.Contains(tropa)) tropasEnemigas.Add(tropa);
-        }
+        if (troop != null)
+            activeTroops.Remove(troop);
     }
 
-    /// <block>
-    /// Remueve la tropa de las listas cuando muere o regresa a la mano.
-    /// </block>
-    public void QuitarTropa(TropaEnTablero tropa)
+    // Comprobar si una carta posee Team.
+    public bool HasTeam(TroopCardData cardData)
     {
-        if (tropasAliadas.Contains(tropa)) tropasAliadas.Remove(tropa);
-        if (tropasEnemigas.Contains(tropa)) tropasEnemigas.Remove(tropa);
+        return cardData != null &&
+               cardData.AbilityPassives != null &&
+               cardData.AbilityPassives.Contains(AbilityPassive.Team);
     }
 
-    /// <block>
-    /// LÓGICA REQUERIDA POR KONQUEST: 
-    /// Cuenta cuántos enemigos válidos hay en el mismo carril considerando un radio/rango.
-    /// </block>
-    public int ContarEnemigosEnCarril(Tropa poseedorStats, int rango)
+    // Comprobar si alguna tropa del bando tiene Team en ese carril.
+    public bool HasTeamInLane(int laneID, bool isAlly)
     {
-        // 1. Conseguimos el componente principal de la tropa que pregunta
-        TropaEnTablero dueño = poseedorStats.GetComponent<TropaEnTablero>();
-        if (dueño == null) return 0;
-
-        int carrilOrigen = dueño.laneIndex;
-        int contador = 0;
-
-        // 2. Determinamos cuál es la lista de enemigos de esta carta
-        // Si el dueño es aliado, busca en la lista de enemigos. Si es enemigo, busca en aliados.
-        List<TropaEnTablero> listaEnemigos = tropasAliadas.Contains(dueño) ? tropasEnemigas : tropasAliadas;
-
-        // 3. Evaluamos cada enemigo en la lista
-        foreach (var enemigo in listaEnemigos)
+        foreach (var entry in activeTroops)
         {
-            // Calculamos la distancia de carriles en valor absoluto (por si el radio abarca carriles adyacentes)
-            int distanciaCarriles = Mathf.Abs(enemigo.laneIndex - carrilOrigen);
+            if (entry.Key == null)
+                continue;
 
-            // Si está dentro del rango/radio (ej: rango 0 significa estrictamente el mismo carril)
-            if (distanciaCarriles <= rango)
+            TroopInfo troop = entry.Value;
+
+            if (troop.LaneID == laneID &&
+                troop.IsAlly == isAlly &&
+                HasTeam(troop.CardData))
             {
-                contador++;
+                return true;
             }
         }
 
-        Debug.Log($"TableroManager: Detectados {contador} enemigos en el carril {carrilOrigen} (Radio: {rango}) para {dueño.name}.");
-        return contador;
+        return false;
+    }
+
+    // Determinar si dos tropas pueden compartir carril.
+    public bool CanShareLane(
+        TroopCardData incomingCard,
+        int laneID,
+        bool isAlly)
+    {
+        return HasTeam(incomingCard) ||
+               HasTeamInLane(laneID, isAlly);
+    }
+
+    // Registrar el carril que estamos seleccionando.
+    public void SetSelectedLane(LandLane lane)
+    {
+        SelectedLane = lane;
     }
 }

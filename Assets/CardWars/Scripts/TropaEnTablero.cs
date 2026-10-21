@@ -32,7 +32,6 @@ public class TropaEnTablero : MonoBehaviour
         // 1. Registrarse en BoardManager
         if (BoardManager.Instance != null)
         {
-            BoardManager.Instance.RegistrarTropa(this, esAliada);
         }
 
         // 2. Registrarse en PhasesSystem
@@ -70,7 +69,6 @@ public class TropaEnTablero : MonoBehaviour
         // 1. Eliminar del BoardManager
         if (BoardManager.Instance != null)
         {
-            BoardManager.Instance.QuitarTropa(this);
         }
 
         // 2. Eliminar del PhasesSystem

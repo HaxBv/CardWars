@@ -23,7 +23,7 @@ MonoBehaviour:
   family: 1100000006000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
-  imgCard: {fileID: 0}
+  imgCard: {fileID: 21300000, guid: 0ff94de93d07a624b85a032499ac98d5, type: 3}
   abilities:
   - trigger: 3
     filter: 0
@@ -62,6 +62,7 @@ MonoBehaviour:
       quantity: 0
       abilityPasiveToGrant: 
       abilitiesToGrant: []
+  isMelee: 0
   attack: 2
   health: 1
   armor: 0

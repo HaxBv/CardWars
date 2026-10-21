@@ -2,9 +2,12 @@ using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PhasesSystem : MonoBehaviour
 {
+
+    public static PhasesSystem Instance;
     // ==========================================
     // EVENTS - COMPATIBILIDAD
     // ==========================================
@@ -12,6 +15,8 @@ public class PhasesSystem : MonoBehaviour
     public static event Action OnFinDeTurno;
     public static event Action OnFaseCombateIniciada;
     public static event Action OnFinDelCombate;
+    public static event Action<TurnPhase> OnPhaseChanged;
+
 
     // ==========================================
     // EVENTS - RONDA Y MOMENTO DEL DÍA
@@ -76,6 +81,13 @@ public class PhasesSystem : MonoBehaviour
     [SerializeField] private Sprite albaMap;
     [SerializeField] private Sprite ocasoMap;
 
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
     private void ActualizarMapa()
     {
         if (mapRenderer == null)
@@ -260,6 +272,7 @@ public class PhasesSystem : MonoBehaviour
                 OnFaseCombateIniciada?.Invoke();
                 break;
         }
+        OnPhaseChanged?.Invoke(currentPhase);
 
         Debug.Log(
             $"Round {currentRound} | " +

@@ -27,7 +27,7 @@ MonoBehaviour:
   family: 0f000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
-  imgCard: {fileID: 0}
+  imgCard: {fileID: 21300000, guid: 5f9e6a4bf4796ac42abbb49e9d8f518a, type: 3}
   abilities:
   - trigger: 2
     filter: 0

@@ -23,7 +23,7 @@ MonoBehaviour:
   family: 1100000013000000
   imgType: {fileID: 0}
   imgRarity: {fileID: 0}
-  imgCard: {fileID: 0}
+  imgCard: {fileID: 21300000, guid: c14e5d0afe8766c4493e485ab1a7cf48, type: 3}
   abilities:
   - trigger: 3
     filter: 1

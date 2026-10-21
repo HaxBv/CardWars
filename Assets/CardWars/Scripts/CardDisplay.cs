@@ -2,8 +2,8 @@
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class CardDisplay : MonoBehaviour
 {
@@ -16,15 +16,26 @@ public class CardDisplay : MonoBehaviour
     public TextMeshProUGUI CardCost;
     public TextMeshProUGUI CardWeight;
     public TextMeshProUGUI CardDescription;
-
+    public GameObject CardDescriptionPanel;
     public TextMeshProUGUI CardAttack;
     public TextMeshProUGUI CardHealth;
 
     public Image CardImg;
 
+    [Header("CARD RARITY DESIGN")]
+    public Image CardDesing;
+    public List<Sprite> RaritySprites;
+
+
+    [Header("CARD STATE")]
+    public GameObject DisabledOverlay;
+
     private void Start()
     {
-        MostrarTropaAleatoria();
+        if (cardDataSO == null)
+            MostrarTropaAleatoria();
+        else
+            AplicarData();
     }
 
     [Button]
@@ -32,46 +43,57 @@ public class CardDisplay : MonoBehaviour
     {
         if (DataBase == null || DataBase.TroopCardByID == null ||
             DataBase.TroopCardByID.Count == 0)
-        {
-            Debug.LogWarning("No hay tropas disponibles en la base de datos.");
             return;
-        }
 
-        // Obtener todos los IDs registrados
         List<int> ids = new List<int>(DataBase.TroopCardByID.Keys);
 
-        // Escoger un ID aleatorio
-        int randomIndex = Random.Range(0, ids.Count);
-        int randomID = ids[randomIndex];
+        int randomID = ids[Random.Range(0, ids.Count)];
 
-        // Buscar la tropa correspondiente
-        cardDataSO = DataBase.TroopCardByID[randomID];
-
-        Debug.Log($"Tropa seleccionada: {cardDataSO.CardName} | ID: {randomID}");
-
-        AplicarData();
+        MostrarTropa(DataBase.TroopCardByID[randomID]);
     }
 
+    public void MostrarTropa(TroopCardData data)
+    {
+        cardDataSO = data;
+        AplicarData();
+    }
+    private void AplicarRareza()
+    {
+        int index = (int)cardDataSO.Rarity;
+
+        if (index >= 0 && index < RaritySprites.Count &&
+            RaritySprites[index] != null)
+        {
+            CardDesing.sprite = RaritySprites[index];
+        }
+    }
     [Button]
     public void AplicarData()
     {
         if (cardDataSO == null)
-        {
-            Debug.LogWarning("No se ha asignado un TroopCardData.");
             return;
-        }
 
-        var Data = cardDataSO;
+        var data = cardDataSO;
 
-        CardName.text = Data.CardName;
-        CardCost.text = Data.Cost.ToString();
-        CardWeight.text = Data.Weight.ToString();
-        CardDescription.text = Data.DescriptionAbility;
+        CardName.text = data.CardName;
+        CardCost.text = data.Cost.ToString();
+        CardWeight.text = data.Weight.ToString();
+        CardDescription.text = data.DescriptionAbility;
+        CardAttack.text = data.Attack.ToString();
+        CardHealth.text = data.Health.ToString();
 
-        CardAttack.text = Data.Attack.ToString();
-        CardHealth.text = Data.Health.ToString();
+        if (data.ImageCard != null)
+            CardImg.sprite = data.ImageCard;
+        AplicarRareza();
+    }
 
-        if(Data.ImageCard != null)
-        CardImg.sprite = Data.ImageCard;
+    [Button]
+    public void MostrarTropaPorID(int id)
+    {
+        if (DataBase == null || DataBase.TroopCardByID == null)
+            return;
+
+        if (DataBase.TroopCardByID.TryGetValue(id, out TroopCardData data))
+            MostrarTropa(data);
     }
 }
