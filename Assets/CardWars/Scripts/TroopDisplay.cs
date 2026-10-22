@@ -42,10 +42,14 @@ public class TroopDisplay : MonoBehaviour
         }
 
         // ESTADÍSTICAS
+        RefreshStats(data.Attack, data.Health);
+    }
+    public void RefreshStats(int attack, int health)
+    {
         if (AttackText != null)
-            AttackText.text = data.Attack.ToString();
+            AttackText.text = attack.ToString();
 
         if (HealthText != null)
-            HealthText.text = data.Health.ToString();
+            HealthText.text = health.ToString();
     }
 }

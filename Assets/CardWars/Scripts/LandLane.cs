@@ -275,16 +275,28 @@ public class LandLane : MonoBehaviour
             TroopsContainer
         );
 
-        TroopDisplay troopDisplay = newTroop.GetComponentInChildren<TroopDisplay>();
+        TroopInGame troop = newTroop.GetComponentInChildren<TroopInGame>();
 
-        if (troopDisplay == null)
+        if (troop == null)
+        {
+            Debug.LogError("No se encontró TroopInGame en el prefab.");
+            Destroy(newTroop);
+            return false;
+        }
+
+        if (newTroop.GetComponentInChildren<TroopDisplay>() == null)
         {
             Debug.LogError("No se encontró TroopDisplay.");
             Destroy(newTroop);
             return false;
         }
 
-        troopDisplay.Initialize(cardData, isAlly);
+        // Inicializar estadísticas y visuales.
+        troop.Initialize(cardData, isAlly);
+
+        // Escuchar cuándo muere esta tropa.
+        troop.OnDeath += HandleTroopDeath;
+
 
         BoardManager.Instance.RegisterTroop(
             newTroop,
@@ -313,9 +325,46 @@ public class LandLane : MonoBehaviour
                   $"Bando: {(isAlly ? "Aliado" : "Enemigo")} | " +
                   $"Posición: {(spawnPoint == firstSlot ? "Frente" : "Atrás")}");
 
+        troop.NotifyDeploy();
         return true;
+
+
+
     }
-   
+
+    private void HandleTroopDeath(TroopInGame troop)
+    {
+        if (troop == null)
+            return;
+
+        GameObject deadTroop = troop.gameObject;
+
+        // Liberar la posición ocupada.
+        if (allyFirstTroop == deadTroop)
+            allyFirstTroop = null;
+
+        else if (allySecondTroop == deadTroop)
+            allySecondTroop = null;
+
+        else if (enemyFirstTroop == deadTroop)
+            enemyFirstTroop = null;
+
+        else if (enemySecondTroop == deadTroop)
+            enemySecondTroop = null;
+
+        // Dejar de escuchar el evento.
+        troop.OnDeath -= HandleTroopDeath;
+
+        // Eliminar el registro del tablero.
+        BoardManager.Instance?.UnregisterTroop(deadTroop);
+
+        // Si hay una segunda tropa, moverla al frente.
+        RefreshTroopPositions();
+
+        // Retirar la tropa del escenario.
+        Destroy(deadTroop);
+    }
+
     public void ShowAvailable()
     {
         RefreshTroopPositions();

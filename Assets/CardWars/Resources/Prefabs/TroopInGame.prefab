@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 8576038811640068682}
   - component: {fileID: 595723509269811950}
   - component: {fileID: 5520338559119039448}
+  - component: {fileID: 4557033942814561294}
   - component: {fileID: 4880449345173130089}
   - component: {fileID: 8507756948697721503}
   - component: {fileID: 915644379013682857}
@@ -407,6 +408,18 @@ MonoBehaviour:
   IsAlly: 0
   AttackText: {fileID: 4028871861069215770}
   HealthText: {fileID: 4500778415220243311}
+--- !u!114 &4557033942814561294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4970265745392302620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54b5d66276d42a40944af449b4a3372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TroopInGame
 --- !u!95 &4880449345173130089
 Animator:
   serializedVersion: 7
