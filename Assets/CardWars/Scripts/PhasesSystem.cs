@@ -34,6 +34,8 @@ public class PhasesSystem : MonoBehaviour
     public static event Action OnOcasoStarted;
     public static event Action OnOcasoEnded;
 
+
+
     // ==========================================
     // ROUND / TIME OF DAY
     // ==========================================
@@ -65,7 +67,9 @@ public class PhasesSystem : MonoBehaviour
     // ==========================================
 
     public int CurrentRound => currentRound;
+    private bool combatInProgress;
 
+    public bool IsCombatInProgress => combatInProgress;
     public TimeOfDay CurrentTimeOfDay => currentTimeOfDay;
 
     public TurnPhase CurrentPhase => currentPhase;
@@ -205,9 +209,14 @@ public class PhasesSystem : MonoBehaviour
     // TURN ADVANCE
     // ==========================================
 
+   
     [Button]
     public void AvanzarTurno()
     {
+        // No permitir avanzar mientras se resuelve el combate.
+        if (combatInProgress)
+            return;
+
         OnFinDeTurno?.Invoke();
 
         if (pasoTurnoActual == 5)
@@ -226,6 +235,7 @@ public class PhasesSystem : MonoBehaviour
 
         ActualizarEstadoTurno();
     }
+
 
     // ==========================================
     // TURN STATE
@@ -264,13 +274,14 @@ public class PhasesSystem : MonoBehaviour
 
             case 5:
                 currentPhase = TurnPhase.CombatTurn;
-
+                combatInProgress = true;
                 Debug.Log(
                     $"Combat started - {currentTimeOfDay}"
                 );
 
                 OnFaseCombateIniciada?.Invoke();
                 break;
+
         }
         OnPhaseChanged?.Invoke(currentPhase);
 
@@ -282,7 +293,20 @@ public class PhasesSystem : MonoBehaviour
             $"Player: {currentPlayerTurn}"
         );
     }
+    public void CompleteCombat()
+    {
+        if (!combatInProgress || pasoTurnoActual != 5)
+            return;
 
+        combatInProgress = false;
+
+        Debug.Log("Combat phase ended.");
+
+        // Conservamos el evento para futuros sistemas.
+        OnFinDelCombate?.Invoke();
+
+        FinalizarMomentoDelDia();
+    }
     // ==========================================
     // PRIORITY
     // ==========================================

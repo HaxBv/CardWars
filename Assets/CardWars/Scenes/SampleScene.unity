@@ -2742,7 +2742,7 @@ MonoBehaviour:
   CardPrefab: {fileID: 9086578669897314811, guid: aba4748b49df1354d8769499294431dc, type: 3}
   CardsInHand: {fileID: 534338313}
   InitialCards: 4
-  MaxHandSize: 8
+  MaxHandSize: 999
   CardSpacing: 100
   deck: []
   HideDistance: 350
@@ -4899,6 +4899,7 @@ GameObject:
   - component: {fileID: 1053958863}
   - component: {fileID: 1053958862}
   - component: {fileID: 1053958864}
+  - component: {fileID: 1053958865}
   m_Layer: 0
   m_Name: BoardManager
   m_TagString: Untagged
@@ -4957,6 +4958,25 @@ MonoBehaviour:
   mapRenderer: {fileID: 843221169}
   albaMap: {fileID: 21300000, guid: 350f7b8c53993904d81cb9f56aafb4de, type: 3}
   ocasoMap: {fileID: 21300000, guid: 0f7297e7a9ddf204e8dba6c214a38fa7, type: 3}
+--- !u!114 &1053958865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053958861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4335bf70b4b546240a453b064712a257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CombatManager
+  moveSpeed: 50
+  maxAttackWait: 3
+  player1UsesAllySide: 1
+  firstSlotReduction: 3
+  secondSlotReduction: 3
+  attackerSecondSlotReduction: 3
+  firstSlotAttackDelay: 0.5
 --- !u!1 &1080502159
 GameObject:
   m_ObjectHideFlags: 0

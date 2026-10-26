@@ -332,36 +332,29 @@ public class LandLane : MonoBehaviour
 
     }
 
+
     private void HandleTroopDeath(TroopInGame troop)
     {
         if (troop == null)
             return;
 
-        GameObject deadTroop = troop.gameObject;
+        GameObject deadTroop = troop.transform.parent.gameObject;
 
-        // Liberar la posición ocupada.
         if (allyFirstTroop == deadTroop)
             allyFirstTroop = null;
-
         else if (allySecondTroop == deadTroop)
             allySecondTroop = null;
-
         else if (enemyFirstTroop == deadTroop)
             enemyFirstTroop = null;
-
         else if (enemySecondTroop == deadTroop)
             enemySecondTroop = null;
 
-        // Dejar de escuchar el evento.
         troop.OnDeath -= HandleTroopDeath;
 
-        // Eliminar el registro del tablero.
         BoardManager.Instance?.UnregisterTroop(deadTroop);
 
-        // Si hay una segunda tropa, moverla al frente.
         RefreshTroopPositions();
 
-        // Retirar la tropa del escenario.
         Destroy(deadTroop);
     }
 
@@ -403,5 +396,30 @@ public class LandLane : MonoBehaviour
         if (LaneRenderer != null)
             LaneRenderer.color = Color.clear;
         previewCard = null;
+    }
+
+    public GameObject GetTroop(bool isAlly, int slot)
+    {
+        if (isAlly)
+            return slot == 1 ? allyFirstTroop : allySecondTroop;
+
+        return slot == 1 ? enemyFirstTroop : enemySecondTroop;
+    }
+
+    public Transform GetOccupiedSlot(GameObject troopRoot)
+    {
+        if (allyFirstTroop == troopRoot) return AllyFirstSlot;
+        if (allySecondTroop == troopRoot) return AllySecondSlot;
+        if (enemyFirstTroop == troopRoot) return EnemyFirstSlot;
+        if (enemySecondTroop == troopRoot) return EnemySecondSlot;
+
+        return null;
+    }
+    public void RemoveDefeatedTroop(TroopInGame troop)
+    {
+        if (troop == null || troop.CurrentHealth > 0)
+            return;
+
+        HandleTroopDeath(troop);
     }
 }

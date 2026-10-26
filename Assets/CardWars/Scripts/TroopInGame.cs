@@ -5,13 +5,11 @@ using UnityEngine;
 
 public class TroopInGame : MonoBehaviour
 {
-
     [Header("DATA")]
     public TroopCardData CardData { get; private set; }
     public bool IsAlly { get; private set; }
 
     [Header("CURRENT STATS")]
-
     [SerializeField] private int currentAttack;
     [SerializeField] private int currentHealth;
     [SerializeField] private int maxHealth;
@@ -30,13 +28,21 @@ public class TroopInGame : MonoBehaviour
     public int CurrentBurn => currentBurn;
     public int CurrentOverstrike => currentOverstrike;
 
-    public bool IsAlive => CurrentHealth > 0;
+    public bool IsAlive => currentHealth > 0;
+
+    // Se consulta al preparar los ataques del carril.
+    public bool CanAttack =>
+        CardData != null &&
+        IsAlive &&
+        CurrentAttack > 0 &&
+        !deathProcessed;
 
     private TroopDisplay troopDisplay;
+
     private bool deployed;
     private bool deathProcessed;
 
-    // Eventos para conectar habilidades posteriormente.
+    // Eventos reservados para futuras habilidades.
     public event Action<TroopInGame> OnDeploy;
     public event Action<TroopInGame, int, TroopInGame> OnDamaged;
     public event Action<TroopInGame, TroopInGame> OnKill;
@@ -68,10 +74,7 @@ public class TroopInGame : MonoBehaviour
         if (troopDisplay != null)
         {
             troopDisplay.Initialize(data, isAlly);
-            troopDisplay.RefreshStats(
-                CurrentAttack,
-                CurrentHealth
-            );
+            RefreshDisplay();
         }
     }
 
@@ -83,26 +86,35 @@ public class TroopInGame : MonoBehaviour
         deployed = true;
         OnDeploy?.Invoke(this);
     }
+
+    // =====================================================
+    // DAMAGE
+    // =====================================================
+
     [Button]
     public void TakeDamage(int damage, TroopInGame attacker = null)
     {
-        if (!IsAlive || damage <= 0)
+        if (damage <= 0 || deathProcessed)
             return;
 
-        // Temporalmente el daño se aplica directamente al HP.
-        int actualDamage = Mathf.Min(damage, CurrentHealth);
+        // La salud nunca baja de 0.
+        currentHealth = Mathf.Max(0, currentHealth - damage);
 
-        currentHealth -= actualDamage;
-
+        // Actualizar HP visual inmediatamente.
         RefreshDisplay();
 
-        OnDamaged?.Invoke(this, actualDamage, attacker);
+        // Reproducir Hurt al recibir daño.
+        if (troopDisplay != null)
+            troopDisplay.PlayHurt();
 
-        if (CurrentHealth <= 0)
-        {
-            Die(attacker);
-        }
+        // No ejecutar Die() todavía.
+        // La muerte se confirma al finalizar el carril.
     }
+
+
+    // =====================================================
+    // HEAL
+    // =====================================================
 
     public void Heal(int amount)
     {
@@ -117,6 +129,21 @@ public class TroopInGame : MonoBehaviour
         RefreshDisplay();
     }
 
+    // =====================================================
+    // DEATH
+    // =====================================================
+
+    public bool ConfirmDeath()
+    {
+        if (deathProcessed || CurrentHealth > 0)
+            return false;
+
+        deathProcessed = true;
+        return true;
+    }
+
+    // Reservado para cuando implementemos
+    // los triggers de muerte y eliminación.
     private void Die(TroopInGame attacker)
     {
         if (deathProcessed)
@@ -124,17 +151,17 @@ public class TroopInGame : MonoBehaviour
 
         deathProcessed = true;
 
-        // Notificar la muerte antes de retirar la tropa.
         OnDeath?.Invoke(this);
 
-        // Notificar al atacante que eliminó una tropa.
         if (attacker != null && attacker != this)
         {
             attacker.OnKill?.Invoke(attacker, this);
         }
-
-        // La retirada del tablero se conectará con LandLane.
     }
+
+    // =====================================================
+    // DISPLAY
+    // =====================================================
 
     private void RefreshDisplay()
     {

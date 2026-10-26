@@ -41,5 +41,11 @@ public class TroopCardData : CardData
     public RuntimeAnimatorController Anim => anim;
 
 
+    [ShowIf("isMelee")]
+    [SerializeField, Min(0f)]
+    private float meleeAttackDistance = 0.5f;
+
+    public float MeleeAttackDistance => meleeAttackDistance;
+
 
 }
