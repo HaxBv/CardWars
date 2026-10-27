@@ -42,10 +42,10 @@ public class TroopCardData : CardData
 
 
     [ShowIf("isMelee")]
-    [SerializeField, Min(0f)]
-    private float meleeAttackDistance = 0.5f;
+    [SerializeField]
+    private float attackSpacing = 2f;
 
-    public float MeleeAttackDistance => meleeAttackDistance;
+    public float AttackSpacing => attackSpacing;
 
 
 }

@@ -35,6 +35,19 @@ public class LandLane : MonoBehaviour
     private GameObject enemyFirstTroop;
     private GameObject enemySecondTroop;
 
+
+    [Header("PORTAL ATTACK POINTS")]
+    [SerializeField] private Transform allyPortalAttackPoint;
+    [SerializeField] private Transform enemyPortalAttackPoint;
+
+    public Transform GetPortalAttackPoint(bool attackerIsAlly)
+    {
+        return attackerIsAlly
+            ? enemyPortalAttackPoint
+            : allyPortalAttackPoint;
+    }
+
+
     private void Awake()
     {
         laneCollider = GetComponent<BoxCollider2D>();

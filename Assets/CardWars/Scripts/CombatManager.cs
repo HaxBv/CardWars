@@ -14,16 +14,6 @@ public class CombatManager : MonoBehaviour
     [SerializeField]
     private bool player1UsesAllySide = true;
 
-    [Header("MELEE DISTANCE REDUCTION")]
-    [SerializeField, Min(0f)]
-    private float firstSlotReduction = 3f;
-
-    [SerializeField, Min(0f)]
-    private float secondSlotReduction = 3f;
-
-    [SerializeField, Min(0f)]
-    private float attackerSecondSlotReduction = 3f;
-
     [Header("ATTACK TIMING")]
     [SerializeField, Min(0f)]
     private float firstSlotAttackDelay = 0.5f;
@@ -42,6 +32,9 @@ public class CombatManager : MonoBehaviour
         public int Damage;
 
         public Vector3 HomePosition;
+
+        public Transform PortalAttackPoint;
+        public Portals PortalTarget;
     }
 
     private void OnEnable()
@@ -66,25 +59,65 @@ public class CombatManager : MonoBehaviour
     // DISTANCE
     // =====================================================
 
-    private float GetMeleeTravelDistance(
-        TroopInGame attacker,
-        int attackerSlot,
-        int targetSlot)
+    private Vector3 GetMeleeAttackPosition(AttackOrder attack)
     {
-        float distance =
-            attacker.CardData.MeleeAttackDistance;
+        Vector3 origin = attack.HomePosition;
 
-        if (targetSlot >= 1)
-            distance -= firstSlotReduction;
+        float direction = attack.Attacker.IsAlly ? 1f : -1f;
 
-        if (targetSlot == 2)
-            distance -= secondSlotReduction;
+        float attackSpacing = attack.Attacker.CardData.AttackSpacing;
 
-        if (attackerSlot == 2)
-            distance -= attackerSecondSlotReduction;
+        float targetX;
 
-        return Mathf.Max(0f, distance);
+        // =================================================
+        // ATTACK TROOP
+        // =================================================
+
+        if (attack.Target != null)
+        {
+            Transform targetRoot =
+                attack.Target.transform.parent;
+
+            targetX = targetRoot != null
+                ? targetRoot.position.x
+                : attack.Target.transform.position.x;
+        }
+
+        // =================================================
+        // ATTACK PORTAL
+        // =================================================
+
+        else if (attack.PortalAttackPoint != null)
+        {
+            targetX = attack.PortalAttackPoint.position.x;
+        }
+
+        else
+        {
+            Debug.LogWarning(
+                $"No se encontró punto de ataque al portal " +
+                $"para {attack.Attacker.CardData.CardName}"
+            );
+
+            return origin;
+        }
+
+        // =================================================
+        // CALCULATE POSITION
+        // =================================================
+
+        float desiredX =
+            targetX - direction * attackSpacing;
+
+        float travelDistance = Mathf.Max(
+            0f,
+            (desiredX - origin.x) * direction
+        );
+
+        return origin +
+               Vector3.right * direction * travelDistance;
     }
+
 
     // =====================================================
     // TARGET
@@ -222,6 +255,19 @@ public class CombatManager : MonoBehaviour
                 out targetSlot
             );
 
+            Transform portalPoint = null;
+            Portals portalTarget = null;
+
+            if (target == null)
+            {
+                portalPoint = lane.GetPortalAttackPoint(isAlly);
+
+                if (portalPoint != null)
+                {
+                    portalTarget =
+                        portalPoint.GetComponentInParent<Portals>();
+                }
+            }
             attacks.Add(new AttackOrder
             {
                 Root = root,
@@ -233,7 +279,10 @@ public class CombatManager : MonoBehaviour
                 TargetSlot = targetSlot,
                 Damage = troop.CurrentAttack,
 
-                HomePosition = root.transform.position
+                HomePosition = root.transform.position,
+
+                PortalAttackPoint = portalPoint,
+                PortalTarget = portalTarget
             });
         }
     }
@@ -311,18 +360,8 @@ public class CombatManager : MonoBehaviour
 
         if (isMelee)
         {
-            float distance = GetMeleeTravelDistance(
-                attacker,
-                attack.Slot,
-                attack.TargetSlot
-            );
-
-            float direction =
-                attacker.IsAlly ? 1f : -1f;
-
             Vector3 attackPosition =
-                attack.HomePosition +
-                Vector3.right * direction * distance;
+                GetMeleeAttackPosition(attack);
 
             while (root != null &&
                    Vector3.Distance(
@@ -341,18 +380,19 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-        if (root == null)
-            yield break;
-
         // -------------------------------------------------
         // ATTACK IMPACT CALLBACK
         // -------------------------------------------------
 
+
         Action onImpact = () =>
         {
+            // =================================================
+            // DAMAGE TO TROOP
+            // =================================================
+
             if (attack.Target != null)
             {
-                // TakeDamage actualiza HP y reproduce Hurt.
                 attack.Target.TakeDamage(
                     attack.Damage,
                     attacker
@@ -361,19 +401,38 @@ public class CombatManager : MonoBehaviour
                 Debug.Log(
                     $"{attacker.CardData.CardName} attacks " +
                     $"{attack.Target.CardData.CardName} " +
-                    $"for {attack.Damage}. " +
+                    $"for {attack.Damage} damage. " +
                     $"HP: {attack.Target.CurrentHealth}"
                 );
             }
+
+            // =================================================
+            // DAMAGE TO PORTAL
+            // =================================================
+
+            else if (attack.PortalTarget != null)
+            {
+                attack.PortalTarget.TakeDamage(
+                    attack.Damage
+                );
+
+                Debug.Log(
+                    $"{attacker.CardData.CardName} attacks " +
+                    $"{attack.PortalTarget.gameObject.name} " +
+                    $"for {attack.Damage} damage. " +
+                    $"HP: {attack.PortalTarget.CurrentHealth}"
+                );
+            }
+
             else
             {
-                // Próximamente: daño al portal.
-                Debug.Log(
-                    $"{attacker.CardData.CardName} " +
-                    "attacks the enemy portal."
+                Debug.LogWarning(
+                    $"No se encontró un objetivo válido para " +
+                    $"{attacker.CardData.CardName}"
                 );
             }
         };
+
 
         // Suscribir antes de iniciar la animación.
         display.OnAttackImpact += onImpact;

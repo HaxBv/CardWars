@@ -58,9 +58,6 @@ public class PhasesSystem : MonoBehaviour
     [SerializeField] private PlayerTurn firstRoundPriority;
     [SerializeField] private PlayerTurn currentPriority;
 
-    [Header("Board")]
-    [SerializeField]
-    private List<TropaEnTablero> tropasEnTablero = new();
 
     // ==========================================
     // PROPERTIES
@@ -322,23 +319,5 @@ public class PhasesSystem : MonoBehaviour
     // TROOP REGISTRATION
     // ==========================================
 
-    public void RegistrarTropa(TropaEnTablero tropa)
-    {
-        if (tropa == null || tropasEnTablero.Contains(tropa))
-            return;
-
-        tropasEnTablero.Add(tropa);
-
-        Debug.Log(
-            $"Troop registered: {tropa.name}"
-        );
-    }
-
-    public void QuitarTropa(TropaEnTablero tropa)
-    {
-        if (tropa == null)
-            return;
-
-        tropasEnTablero.Remove(tropa);
-    }
+   
 }

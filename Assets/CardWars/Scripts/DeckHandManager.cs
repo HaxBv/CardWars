@@ -1,4 +1,5 @@
 
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -296,6 +297,23 @@ public class DeckHandManager : MonoBehaviour
 
         AddCardToHand(card);
     }
+
+    [Button]
+    public void SpecificCard(TroopCardData card)
+    {
+        if (deck.Count == 0)
+            return;
+
+        if (GetHandCount() >= MaxHandSize)
+            return;
+        if (card == null)
+            return;
+
+
+
+        AddCardToHand(card);
+    }
+
 
     // Para cartas devueltas por Bounce.
     // No aplica el límite de la mano.
