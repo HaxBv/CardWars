@@ -66,3 +66,68 @@ Estas actividades comparan **el juego actual** con **lo que asume el motor**. Si
 - **Pasos:** en un test nuevo: crea `var setup = engine.CreateSetup(42);`, arma una lista de cuatro acciones `GameAction.End(...)` (la primera del jugador `setup.FirstPlayer`, luego del otro, y así alternando) y llama `engine.Replay(setup, acciones)`. Compara `result.State.Step` con lo que esperas.
 - **Esperado:** Tras tres `End` el `Step` vale 4; el cuarto resuelve el combate (paso 5) y deja `Step` en 1 con `TimeOfDay` en `Ocaso`.
 - **Reporta:** si el resultado coincide con lo que esperabas. Explica con tus palabras por qué guardar `setup + acciones` basta para reconstruir la partida y para qué sirve que el azar esté en el `setup`.
+
+---
+
+# Parte D — El módulo de Cloud Code (`CloudCode~/CardWarsModule/`)
+
+Estas actividades son del segundo PR. Las marcadas con 🔎 necesitan un **proyecto de Unity Gaming Services propio** (el módulo se probó con almacén y push *en memoria*, pero nunca contra Cloud Save ni Cloud Code reales). Necesitas dos cuentas de jugador distintas: usa dos sesiones con inicio de sesión anónimo o dos instalaciones.
+
+### P11 Corre las 34 pruebas del servidor
+- **Pasos:** instala el SDK de .NET 9. En una terminal: `cd CloudCode~/CardWarsModule.Tests` y `dotnet test`.
+- **Esperado:** `Correctas! - Con error: 0, Superado: 34`.
+- **Reporta si falla:** versión de `dotnet --version` y el mensaje del primer error.
+
+### P12 Rompe una regla del servidor y mira qué test falla
+- **Pasos:** en `MatchService.cs`, método `PlayMoveAsync`, cambia `engine.Apply(replay.State, action, request.ExpectedTurnNumber)` por `engine.Apply(replay.State, action)`. Corre `dotnet test`. **Deshaz el cambio.**
+- **Esperado:** falla `PlayMove_ARetriedMessage_IsStale_AndIsNotAppliedTwice`.
+- **Reporta:** qué prueba falló y con tus palabras, qué problema real causaría esta línea en una partida con mala conexión.
+
+### P13 🔎 Despliega y llama a `GetGameConfig`
+- **Pasos:** despliega el módulo (tarea 12 del README del módulo). Llama a la función `GetGameConfig` desde el Dashboard de Cloud Code o desde un script de Unity.
+- **Esperado:** un JSON con `catalogVersion: "v1"`, `protocolVersion: 1`, `stepTimeoutSeconds: 180` y las 6 cartas de muestra.
+- **Reporta si falla:** el mensaje de error del Dashboard o de la Consola, completo. Anota también los pasos de despliegue que te hicieron falta.
+
+### P14 🔎 Dos jugadores crean y se unen a una partida
+- **Pasos:** con el jugador A: `CreateMatch` con `requestId = "r1"` y `protocolVersion = 1`. Copia el `matchId`. Con el jugador B: `JoinMatch` con ese `matchId`.
+- **Esperado:** A recibe `status: "waiting"`; B recibe `status: "in_progress"` con `yourSide` y una `view` con **su** mano de 4 cartas.
+- **Reporta:** el `matchId`, y si `yourSide` de A y B son distintos.
+
+### P15 🔎 El registro está realmente privado
+- **Pasos:** en el Dashboard de Cloud Save, busca el documento de Custom Data con el `matchId` (clave `state`). Después, desde un cliente con la sesión del jugador A, intenta leerlo: `CloudSaveService.Instance.Data.Custom.LoadAllAsync(matchId)`.
+- **Esperado:** el documento existe en el Dashboard; el cliente **no** debe poder leerlo ni escribirlo (lista vacía o error de permisos). Contiene los mazos: si un jugador pudiera leerlo, vería las cartas del rival.
+- **Reporta:** qué ve el cliente y la clase de acceso que muestra el Dashboard. Si el cliente puede leerlo, **es un fallo de seguridad grave**: no sigas, avísanos.
+
+### P16 🔎 Intentos de trampa
+- **Pasos:** con la partida de P14, prueba cada caso y anota el `errorCode`:
+  1. B llama a `PlayMove` (`kind: "end"`) cuando le toca a A.
+  2. Un tercer jugador C llama a `GetMatchState` y a `PlayMove`.
+  3. El jugador al que le toca llama a `PlayMove` con `kind: "deploy"` y `cardId: 999`, y con un `cardId` que **no** esté en su mano.
+  4. El jugador al que le toca llama con `lane: 7`.
+- **Esperado:** `not_your_turn`, `not_a_player`, `card_not_in_hand` y `invalid_lane`, y la partida no cambia (`actionCount` igual).
+- **Reporta:** los `errorCode` que obtuviste. Si alguno devuelve `ok: true`, explica qué enviaste.
+
+### P17 🔎 Lo que el rival NO debe ver
+- **Pasos:** llama a `GetMatchState` como A y como B. Mira todo el JSON.
+- **Esperado:** cada uno ve su `myHand` y del rival solo `opponentHandCount` y `opponentDeckCount`. No aparece ningún `setup`, mazo ni lista de acciones. Tampoco debe aparecer la mano del rival en los **logs de Cloud Code** del Dashboard.
+- **Reporta:** si encontraste algo de más en la respuesta o en los logs.
+
+### P18 🔎 Reintentos: no se aplica dos veces
+- **Pasos:** (a) llama dos veces a `CreateMatch` con el mismo `requestId` desde el mismo jugador. (b) Cuando le toque a A, llama dos veces seguidas a `PlayMove` (`kind: "end"`) con el mismo `expectedTurnNumber`.
+- **Esperado:** (a) el mismo `matchId` las dos veces y una sola partida en Cloud Save. (b) la primera `ok: true`, la segunda `stale_turn`, y `actionCount` sube una sola vez.
+- **Reporta:** los resultados.
+
+### P19 🔎 El reloj es del servidor
+- **Pasos:** crea una partida nueva y no juegues. Pasados 181 segundos, llama a `GetMatchState` como el jugador al que **no** le tocaba. (Si quieres acortar la espera, crea `cards.v2.json` con `stepTimeoutSeconds: 20` y despliega.)
+- **Esperado:** `status: "finished"`, `result: "won"` y `endReason: "timeout"`. El jugador lento, al consultar, ve `lost`.
+- **Reporta:** lo que ves y cuánto tardó. ¿Por qué el servidor no necesita un temporizador por partida?
+
+### P20 🔎 Dos llamadas a la vez
+- **Pasos:** con una partida en espera, haz que dos jugadores (B y C) llamen a `JoinMatch` casi al mismo tiempo.
+- **Esperado:** solo uno entra; el otro recibe `match_full` o `conflict`. Nunca deben quedar tres jugadores.
+- **Reporta:** el resultado de cada uno y la lista `players` del documento. Esto comprueba el *candado de escritura* del almacén; si el registro queda con tres jugadores, avísanos.
+
+### P21 🔎 El push (cuando hagas la tarea 14)
+- **Pasos:** con el cliente suscrito a los mensajes del jugador, haz que el rival juegue.
+- **Esperado:** llega un mensaje `match_updated` con `{"type":"match_updated","matchId":"..."}` **sin estado**. Al recibirlo, tu cliente llama a `GetMatchState`. Apaga la suscripción y comprueba que el sondeo de respaldo (~10 s) recupera la partida.
+- **Reporta:** qué recibe tu cliente y cuánto tarda el sondeo.

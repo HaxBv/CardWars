@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>CardWars.CloudCode</RootNamespace>
+    <AssemblyName>CardWarsModule</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Las reglas NO se duplican: el módulo compila el mismo código fuente que usa Unity.
+         Solo *.cs de esta carpeta (sin Tests/): los .asmdef los ignora el compilador. -->
+    <Compile Include="../../Assets/CardWars/Rules/*.cs" Link="Rules/%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Catálogo de cartas y configuración, versionados. Se leen como recurso embebido. -->
+    <EmbeddedResource Include="Data/*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Com.Unity.Services.CloudCode.Apis" Version="0.0.27" />
+    <PackageReference Include="Com.Unity.Services.CloudCode.Core" Version="0.0.9" />
+  </ItemGroup>
+
+</Project>
