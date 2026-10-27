@@ -6,6 +6,7 @@ namespace CardWars.Rules
     {
         Applied,
         GameOver,
+        StaleTurn,
         NotYourTurn,
         WrongStep,
         CardNotInHand,

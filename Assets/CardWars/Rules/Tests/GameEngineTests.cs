@@ -9,13 +9,13 @@ namespace CardWars.Rules.Tests
     // si el motor corre aquí, también corre en un servidor.
     public class GameEngineTests
     {
-        private const int Grunt = 1;   // ataque 3, vida 5
-        private const int Tank = 2;    // ataque 1, vida 10
-        private const int Team = 3;    // ataque 2, vida 4, con Team
-        private const int Glass = 4;   // ataque 10, vida 1
-        private const int Climber = 5; // ataque 2, vida 4, solo Highground
+        internal const int Grunt = 1;   // ataque 3, vida 5
+        internal const int Tank = 2;    // ataque 1, vida 10
+        internal const int Team = 3;    // ataque 2, vida 4, con Team
+        internal const int Glass = 4;   // ataque 10, vida 1
+        internal const int Climber = 5; // ataque 2, vida 4, solo Highground
 
-        private static List<CardDefinition> Cards()
+        internal static List<CardDefinition> Cards()
         {
             return new List<CardDefinition>
             {
@@ -27,13 +27,13 @@ namespace CardWars.Rules.Tests
             };
         }
 
-        private static GameEngine NewEngine(GameConfig config = null)
+        internal static GameEngine NewEngine(GameConfig config = null)
         {
             return new GameEngine(Cards(), config);
         }
 
         // Partida con la prioridad fijada y manos vacías, para armar cada escenario a mano.
-        private static GameState NewGame(
+        internal static GameState NewGame(
             GameEngine engine, PlayerId priority = PlayerId.Player1, int seed = 7)
         {
             GameState state = engine.StartGame(seed);
@@ -44,7 +44,7 @@ namespace CardWars.Rules.Tests
             return state;
         }
 
-        private static void Give(GameState state, PlayerId player, params int[] cardIds)
+        internal static void Give(GameState state, PlayerId player, params int[] cardIds)
         {
             state.Get(player).Hand.AddRange(cardIds);
         }
@@ -141,11 +141,11 @@ namespace CardWars.Rules.Tests
         }
 
         [Test]
-        public void View_HasNoFieldThatCouldCarryTheOpponentCards()
+        public void View_HasNoPropertyThatCouldCarryTheOpponentCards()
         {
             // La única lista de ids de carta de la vista es la mano propia.
-            var listFields = typeof(PlayerView).GetFields()
-                .Where(f => f.FieldType == typeof(List<int>))
+            var listFields = typeof(PlayerView).GetProperties()
+                .Where(f => f.PropertyType == typeof(List<int>))
                 .Select(f => f.Name)
                 .ToList();
 

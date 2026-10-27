@@ -9,10 +9,13 @@ namespace CardWars.Rules
     // Es un port de las reglas que hoy viven repartidas en PhasesSystem (pasos y prioridad),
     // LandLane (despliegue), CombatManager (combate), Portals (escudos) y DeckHandManager
     // (mazo y mano). Donde el juego no define una regla (por ejemplo, la victoria) se anota.
-    public sealed class GameEngine
+    public sealed partial class GameEngine
     {
         private readonly Dictionary<int, CardDefinition> catalog =
             new Dictionary<int, CardDefinition>();
+
+        // Valor de "expectedTurnNumber" que significa "no comprobar" (juego local).
+        public const int NoExpectedTurn = -1;
 
         public GameConfig Config { get; }
 
@@ -33,31 +36,50 @@ namespace CardWars.Rules
         // START
         // =====================================================
 
-        // Todo el azar de la partida (barajar y primer jugador) sale de esta semilla, así que
-        // la misma semilla produce la misma partida. En online la semilla la elige el servidor
-        // y nunca se envía al cliente.
-        public GameState StartGame(int seed)
+        // TODO el azar de la partida (barajar y primer jugador) se sortea AQUÍ y queda escrito
+        // en un GameSetup. Después de esto el motor no vuelve a usar azar, así que una partida
+        // es una función pura de (setup + lista de acciones) y se puede reproducir (Replay)
+        // aunque cambie la versión de .NET o de Random. En online el setup lo crea y lo guarda
+        // el servidor, y NUNCA se envía al cliente (contiene el orden de los mazos).
+        public GameSetup CreateSetup(int seed)
         {
             var rng = new Random(seed);
+            var setup = new GameSetup();
+
+            BuildDeck(setup.Player1Deck, rng);
+            BuildDeck(setup.Player2Deck, rng);
+
+            // PhasesSystem.Start: el jugador inicial se decide al azar.
+            setup.FirstPlayer = rng.Next(2) == 0 ? PlayerId.Player1 : PlayerId.Player2;
+            return setup;
+        }
+
+        // Atajo para juego local y pruebas: sortea el setup con la semilla y empieza.
+        public GameState StartGame(int seed)
+        {
+            return StartGame(CreateSetup(seed));
+        }
+
+        public GameState StartGame(GameSetup setup)
+        {
             var state = new GameState();
 
             foreach (LaneTerrainKind terrain in Config.LaneTerrains)
                 state.Lanes.Add(new LaneState(terrain));
 
+            state.Get(PlayerId.Player1).Deck.AddRange(setup.Player1Deck);
+            state.Get(PlayerId.Player2).Deck.AddRange(setup.Player2Deck);
+
             foreach (PlayerId player in new[] { PlayerId.Player1, PlayerId.Player2 })
             {
-                PlayerState ps = state.Get(player);
-
-                BuildDeck(ps.Deck, rng);
-
-                ps.Portal.MaxHealth = Config.PortalMaxHealth;
-                ps.Portal.Health = Config.PortalMaxHealth;
-                ps.Portal.RemainingShields = Config.PortalShields;
+                PortalState portal = state.Get(player).Portal;
+                portal.MaxHealth = Config.PortalMaxHealth;
+                portal.Health = Config.PortalMaxHealth;
+                portal.RemainingShields = Config.PortalShields;
             }
 
-            // PhasesSystem.Start: el jugador inicial se decide al azar.
-            state.FirstRoundPriority = rng.Next(2) == 0 ? PlayerId.Player1 : PlayerId.Player2;
-            state.Priority = state.FirstRoundPriority;
+            state.FirstRoundPriority = setup.FirstPlayer;
+            state.Priority = setup.FirstPlayer;
 
             var ignored = new List<GameEvent>();
 
@@ -119,11 +141,19 @@ namespace CardWars.Rules
         // slot: 1 o 2, el espacio donde el jugador suelta la carta (como en LandLane.DeployTroop).
         // Carril vacío: solo el 1. Con una tropa: hace falta Team en alguna de las dos; soltar en
         // el 1 empuja a la que estaba al 2, y soltar en el 2 la deja detrás.
+        //
+        // expectedTurnNumber: el TurnNumber que el cliente cree vigente. Si no coincide, la acción
+        // es de un turno que ya pasó (un reintento de red, por ejemplo) y se rechaza con StaleTurn.
+        // Importa porque a veces el mismo jugador juega dos pasos seguidos (al cambiar de ronda).
         public ActionOutcome DeployTroop(
-            GameState state, PlayerId player, int cardId, int laneIndex, int slot)
+            GameState state, PlayerId player, int cardId, int laneIndex, int slot,
+            int expectedTurnNumber = NoExpectedTurn)
         {
             if (state.IsOver)
                 return new ActionOutcome(ActionResult.GameOver);
+
+            if (expectedTurnNumber != NoExpectedTurn && expectedTurnNumber != state.TurnNumber)
+                return new ActionOutcome(ActionResult.StaleTurn);
 
             if (state.CurrentPlayer != player)
                 return new ActionOutcome(ActionResult.NotYourTurn);
@@ -212,10 +242,14 @@ namespace CardWars.Rules
 
         // Termina el paso del jugador. Tras el paso 4 el motor resuelve el combate (paso 5),
         // roba las cartas del final del momento del día y deja la partida en el siguiente paso 1.
-        public ActionOutcome EndStep(GameState state, PlayerId player)
+        public ActionOutcome EndStep(
+            GameState state, PlayerId player, int expectedTurnNumber = NoExpectedTurn)
         {
             if (state.IsOver)
                 return new ActionOutcome(ActionResult.GameOver);
+
+            if (expectedTurnNumber != NoExpectedTurn && expectedTurnNumber != state.TurnNumber)
+                return new ActionOutcome(ActionResult.StaleTurn);
 
             if (state.CurrentPlayer != player)
                 return new ActionOutcome(ActionResult.NotYourTurn);

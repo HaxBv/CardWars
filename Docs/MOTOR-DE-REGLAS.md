@@ -30,8 +30,9 @@ Cliente (Unity)                      Motor (C# puro)
 | `State.cs` | El estado de la partida en datos simples: mazos, manos, tablero (2 espacios por bando y carril), portales, ronda, paso, prioridad. |
 | `Events.cs` | `GameEvent` (qué ocurrió), `ActionResult` (por qué se aceptó o rechazó una acción) y `ActionOutcome`. |
 | `Views.cs` | `PlayerView`: lo que **un** jugador puede saber. No incluye la mano ni el orden del mazo del rival, solo cuántas cartas tiene. |
-| `GameEngine.cs` | `StartGame(seed)`, `DeployTroop`, `EndStep`, `CreateView`, `RedactFor`. Aquí están las reglas. |
-| `Tests/GameEngineTests.cs` | 37 pruebas EditMode (incluye una de estrés con jugadas válidas, inválidas y fuera de turno). |
+| `GameEngine.cs` | `CreateSetup(seed)`, `StartGame`, `DeployTroop`, `EndStep`, `CreateView`, `RedactFor`. Aquí están las reglas. |
+| `Replay.cs` | `GameSetup` (todo el azar de una partida, sorteado una vez), `GameAction` (una acción aceptada) y `Replay(setup, acciones)`, que reconstruye la partida desde cero. |
+| `Tests/GameEngineTests.cs`, `Tests/ReplayTests.cs` | 49 pruebas EditMode: reglas, información oculta, replay de partidas al azar y una de estrés con jugadas válidas, inválidas y fuera de turno. |
 
 ## De dónde sale cada regla
 
@@ -49,9 +50,9 @@ El motor reproduce lo que hace hoy el juego. Si cambia el juego, cambia el motor
 ## Cómo ejecutar las pruebas
 
 1. Abre el proyecto en Unity. Unity generará los `.meta` de la carpeta nueva; **inclúyelos en el commit**.
-2. `Window > General > Test Runner > EditMode > Run All`. Deben pasar las 37.
+2. `Window > General > Test Runner > EditMode > Run All`. Deben pasar las 49.
 
-(Las pruebas también se verificaron fuera de Unity compilando los mismos archivos con .NET 8 y NUnit: 37/37 en verde. Además se comprobó que fallan si se rompe una regla, por ejemplo invirtiendo el orden de los objetivos.)
+(Las pruebas también se verificaron fuera de Unity compilando los mismos archivos con .NET 8 y NUnit: 49/49 en verde. Además se comprobó que fallan si se rompe una regla, por ejemplo invirtiendo el orden de los objetivos.)
 
 ## Cosas que se encontraron al escribirlo (para discutir)
 
@@ -79,4 +80,24 @@ Cada una es pequeña y se puede entregar en su propio commit o PR. Las primeras 
 - [ ] **9. Pantalla de victoria** al recibir `GameWon`.
 - [ ] **10. Orden del repositorio.** Arreglar `Packages/manifest.json` (hoy apunta a `file:C:/Users/JEREMY/...` y no abre en otras máquinas), actualizar el Vault con el estado real, escribir un `README.md` con cómo abrir y probar el proyecto, y revisar la licencia de los assets de pago (Feel y Odin Inspector) antes de mantener el repositorio público.
 
-**Lo que viene después** (no está en este PR): un servidor que ejecute este mismo motor y un protocolo de mensajes entre los dos clientes. El motor ya está pensado para eso: las acciones llevan al jugador como argumento (en un servidor saldría de la sesión), `PlayerView` es lo único que se devuelve a un cliente, `RedactFor` oculta qué carta robó el rival y `TurnNumber` servirá como "turno esperado" para evitar jugadas repetidas o atrasadas. El profesor compartirá la guía del multijugador cuando termines las tareas 1 a 9.
+## Pensado para un servidor (no está en este PR)
+
+Lo que viene después es un servidor que ejecute **este mismo código** y un protocolo de mensajes entre los dos clientes. El motor ya está preparado para eso:
+
+| Necesidad de un servidor | Cómo lo cubre el motor |
+|---|---|
+| Compilar las reglas dentro del módulo, sin duplicarlas | Son C# puro. El módulo puede incluir los `.cs` de `Assets/CardWars/Rules/` (sin la carpeta `Tests`) en su propio proyecto. Los `.asmdef` solo los usa Unity. Se comprobó compilándolos en un proyecto `net9.0` aparte. |
+| No guardar una "foto" del estado | La partida es `GameSetup` + lista de `GameAction` (solo se agregan acciones aceptadas). `GameEngine.Replay` reconstruye todo, de forma determinista. Una acción inválida al reproducir lanza una excepción: el registro está corrupto. |
+| Que el azar lo decida el servidor y quede registrado | `CreateSetup(seed)` sortea los mazos y el primer jugador **una sola vez** y lo deja escrito en el `GameSetup`. Después el motor no usa azar, así que el replay no depende de la versión de .NET. **El `GameSetup` es secreto del servidor** (contiene el orden de los mazos): jamás se envía a un cliente. |
+| Mostrar a cada jugador solo lo suyo | `CreateView(estado, jugador)` entrega su mano y el número de cartas del rival, nada más. `RedactFor(eventos, jugador)` tapa qué carta robó el rival. |
+| Contar al cliente lo que pasó desde su última consulta | `Replay` devuelve los eventos de cada acción (`EventsPerAction`). Con "cuántas acciones he visto" se devuelve solo lo nuevo. |
+| Reintentos de red | `DeployTroop` y `EndStep` aceptan `expectedTurnNumber`. Si no coincide con el turno actual devuelven `StaleTurn` y no cambian nada. Es necesario porque al cambiar de ronda el mismo jugador juega dos pasos seguidos, y un `EndStep` reenviado se aplicaría otra vez. |
+| Identidad | La acción lleva el `PlayerId` como argumento. El servidor lo obtiene de la sesión autenticada (nunca de un dato que mande el cliente) y el motor comprueba que sea su turno. |
+| Abandono y tiempo por paso | No están en el motor, a propósito: dependen del reloj del servidor. Se resuelven por encima del resultado del replay, sin meterlos como una acción falsa en la lista. |
+
+**Dos cosas que el motor no resuelve y habrá que decidir** cuando llegue ese momento:
+
+1. **El catálogo de cartas.** El motor recibe `CardDefinition`, pero las cartas hoy viven como `ScriptableObject` dentro de Unity, que un servidor no puede leer. Hará falta exportarlas (por ejemplo a un JSON generado desde un menú del Editor) y **guardar con cada partida la versión del catálogo**: si se cambia el ataque de una carta a mitad de partida, el replay daría otro resultado.
+2. **Qué datos son privados.** El `GameSetup` y la lista de acciones son del servidor. A los clientes solo les llega la vista.
+
+El profesor compartirá la guía del multijugador cuando termines las tareas 1 a 9.
