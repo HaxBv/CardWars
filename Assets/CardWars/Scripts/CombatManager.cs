@@ -15,9 +15,10 @@ public class CombatManager : MonoBehaviour
     private bool player1UsesAllySide = true;
 
     [Header("ATTACK TIMING")]
-    [SerializeField, Min(0f)]
+    [SerializeField]
     private float firstSlotAttackDelay = 0.5f;
-
+    [SerializeField]
+    private float nextLaneDelay = 0.5f;
     private Coroutine combatRoutine;
 
     private class AttackOrder
@@ -157,6 +158,7 @@ public class CombatManager : MonoBehaviour
     // COMBAT
     // =====================================================
 
+
     private IEnumerator ResolveCombat()
     {
         LandLane[] lanes =
@@ -171,20 +173,40 @@ public class CombatManager : MonoBehaviour
             (PhasesSystem.Instance.CurrentPriority ==
              PlayerTurn.Player1) == player1UsesAllySide;
 
-        foreach (LandLane lane in lanes)
+        for (int i = 0; i < lanes.Length; i++)
         {
+            LandLane lane = lanes[i];
+
             if (lane == null)
                 continue;
 
             Debug.Log($"COMBAT - Lane {lane.LaneID}");
 
+            // Esperar a que termine completamente el carril.
             yield return ResolveLane(lane, allyFirst);
+
+            // Esperar antes de pasar al siguiente carril.
+            // No aplicar delay después del último carril.
+            bool hasNextLane = false;
+
+            for (int j = i + 1; j < lanes.Length; j++)
+            {
+                if (lanes[j] != null)
+                {
+                    hasNextLane = true;
+                    break;
+                }
+            }
+
+            if (hasNextLane && nextLaneDelay > 0f)
+                yield return new WaitForSeconds(nextLaneDelay);
         }
 
         combatRoutine = null;
 
         PhasesSystem.Instance.CompleteCombat();
     }
+
 
     private IEnumerator ResolveLane(
         LandLane lane,
@@ -352,6 +374,16 @@ public class CombatManager : MonoBehaviour
         if (root == null || attacker == null)
             yield break;
 
+        if (attacker.ConsumeStun())
+        {
+            Debug.Log(
+                $"{attacker.CardData.CardName} is stunned " +
+                "and skips its next attack."
+            );
+
+            yield break;
+        }
+
         bool isMelee = attacker.CardData.IsMelee;
 
         // -------------------------------------------------
@@ -397,6 +429,18 @@ public class CombatManager : MonoBehaviour
                     attack.Damage,
                     attacker
                 );
+
+
+                if (attacker.HasPassive(AbilityPassive.Freeze))
+                {
+                    attack.Target.ApplyStun();
+
+                    Debug.Log(
+                        $"{attack.Target.CardData.CardName} " +
+                        "has been stunned."
+                    );
+                }
+
 
                 Debug.Log(
                     $"{attacker.CardData.CardName} attacks " +

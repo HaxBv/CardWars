@@ -18,6 +18,11 @@ public class BoardManager : MonoBehaviour
 
     public static event Action OnCombatStarted;
     public static event Action OnCombatEnded;
+
+    [Header("OBJECT POOL")]
+    [SerializeField] private Transform TroopPool;
+
+    private Stack<GameObject> pooledTroops = new Stack<GameObject>();
     private class TroopInfo
     {
         public TroopCardData CardData;
@@ -36,6 +41,59 @@ public class BoardManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    // =========================================
+    // OBJECT POOLING
+    // =========================================
+
+    public GameObject GetTroopFromPool(
+        GameObject prefab,
+        Vector3 position,
+        Transform parent)
+    {
+        if (prefab == null)
+            return null;
+
+        GameObject troop;
+
+        if (pooledTroops.Count > 0)
+        {
+            // Reutilizar una tropa existente.
+            troop = pooledTroops.Pop();
+
+            troop.transform.SetParent(parent);
+            troop.transform.SetPositionAndRotation(
+                position,
+                Quaternion.identity
+            );
+
+            troop.SetActive(true);
+        }
+        else
+        {
+            // Crear una nueva si el pool está vacío.
+            troop = Instantiate(
+                prefab,
+                position,
+                Quaternion.identity,
+                parent
+            );
+        }
+
+        return troop;
+    }
+
+    public void ReturnTroopToPool(GameObject troop)
+    {
+        if (troop == null)
+            return;
+
+        troop.SetActive(false);
+        troop.transform.SetParent(TroopPool, false);
+
+        pooledTroops.Push(troop);
+    }
+
     public bool TryGetTroopData(
     GameObject troopObject,
     out TroopCardData cardData)

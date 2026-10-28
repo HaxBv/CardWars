@@ -15,11 +15,15 @@ MonoBehaviour:
   cardName: Konquest
   cost: 9
   weight: 4
-  descriptionAbility: 'End of Turn: Heal 1 HP to this unit for each enemy in this
+  descriptionAbility: 'End of Round: Heal 1 HP to this unit for each enemy in this
     lane and adjacent lanes.
 
-    Ascension - Monster: Double the ATK of allied units
-    in this lane and adjacent lanes.'
+
+    This gets +1 ARM for each 1 point missing health.
+
+
+    Ascension
+    - Monster: Double the ATK of allied units in this lane and adjacent lanes.'
   phrase: 
   type: 1
   role: 8
@@ -86,4 +90,4 @@ MonoBehaviour:
   imgCharInGame: {fileID: -4340427415590081804, guid: 91745a5fd431b4d4cb0ee7a526280957, type: 3}
   anim: {fileID: 9100000, guid: f5e8e9807e814354fa27f86cc01d1c21, type: 2}
   abilityPassives: 0800000014000000
-  meleeAttackDistance: 9
+  attackSpacing: 2

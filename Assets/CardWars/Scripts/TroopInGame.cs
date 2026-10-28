@@ -1,6 +1,7 @@
 
 using Sirenix.OdinInspector;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TroopInGame : MonoBehaviour
@@ -30,6 +31,19 @@ public class TroopInGame : MonoBehaviour
 
     public bool IsAlive => currentHealth > 0;
 
+
+    [Header("STATUS MARKS")]
+    [SerializeField] private bool isStunned;
+    [SerializeField, Min(0)] private int burnMark;
+    [SerializeField, Min(0)] private int poisonRemainingPeriods;
+    [SerializeField] private bool isBleeding;
+
+    public bool IsStunned => isStunned;
+    public int BurnMark => burnMark;
+    public int PoisonRemainingPeriods => poisonRemainingPeriods;
+    public bool IsPoisoned => poisonRemainingPeriods > 0;
+    public bool IsBleeding => isBleeding;
+
     // Se consulta al preparar los ataques del carril.
     public bool CanAttack =>
         CardData != null &&
@@ -48,6 +62,30 @@ public class TroopInGame : MonoBehaviour
     public event Action<TroopInGame, TroopInGame> OnKill;
     public event Action<TroopInGame> OnDeath;
 
+    [Header("CURRENT PASSIVES")]
+    [SerializeField] private List<AbilityPassive> currentPassives = new();
+
+    public IReadOnlyList<AbilityPassive> CurrentPassives => currentPassives;
+
+    public bool HasPassive(AbilityPassive passive)
+    {
+        return currentPassives.Contains(passive);
+    }
+
+    public void AddPassive(AbilityPassive passive)
+    {
+        if (passive == AbilityPassive.None ||
+            currentPassives.Contains(passive))
+            return;
+
+        currentPassives.Add(passive);
+    }
+
+    public void RemovePassive(AbilityPassive passive)
+    {
+        currentPassives.Remove(passive);
+    }
+
     public void Initialize(TroopCardData data, bool isAlly)
     {
         if (data == null)
@@ -56,6 +94,17 @@ public class TroopInGame : MonoBehaviour
         CardData = data;
         IsAlly = isAlly;
 
+        currentPassives.Clear();
+
+        if (data.AbilityPassives != null)
+        {
+            foreach (AbilityPassive passive in data.AbilityPassives)
+            {
+                AddPassive(passive);
+            }
+        }
+
+        // Reiniciar estadísticas.
         currentAttack = data.Attack;
         maxHealth = data.Health;
         currentHealth = maxHealth;
@@ -66,11 +115,28 @@ public class TroopInGame : MonoBehaviour
         currentBurn = data.Burn;
         currentOverstrike = data.Overstrike;
 
+        // Reiniciar estados.
         deployed = false;
         deathProcessed = false;
 
-        troopDisplay = GetComponentInChildren<TroopDisplay>();
+        isStunned = false;
+        burnMark = 0;
+        poisonRemainingPeriods = 0;
+        isBleeding = false;
 
+        // Obtener componentes, incluso si están inactivos.
+        troopDisplay = GetComponentInChildren<TroopDisplay>(true);
+
+        // Reiniciar animaciones anteriores.
+        Animator animator = GetComponentInChildren<Animator>(true);
+
+        if (animator != null)
+        {
+            animator.Rebind();
+            animator.Update(0f);
+        }
+
+        // Actualizar apariencia y estadísticas.
         if (troopDisplay != null)
         {
             troopDisplay.Initialize(data, isAlly);
@@ -173,4 +239,81 @@ public class TroopInGame : MonoBehaviour
             );
         }
     }
+
+
+    #region STATUS MARKS
+
+    // STUN: no acumulable.
+    public void ApplyStun()
+    {
+        if (!IsAlive || deathProcessed)
+            return;
+
+        isStunned = true;
+    }
+
+    public bool ConsumeStun()
+    {
+        if (!isStunned)
+            return false;
+
+        isStunned = false;
+        return true;
+    }
+
+    // BURN: almacena el daño adicional pendiente.
+    public void ApplyBurn(int amount)
+    {
+        if (!IsAlive || deathProcessed || amount <= 0)
+            return;
+
+        burnMark = amount;
+    }
+
+    public int ConsumeBurn()
+    {
+        int amount = burnMark;
+        burnMark = 0;
+        return amount;
+    }
+
+    // POISON: la duración se acumula.
+    public void ApplyPoison(int duration)
+    {
+        if (!IsAlive || deathProcessed || duration <= 0)
+            return;
+
+        poisonRemainingPeriods =
+            Mathf.Min(10, poisonRemainingPeriods + duration);
+    }
+
+    public bool ConsumePoisonPeriod()
+    {
+        if (poisonRemainingPeriods <= 0)
+            return false;
+
+        poisonRemainingPeriods--;
+        return true;
+    }
+
+    // BLEEDING: marca de un solo uso.
+    public void ApplyBleeding()
+    {
+        if (!IsAlive || deathProcessed)
+            return;
+
+        isBleeding = true;
+    }
+
+    public bool ConsumeBleeding()
+    {
+        if (!isBleeding)
+            return false;
+
+        isBleeding = false;
+        return true;
+    }
+
+    #endregion
+
 }

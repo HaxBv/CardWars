@@ -85,4 +85,4 @@ MonoBehaviour:
   imgCharInGame: {fileID: -4126795280975832674, guid: 8472951a129c88441a6b73417b6f691b, type: 3}
   anim: {fileID: 9100000, guid: 8ff1b27b3d169b542a07d28246f23338, type: 2}
   abilityPassives: 
-  meleeAttackDistance: 12
+  attackSpacing: 2

@@ -73,3 +73,4 @@ MonoBehaviour:
   imgCharInGame: {fileID: -5178761132286291668, guid: 99676a318c5c5a3449f14b19d76a80fb, type: 3}
   anim: {fileID: 9100000, guid: 88e00bec5a653624ebe83412f71b37a1, type: 2}
   abilityPassives: 1700000018000000
+  attackSpacing: 2

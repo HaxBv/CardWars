@@ -125,20 +125,8 @@ public class LandLane : MonoBehaviour
     }
     private void RefreshTroopPositions()
     {
-        // Si la tropa del frente murió, la de atrás avanza.
-        if (allyFirstTroop == null && allySecondTroop != null)
-        {
-            allyFirstTroop = allySecondTroop;
-            allySecondTroop = null;
-            allyFirstTroop.transform.position = AllyFirstSlot.position;
-        }
-
-        if (enemyFirstTroop == null && enemySecondTroop != null)
-        {
-            enemyFirstTroop = enemySecondTroop;
-            enemySecondTroop = null;
-            enemyFirstTroop.transform.position = EnemyFirstSlot.position;
-        }
+        // Las tropas conservan sus posiciones.
+        // No se desplazan automáticamente cuando otra muere.
     }
 
     private bool IsSlotSelected(Transform slot, Vector2 worldPosition)
@@ -281,26 +269,21 @@ public class LandLane : MonoBehaviour
             }
         }
 
-        GameObject newTroop = Instantiate(
-            TroopPrefab,
-            spawnPoint.position,
-            Quaternion.identity,
-            TroopsContainer
-        );
+        GameObject newTroop = BoardManager.Instance.GetTroopFromPool(TroopPrefab, spawnPoint.position, TroopsContainer);
 
         TroopInGame troop = newTroop.GetComponentInChildren<TroopInGame>();
 
         if (troop == null)
         {
             Debug.LogError("No se encontró TroopInGame en el prefab.");
-            Destroy(newTroop);
+            BoardManager.Instance.ReturnTroopToPool(newTroop);
             return false;
         }
 
         if (newTroop.GetComponentInChildren<TroopDisplay>() == null)
         {
             Debug.LogError("No se encontró TroopDisplay.");
-            Destroy(newTroop);
+            BoardManager.Instance.ReturnTroopToPool(newTroop);
             return false;
         }
 
@@ -368,7 +351,7 @@ public class LandLane : MonoBehaviour
 
         RefreshTroopPositions();
 
-        Destroy(deadTroop);
+        BoardManager.Instance.ReturnTroopToPool(deadTroop);
     }
 
     public void ShowAvailable()
