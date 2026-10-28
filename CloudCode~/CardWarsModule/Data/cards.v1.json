@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "stepTimeoutSeconds": 180,
+  "laneTerrains": [ "Land", "Land", "Land" ],
+  "initialHandSize": 4,
+  "maxHandSize": 8,
+  "portalMaxHealth": 50,
+  "portalShields": 3,
+  "cards": [
+    { "id": 1, "name": "MUESTRA Soldado",   "attack": 3, "health": 5,  "maxDeckCopies": 4 },
+    { "id": 2, "name": "MUESTRA Escudero",  "attack": 1, "health": 10, "maxDeckCopies": 3 },
+    { "id": 3, "name": "MUESTRA Aliado",    "attack": 2, "health": 4,  "maxDeckCopies": 3, "hasTeam": true },
+    { "id": 4, "name": "MUESTRA Asesino",   "attack": 8, "health": 2,  "maxDeckCopies": 2 },
+    { "id": 5, "name": "MUESTRA Escalador", "attack": 2, "health": 4,  "maxDeckCopies": 2, "highground": true },
+    { "id": 6, "name": "MUESTRA Nadador",   "attack": 2, "health": 4,  "maxDeckCopies": 2, "aquatic": true }
+  ]
+}
