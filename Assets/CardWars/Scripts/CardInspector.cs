@@ -55,52 +55,67 @@ public class CardInspector : MonoBehaviour
         characterImage.preserveAspect = true;
         characterImage.SetNativeSize();
     }
-    public void Open(TroopCardData cardData)
+    public void Open(CardInstance card)
     {
-        if (cardData == null || inspectorPanel == null)
+        if (card == null || inspectorPanel == null)
             return;
 
+        CardData cardData = card.CardData;
+
         inspectorPanel.SetActive(true);
-        // Actualizar la carta de la izquierda.
+
+        // Mostrar la carta con sus estadísticas actuales.
         if (cardPreview != null)
-            cardPreview.MostrarTropa(cardData);
+            cardPreview.SetCard(card);
 
-        // Actualizar los textos de la derecha.
+        // Mostrar la descripción actual.
         if (cardDescription != null)
-            cardDescription.text = cardData.DescriptionAbility;
+            cardDescription.text = card.CurrentDescription;
 
+        // Mostrar la frase actual.
         if (cardPhrase != null)
-            cardPhrase.text = cardData.Phrase;
+            cardPhrase.text = card.CurrentPhrase;
 
-        // Mostrar el sprite del personaje.
-        if (characterImage != null)
+        // Información visual exclusiva de tropas.
+        if (cardData is TroopCardData troopData)
         {
-            characterImage.sprite = cardData.ImgCharInGame;
-            characterImage.enabled = cardData.ImgCharInGame != null;
-            AdjustCharacterImage();
-            if (characterImage.sprite != null)
+            if (characterImage != null)
             {
-                characterImage.preserveAspect = true;
-                characterImage.SetNativeSize();
+                characterImage.sprite = troopData.ImgCharInGame;
+                characterImage.enabled = troopData.ImgCharInGame != null;
+
+                AdjustCharacterImage();
+            }
+
+            if (characterAnimator != null)
+            {
+                characterAnimator.runtimeAnimatorController = null;
+
+                UnityEngine.Object animationAsset = troopData.Anim;
+
+                if (animationAsset is RuntimeAnimatorController controller)
+                {
+                    characterAnimator.runtimeAnimatorController = controller;
+                    characterAnimator.Rebind();
+                    characterAnimator.Update(0f);
+                }
             }
         }
-        // Configurar la animación, si es un Animator Controller.
-        if (characterAnimator != null)
+        else
         {
-            characterAnimator.runtimeAnimatorController = null;
-
-            UnityEngine.Object animationAsset = cardData.Anim;
-
-            if (animationAsset is RuntimeAnimatorController controller)
+            if (characterImage != null)
             {
-                characterAnimator.runtimeAnimatorController = controller;
-                characterAnimator.Rebind();
-                characterAnimator.Update(0f);
+                characterImage.sprite = null;
+                characterImage.enabled = false;
             }
+
+            if (characterAnimator != null)
+                characterAnimator.runtimeAnimatorController = null;
         }
 
         openedFrame = Time.frameCount;
     }
+
 
     public void Close()
     {

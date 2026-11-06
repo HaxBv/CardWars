@@ -8,6 +8,7 @@ public class TroopInGame : MonoBehaviour
 {
     [Header("DATA")]
     public TroopCardData CardData { get; private set; }
+    public TroopCardInstance CardInstance { get; private set; }
     public bool IsAlly { get; private set; }
 
     [Header("CURRENT STATS")]
@@ -45,11 +46,7 @@ public class TroopInGame : MonoBehaviour
     public bool IsBleeding => isBleeding;
 
     // Se consulta al preparar los ataques del carril.
-    public bool CanAttack =>
-        CardData != null &&
-        IsAlive &&
-        CurrentAttack > 0 &&
-        !deathProcessed;
+    public bool CanAttack => CardInstance != null && IsAlive && CurrentAttack > 0 && !deathProcessed;
 
     private TroopDisplay troopDisplay;
 
@@ -72,6 +69,7 @@ public class TroopInGame : MonoBehaviour
         return currentPassives.Contains(passive);
     }
 
+
     public void AddPassive(AbilityPassive passive)
     {
         if (passive == AbilityPassive.None ||
@@ -79,55 +77,87 @@ public class TroopInGame : MonoBehaviour
             return;
 
         currentPassives.Add(passive);
+
+        if (deployed)
+            RefreshDisplay();
     }
 
     public void RemovePassive(AbilityPassive passive)
     {
-        currentPassives.Remove(passive);
-    }
-
-    public void Initialize(TroopCardData data, bool isAlly)
-    {
-        if (data == null)
+        if (!currentPassives.Remove(passive))
             return;
 
-        CardData = data;
+        if (deployed)
+            RefreshDisplay();
+    }
+
+
+    public void Initialize(TroopCardInstance card, bool isAlly)
+    {
+        if (card == null)
+        {
+            Debug.LogError("No se puede inicializar una tropa sin CardInstance.");
+            return;
+        }
+
+        CardInstance = card;
+        CardData = card.CardData as TroopCardData;
         IsAlly = isAlly;
+
+        if (CardData == null)
+        {
+            Debug.LogError("La instancia no contiene un TroopCardData válido.");
+            CardInstance = null;
+            return;
+        }
+
+        // ==========================================
+        // CURRENT STATS
+        // ==========================================
+
+        currentAttack = card.CurrentAttack;
+
+        maxHealth = card.CurrentHealth;
+        currentHealth = maxHealth;
+
+        currentArmor = card.CurrentArmor;
+        currentShield = card.CurrentShield;
+        currentShieldArmor = card.CurrentShieldArmor;
+
+        currentBurn = card.CurrentBurn;
+        currentOverstrike = card.CurrentOverstrike;
+
+        // ==========================================
+        // CURRENT PASSIVES
+        // ==========================================
 
         currentPassives.Clear();
 
-        if (data.AbilityPassives != null)
+        foreach (AbilityPassive passive in card.CurrentPassives)
         {
-            foreach (AbilityPassive passive in data.AbilityPassives)
-            {
-                AddPassive(passive);
-            }
+            AddPassive(passive);
         }
 
-        // Reiniciar estadísticas.
-        currentAttack = data.Attack;
-        maxHealth = data.Health;
-        currentHealth = maxHealth;
-
-        currentArmor = data.Armor;
-        currentShield = data.Shield;
-        currentShieldArmor = data.ShieldArmor;
-        currentBurn = data.Burn;
-        currentOverstrike = data.Overstrike;
-
-        // Reiniciar estados.
-        deployed = false;
-        deathProcessed = false;
+        // ==========================================
+        // RESET STATUS MARKS
+        // ==========================================
 
         isStunned = false;
         burnMark = 0;
         poisonRemainingPeriods = 0;
         isBleeding = false;
 
-        // Obtener componentes, incluso si están inactivos.
-        troopDisplay = GetComponentInChildren<TroopDisplay>(true);
+        // ==========================================
+        // RESET DEPLOYMENT STATE
+        // ==========================================
 
-        // Reiniciar animaciones anteriores.
+        deployed = false;
+        deathProcessed = false;
+
+        // ==========================================
+        // RESET ANIMATOR
+        // ==========================================
+
         Animator animator = GetComponentInChildren<Animator>(true);
 
         if (animator != null)
@@ -136,13 +166,19 @@ public class TroopInGame : MonoBehaviour
             animator.Update(0f);
         }
 
-        // Actualizar apariencia y estadísticas.
+        // ==========================================
+        // TROOP DISPLAY
+        // ==========================================
+
+        troopDisplay = GetComponentInChildren<TroopDisplay>(true);
+
         if (troopDisplay != null)
         {
-            troopDisplay.Initialize(data, isAlly);
+            troopDisplay.Initialize(CardData, isAlly);
             RefreshDisplay();
         }
     }
+
 
     public void NotifyDeploy()
     {
@@ -157,25 +193,111 @@ public class TroopInGame : MonoBehaviour
     // DAMAGE
     // =====================================================
 
+
     [Button]
-    public void TakeDamage(int damage, TroopInGame attacker = null)
+    public DamageResult TakeDamage(
+        int damage,
+        TroopInGame attacker = null)
     {
-        if (damage <= 0 || deathProcessed)
-            return;
+        if (damage <= 0 || deathProcessed || !IsAlive)
+            return new DamageResult(0, 0, 0, false);
 
-        // La salud nunca baja de 0.
-        currentHealth = Mathf.Max(0, currentHealth - damage);
+        bool hasBreak = attacker != null &&
+            attacker.HasPassive(AbilityPassive.Break);
 
-        // Actualizar HP visual inmediatamente.
-        RefreshDisplay();
+        int healthBefore = currentHealth;
+        int shieldBefore = currentShield;
 
-        // Reproducir Hurt al recibir daño.
-        if (troopDisplay != null)
-            troopDisplay.PlayHurt();
+        int healthDamage = 0;
+        int shieldDamage = 0;
+        int blockedDamage = 0;
 
-        // No ejecutar Die() todavía.
-        // La muerte se confirma al finalizar el carril.
+        if (currentShield > 0)
+        {
+            if (hasBreak)
+            {
+                // Break destruye todo el escudo.
+                currentShield = 0;
+                shieldDamage = shieldBefore;
+
+                // Solo el daño sobrante pasa al HP.
+                int excessDamage = Mathf.Max(
+                    0,
+                    damage - shieldBefore
+                );
+
+                healthDamage = Mathf.Min(
+                    currentHealth,
+                    excessDamage
+                );
+
+                currentHealth -= healthDamage;
+            }
+            else
+            {
+                // El escudo utiliza Shield Armor.
+                int effectiveDamage = Mathf.Max(
+                    0,
+                    damage - currentShieldArmor
+                );
+
+                blockedDamage = damage - effectiveDamage;
+
+                shieldDamage = Mathf.Min(
+                    currentShield,
+                    effectiveDamage
+                );
+
+                currentShield -= shieldDamage;
+
+                // Sin Break, el exceso no llega al HP.
+            }
+        }
+        else
+        {
+            // Break ignora ARMOR.
+            int effectiveDamage = hasBreak
+                ? damage
+                : Mathf.Max(0, damage - currentArmor);
+
+            blockedDamage = damage - effectiveDamage;
+
+            healthDamage = Mathf.Min(
+                currentHealth,
+                effectiveDamage
+            );
+
+            currentHealth -= healthDamage;
+        }
+
+        bool shieldDestroyed =
+            shieldBefore > 0 && currentShield == 0;
+
+        if (healthDamage > 0 || shieldDamage > 0)
+        {
+            RefreshDisplay();
+
+            if (troopDisplay != null)
+                troopDisplay.PlayHurt();
+        }
+
+        if (healthDamage > 0)
+        {
+            OnDamaged?.Invoke(
+                this,
+                healthDamage,
+                attacker
+            );
+        }
+
+        return new DamageResult(
+            healthDamage,
+            shieldDamage,
+            blockedDamage,
+            shieldDestroyed
+        );
     }
+
 
 
     // =====================================================
@@ -229,16 +351,30 @@ public class TroopInGame : MonoBehaviour
     // DISPLAY
     // =====================================================
 
+
     private void RefreshDisplay()
     {
-        if (troopDisplay != null)
-        {
-            troopDisplay.RefreshStats(
-                CurrentAttack,
-                CurrentHealth
-            );
-        }
+        if (troopDisplay == null)
+            return;
+
+        troopDisplay.RefreshStats(
+            CurrentAttack,
+            CurrentHealth
+        );
+
+        troopDisplay.RefreshPassiveIcons(
+            CurrentPassives
+        );
+
+        troopDisplay.RefreshExtraStats(
+            CurrentOverstrike,
+            CurrentShield,
+            CurrentShieldArmor,
+            CurrentArmor,
+            CurrentBurn
+        );
     }
+
 
 
     #region STATUS MARKS

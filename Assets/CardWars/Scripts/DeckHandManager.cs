@@ -20,7 +20,7 @@ public class DeckHandManager : MonoBehaviour
     [Header("LAYOUT")]
     public float CardSpacing = 20f;
 
-    [SerializeField]private List<TroopCardData> deck = new List<TroopCardData>();
+    [SerializeField] private List<CardInstance> deck = new();
     [Header("HAND ANIMATION")]
     [SerializeField] private float HideDistance = 350f;
     [SerializeField] private float AnimationDuration = 0.4f;
@@ -92,19 +92,23 @@ public class DeckHandManager : MonoBehaviour
     {
         RefreshCardAvailability();
     }
-    private bool CanDragCard(CardData card)
+
+    private bool CanDragCard(CardInstance card)
     {
-        if (card == null || PhasesSystem.Instance == null)
+        if (card == null ||
+            PhasesSystem.Instance == null)
             return false;
+
+        CardType type = card.CardData.Type;
 
         switch (PhasesSystem.Instance.CurrentPhase)
         {
             case TurnPhase.TroopTurn:
-                return card.Type == CardType.Troop;
+                return type == CardType.Troop;
 
             case TurnPhase.SpellAndDomainTurn:
-                return card.Type == CardType.Spell ||
-                       card.Type == CardType.Domain;
+                return type == CardType.Spell ||
+                       type == CardType.Domain;
 
             case TurnPhase.CombatTurn:
                 return false;
@@ -112,6 +116,7 @@ public class DeckHandManager : MonoBehaviour
 
         return false;
     }
+
     public void RefreshCardAvailability()
     {
         foreach (Transform child in CardsInHand)
@@ -128,7 +133,7 @@ public class DeckHandManager : MonoBehaviour
             if (display == null)
                 continue;
 
-            bool canDrag = CanDragCard(display.cardDataSO);
+            bool canDrag = CanDragCard(display.CardInstance);
 
             // Permitir o bloquear el arrastre.
             if (drag != null)
@@ -245,6 +250,7 @@ public class DeckHandManager : MonoBehaviour
 
 
 
+
     private void CreateDeck()
     {
         deck.Clear();
@@ -257,17 +263,17 @@ public class DeckHandManager : MonoBehaviour
             if (card == null)
                 continue;
 
-            // Obtener las copias máximas según la rareza.
             int copies = card.MaxDeckCopies;
 
-            // Excluir Token y rarezas no permitidas.
             if (copies <= 0)
                 continue;
 
-            // Agregar las copias de esta carta al mazo.
             for (int i = 0; i < copies; i++)
             {
-                deck.Add(card);
+                CardInstance instance =
+                    CardInstanceFactory.Create(card);
+
+                deck.Add(instance);
             }
         }
 
@@ -284,6 +290,7 @@ public class DeckHandManager : MonoBehaviour
     }
 
 
+
     public void DrawCard()
     {
         if (deck.Count == 0)
@@ -292,7 +299,8 @@ public class DeckHandManager : MonoBehaviour
         if (GetHandCount() >= MaxHandSize)
             return;
 
-        TroopCardData card = deck[deck.Count - 1];
+        CardInstance card = deck[deck.Count - 1];
+
         deck.RemoveAt(deck.Count - 1);
 
         AddCardToHand(card);
@@ -310,8 +318,8 @@ public class DeckHandManager : MonoBehaviour
             return;
 
 
-
-        AddCardToHand(card);
+        CardInstance instance = CardInstanceFactory.Create(card);
+        AddCardToHand(instance);
     }
 
 
@@ -349,6 +357,10 @@ public class DeckHandManager : MonoBehaviour
                 0f
             );
         }
+        CardDisplay display = rootObject.GetComponentInChildren<CardDisplay>(true);
+
+        if (display != null)
+            display.ClearCard();
 
         rootObject.SetActive(false);
         rootObject.transform.SetParent(CardPool, false);
@@ -357,7 +369,7 @@ public class DeckHandManager : MonoBehaviour
 
         RefreshHand();
     }
-    private void AddCardToHand(TroopCardData card)
+    private void AddCardToHand(CardInstance card)
     {
         GameObject newCard;
 
@@ -397,8 +409,7 @@ public class DeckHandManager : MonoBehaviour
 
         if (display != null)
         {
-            display.cardDataSO = card;
-            display.AplicarData();
+            display.SetCard(card);
         }
 
         // Guardar los colores actuales de la nueva carta.

@@ -898,8 +898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'End of Round: Transforms into a random unit with +1 ATK and +1 HP. Retains
-    this ability.'
+  m_text: Creator In Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2749d2d329efdc448b1e76c960c3c35f, type: 2}
   m_sharedMaterial: {fileID: -2013633923709956340, guid: 2749d2d329efdc448b1e76c960c3c35f, type: 2}
@@ -926,7 +925,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.35
+  m_fontSize: 40
   m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10534,7 +10533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2006162626
 RectTransform:
   m_ObjectHideFlags: 0

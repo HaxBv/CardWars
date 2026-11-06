@@ -17,7 +17,7 @@ MonoBehaviour:
   weight: 3
   descriptionAbility: 'End of Round: Transforms into a random unit with +1 ATK and
     +1 HP. Retains this ability.'
-  phrase: 
+  phrase: Creator In Game
   type: 1
   role: 6
   rarity: 5

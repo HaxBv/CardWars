@@ -245,6 +245,12 @@ public enum AbilityPassive
 
 
 }
+public enum AbilityIconCategory
+{
+    Offensive,
+    Defensive,
+    Utility
+}
 public enum TargetType
 {
     None,

@@ -145,11 +145,10 @@ public class BoardManager : MonoBehaviour
     }
 
     // Comprobar si una carta posee Team.
-    public bool HasTeam(TroopCardData cardData)
+    public bool HasTeam(CardInstance card)
     {
-        return cardData != null &&
-               cardData.AbilityPassives != null &&
-               cardData.AbilityPassives.Contains(AbilityPassive.Team);
+        return card is TroopCardInstance troop &&
+               troop.HasPassive(AbilityPassive.Team);
     }
 
     // Comprobar si alguna tropa del bando tiene Team en ese carril.
@@ -160,11 +159,16 @@ public class BoardManager : MonoBehaviour
             if (entry.Key == null)
                 continue;
 
-            TroopInfo troop = entry.Value;
+            TroopInfo info = entry.Value;
 
-            if (troop.LaneID == laneID &&
-                troop.IsAlly == isAlly &&
-                HasTeam(troop.CardData))
+            if (info.LaneID != laneID || info.IsAlly != isAlly)
+                continue;
+
+            TroopInGame troop =
+                entry.Key.GetComponent<TroopInGame>();
+
+            if (troop != null &&
+                troop.HasPassive(AbilityPassive.Team))
             {
                 return true;
             }
@@ -172,12 +176,29 @@ public class BoardManager : MonoBehaviour
 
         return false;
     }
+    public void UpdateTroopLane(GameObject troop, int newLaneID)
+    {
+        if (troop == null)
+            return;
+
+        if (!activeTroops.TryGetValue(troop, out TroopInfo info))
+            return;
+
+        int oldLaneID = info.LaneID;
+
+        if (oldLaneID == newLaneID)
+            return;
+
+        info.LaneID = newLaneID;
+
+        OnTroopMoved?.Invoke(troop, oldLaneID, newLaneID);
+    }
 
     // Determinar si dos tropas pueden compartir carril.
     public bool CanShareLane(
-        TroopCardData incomingCard,
-        int laneID,
-        bool isAlly)
+     CardInstance incomingCard,
+     int laneID,
+     bool isAlly)
     {
         return HasTeam(incomingCard) ||
                HasTeamInLane(laneID, isAlly);

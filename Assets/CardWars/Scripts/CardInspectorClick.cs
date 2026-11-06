@@ -9,6 +9,7 @@ public class CardInspectorClick : MonoBehaviour,
     [SerializeField] private CardDisplay cardDisplay;
 
     private CardDrag cardDrag;
+    private TroopInGame troopInGame;
 
     private void Awake()
     {
@@ -16,6 +17,12 @@ public class CardInspectorClick : MonoBehaviour,
             cardDisplay = GetComponentInChildren<CardDisplay>(true);
 
         cardDrag = GetComponentInChildren<CardDrag>(true);
+
+        // Buscar la tropa desplegada.
+        troopInGame = GetComponentInChildren<TroopInGame>(true);
+
+        if (troopInGame == null)
+            troopInGame = GetComponentInParent<TroopInGame>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -26,7 +33,6 @@ public class CardInspectorClick : MonoBehaviour,
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Click en: " + gameObject.name);
         if (eventData.button != PointerEventData.InputButton.Left)
             return;
 
@@ -36,21 +42,39 @@ public class CardInspectorClick : MonoBehaviour,
         if (CardInspector.Instance == null)
             return;
 
-        TroopCardData cardData = null;
+        CardInstance card = null;
+
+        // ==========================================
+        // CARTA EN LA MANO
+        // ==========================================
 
         if (cardDisplay != null)
         {
-            cardData = cardDisplay.cardDataSO;
-        }
-        else if (BoardManager.Instance != null)
-        {
-            BoardManager.Instance.TryGetTroopData(
-                gameObject,
-                out cardData
-            );
+            card = cardDisplay.CardInstance;
         }
 
-        if (cardData != null)
-            CardInspector.Instance.Open(cardData);
+        // ==========================================
+        // TROPA DESPLEGADA
+        // ==========================================
+
+        if (card == null && troopInGame != null)
+        {
+            card = troopInGame.CardInstance;
+        }
+
+        // ==========================================
+        // OPEN INSPECTOR
+        // ==========================================
+
+        if (card != null)
+        {
+            CardInspector.Instance.Open(card);
+        }
+        else
+        {
+            Debug.LogWarning(
+                $"No se encontró CardInstance en {gameObject.name}"
+            );
+        }
     }
 }

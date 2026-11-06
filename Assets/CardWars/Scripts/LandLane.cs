@@ -8,7 +8,7 @@ public class LandLane : MonoBehaviour
     public int LaneID;
   
     public LaneTerrain Terrain = LaneTerrain.Land;
-    private TroopCardData previewCard;
+    private CardInstance previewCard;
 
     [Header("DEPLOYMENT")]
     public Transform AllyFirstSlot;
@@ -57,41 +57,55 @@ public class LandLane : MonoBehaviour
 
         HideHighlight();
     }
-
-    private bool CanDeployOnTerrain(TroopCardData cardData)
+    public bool CanDeployOnTerrain(CardInstance card)
     {
-        if (cardData == null)
+        if (card is not TroopCardInstance troop)
             return false;
 
-        // Todas las tropas pueden jugarse en tierra.
         if (Terrain == LaneTerrain.Land)
             return true;
 
-        if (cardData.AbilityPassives == null)
-            return false;
-
-        // AllTerrain permite ambos terrenos especiales.
-        if (cardData.AbilityPassives.Contains(AbilityPassive.AllTerrain))
+        if (troop.HasPassive(AbilityPassive.AllTerrain))
             return true;
 
         switch (Terrain)
         {
-            case LaneTerrain.Highground:
-                return cardData.AbilityPassives.Contains(
-                    AbilityPassive.Highground
-                );
-
             case LaneTerrain.Aquatic:
-                return cardData.AbilityPassives.Contains(
-                    AbilityPassive.Aquatic
-                );
-        }
+                return troop.HasPassive(AbilityPassive.Aquatic);
 
-        return false;
+            case LaneTerrain.Highground:
+                return troop.HasPassive(AbilityPassive.Highground);
+
+            default:
+                return false;
+        }
     }
-    public void SetPreviewCard(TroopCardData cardData)
+    public bool CanDeployOnTerrain(TroopInGame troop)
     {
-        previewCard = cardData;
+        if (troop == null)
+            return false;
+
+        if (Terrain == LaneTerrain.Land)
+            return true;
+
+        if (troop.HasPassive(AbilityPassive.AllTerrain))
+            return true;
+
+        switch (Terrain)
+        {
+            case LaneTerrain.Aquatic:
+                return troop.HasPassive(AbilityPassive.Aquatic);
+
+            case LaneTerrain.Highground:
+                return troop.HasPassive(AbilityPassive.Highground);
+
+            default:
+                return false;
+        }
+    }
+    public void SetPreviewCard(CardInstance card)
+    {
+        previewCard = card;
     }
     public bool ContainsPosition(Vector2 worldPosition)
     {
@@ -198,14 +212,15 @@ public class LandLane : MonoBehaviour
         }
     }
 
-    public bool DeployTroop(TroopCardData cardData, Vector2 worldPosition)
+    public bool DeployTroop(CardInstance card, Vector2 worldPosition)
     {
-
-        if (cardData == null || TroopPrefab == null ||
-            TroopsContainer == null || !ContainsPosition(worldPosition))
+        // Validar que la carta sea una tropa.
+        if (card is not TroopCardInstance troopCard || TroopPrefab == null || TroopsContainer == null || BoardManager.Instance == null || !ContainsPosition(worldPosition))
             return false;
 
-        if (!CanDeployOnTerrain(cardData))
+        TroopCardData cardData = troopCard.CardData as TroopCardData;
+
+        if (cardData == null || !CanDeployOnTerrain(card))
             return false;
 
         RefreshTroopPositions();
@@ -221,46 +236,37 @@ public class LandLane : MonoBehaviour
         if (firstSlot == null || secondSlot == null)
             return false;
 
-        // Si ambas posiciones están ocupadas, no desplegar.
+        // No permitir más de dos tropas por bando.
         if (firstTroop != null && secondTroop != null)
             return false;
-        // Permitir compartir si alguna de las dos tropas tiene Team.
+
+        // Si ya existe una tropa, alguna debe tener Team.
         if (firstTroop != null &&
-            !BoardManager.Instance.CanShareLane(cardData, LaneID, isAlly))
+            !BoardManager.Instance.CanShareLane(card, LaneID, isAlly))
         {
             return false;
         }
 
         Transform spawnPoint = firstSlot;
+        bool moveExistingTroop = false;
 
-        // Carril vacío: solamente se permite el FirstSlot.
         if (firstTroop == null)
         {
+            // Carril vacío: desplegar en FirstSlot.
             if (!IsSlotSelected(firstSlot, worldPosition))
                 return false;
         }
         else
         {
-            // Aquí mantienes el código que ya tenías:
-            // Elegir delante o detrás cuando existe una tropa.
-
             if (IsSlotSelected(firstSlot, worldPosition))
             {
-                firstTroop.transform.position = secondSlot.position;
-
-                if (isAlly)
-                {
-                    allySecondTroop = firstTroop;
-                    allyFirstTroop = null;
-                }
-                else
-                {
-                    enemySecondTroop = firstTroop;
-                    enemyFirstTroop = null;
-                }
+                // La nueva tropa irá delante.
+                // La existente pasará detrás al confirmar el despliegue.
+                moveExistingTroop = true;
             }
             else if (IsSlotSelected(secondSlot, worldPosition))
             {
+                // La nueva tropa irá detrás.
                 spawnPoint = secondSlot;
             }
             else
@@ -269,13 +275,23 @@ public class LandLane : MonoBehaviour
             }
         }
 
-        GameObject newTroop = BoardManager.Instance.GetTroopFromPool(TroopPrefab, spawnPoint.position, TroopsContainer);
+        // Obtener el GameObject desde el pool.
+        GameObject newTroop = BoardManager.Instance.GetTroopFromPool(
+            TroopPrefab,
+            spawnPoint.position,
+            TroopsContainer
+        );
 
-        TroopInGame troop = newTroop.GetComponentInChildren<TroopInGame>();
+        if (newTroop == null)
+            return false;
+
+        TroopInGame troop =
+            newTroop.GetComponentInChildren<TroopInGame>();
 
         if (troop == null)
         {
             Debug.LogError("No se encontró TroopInGame en el prefab.");
+
             BoardManager.Instance.ReturnTroopToPool(newTroop);
             return false;
         }
@@ -283,17 +299,20 @@ public class LandLane : MonoBehaviour
         if (newTroop.GetComponentInChildren<TroopDisplay>() == null)
         {
             Debug.LogError("No se encontró TroopDisplay.");
+
             BoardManager.Instance.ReturnTroopToPool(newTroop);
             return false;
         }
 
-        // Inicializar estadísticas y visuales.
-        troop.Initialize(cardData, isAlly);
+        // Inicializar usando las estadísticas y pasivas
+        // actuales de TroopCardInstance.
+        troop.Initialize(troopCard, isAlly);
 
-        // Escuchar cuándo muere esta tropa.
+        // Suscribir el evento de muerte.
+        troop.OnDeath -= HandleTroopDeath;
         troop.OnDeath += HandleTroopDeath;
 
-
+        // Registrar la tropa en BoardManager.
         BoardManager.Instance.RegisterTroop(
             newTroop,
             cardData,
@@ -301,7 +320,25 @@ public class LandLane : MonoBehaviour
             isAlly
         );
 
-        // Registrar la nueva tropa en su posición.
+        // Mover la tropa anterior solo después
+        // de haber creado e inicializado la nueva.
+        if (moveExistingTroop)
+        {
+            firstTroop.transform.position = secondSlot.position;
+
+            if (isAlly)
+            {
+                allySecondTroop = firstTroop;
+                allyFirstTroop = null;
+            }
+            else
+            {
+                enemySecondTroop = firstTroop;
+                enemyFirstTroop = null;
+            }
+        }
+
+        // Registrar la nueva tropa en el slot correspondiente.
         if (isAlly)
         {
             if (spawnPoint == AllyFirstSlot)
@@ -317,16 +354,17 @@ public class LandLane : MonoBehaviour
                 enemySecondTroop = newTroop;
         }
 
-        Debug.Log($"Tropa desplegada | Carril: {LaneID} | " +
-                  $"Bando: {(isAlly ? "Aliado" : "Enemigo")} | " +
-                  $"Posición: {(spawnPoint == firstSlot ? "Frente" : "Atrás")}");
+        Debug.Log(
+            $"Tropa desplegada | Carril: {LaneID} | " +
+            $"Bando: {(isAlly ? "Aliado" : "Enemigo")} | " +
+            $"Posición: {(spawnPoint == firstSlot ? "Frente" : "Atrás")}"
+        );
 
         troop.NotifyDeploy();
+
         return true;
-
-
-
     }
+
 
 
     private void HandleTroopDeath(TroopInGame troop)

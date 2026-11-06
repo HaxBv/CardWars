@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c350e83ba62f4740a54a1b758cce497, type: 3}
+  m_Name: TroopIconDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::TroopIconDatabase
+  DefaultAttack: {fileID: 6094515790805491379, guid: 68cdc8d6b1a71014c9e8f74346cf4bae, type: 3}
+  DefaultHealth: {fileID: -990748412570999128, guid: 68cdc8d6b1a71014c9e8f74346cf4bae, type: 3}
+  MultipleOffensive: {fileID: 0}
+  MultipleDefensive: {fileID: 0}
+  PassiveIcons:
+  - Passive: 1
+    Category: 2
+    Icon: {fileID: -1128880618394235531, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 2
+    Category: 0
+    Icon: {fileID: -6607093353826368926, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 3
+    Category: 0
+    Icon: {fileID: -2225706744866961870, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 5
+    Category: 0
+    Icon: {fileID: -6552891729135783003, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 5
+    Category: 0
+    Icon: {fileID: -5476172228574345899, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 6
+    Category: 2
+    Icon: {fileID: 5327515457106660631, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 7
+    Category: 0
+    Icon: {fileID: -8442966708908276820, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 8
+    Category: 1
+    Icon: {fileID: 918439550415477324, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 9
+    Category: 1
+    Icon: {fileID: 2839284328760246655, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 10
+    Category: 0
+    Icon: {fileID: 207269773172108061, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 11
+    Category: 0
+    Icon: {fileID: -7646339056169959095, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 12
+    Category: 0
+    Icon: {fileID: 5039281593437910164, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 13
+    Category: 0
+    Icon: {fileID: 5594947292272596689, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 14
+    Category: 0
+    Icon: {fileID: 3458279063632274417, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 15
+    Category: 0
+    Icon: {fileID: -1647750564677613188, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 16
+    Category: 2
+    Icon: {fileID: -22094771, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 17
+    Category: 2
+    Icon: {fileID: 1675836507, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 18
+    Category: 2
+    Icon: {fileID: -1764998856, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 19
+    Category: 0
+    Icon: {fileID: 8483057577186787549, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 20
+    Category: 1
+    Icon: {fileID: -5396139065476021887, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 21
+    Category: 1
+    Icon: {fileID: -1617580783013829772, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 22
+    Category: 1
+    Icon: {fileID: -2955571815516678452, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}
+  - Passive: 23
+    Category: 0
+    Icon: {fileID: -3781199606029352721, guid: 1e61b61feb9e2294b8b8aa1699633370, type: 3}

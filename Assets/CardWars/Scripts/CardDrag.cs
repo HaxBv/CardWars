@@ -49,13 +49,17 @@ public class CardDrag : MonoBehaviour,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (!canDrag)
+        if (!canDrag ||
+        cardDisplay == null ||
+        cardDisplay.CardInstance == null)
             return;
+
         dragStarted = true;
         WasDraggedThisPress = true;
 
         originalSiblingIndex = cardDisplay.transform.GetSiblingIndex();
         cardDisplay.transform.SetAsLastSibling();
+     
 
         // Primero restaurar la carta seleccionada y bajar las demás.
         if (DeckHandManager.Instance != null)
@@ -79,7 +83,7 @@ public class CardDrag : MonoBehaviour,
         // Mostrar inmediatamente TODOS los slots disponibles.
         foreach (LandLane lane in lanes)
         {
-            lane.SetPreviewCard(cardDisplay.cardDataSO);
+            lane.SetPreviewCard(cardDisplay.CardInstance);
             lane.ShowAvailable();
         }
 
@@ -131,8 +135,8 @@ public class CardDrag : MonoBehaviour,
         if (currentLane != null && cardDisplay != null)
         {
             deployed = currentLane.DeployTroop(
-                cardDisplay.cardDataSO,
-                GetWorldPosition(eventData.position)
+            cardDisplay.CardInstance,
+            GetWorldPosition(eventData.position)
             );
         }
 
@@ -162,15 +166,14 @@ public class CardDrag : MonoBehaviour,
         // Devolver la carta visual al pool si fue desplegada.
         if (deployed)
         {
-            DeckHandManager hand =
-                cardDisplay.GetComponentInParent<DeckHandManager>();
-
+            DeckHandManager hand = DeckHandManager.Instance;
 
             if (hand != null)
+            {
                 Debug.Log("Carta desplegada, devolviendo al pool");
-            hand.ReturnCardToPool(cardDisplay.gameObject);
 
-
+                hand.ReturnCardToPool(cardDisplay.gameObject);
+            }
         }
     }
 
@@ -217,10 +220,12 @@ public class CardDrag : MonoBehaviour,
             cardDisplay.CardDescriptionPanel == null)
             return;
 
+        CardInstance card = cardDisplay.CardInstance;
+
         bool hasDescription =
-            cardDisplay.cardDataSO != null &&
+            card != null &&
             !string.IsNullOrWhiteSpace(
-                cardDisplay.cardDataSO.DescriptionAbility
+                card.CurrentDescription
             );
 
         cardDisplay.CardDescriptionPanel.SetActive(
